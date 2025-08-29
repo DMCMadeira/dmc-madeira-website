@@ -17,7 +17,7 @@
 .services .header-bg-text {
 	font-family: "Helvetica", sans-serif;
 	position: absolute;
-	top: 20%;
+	top: 12%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 7.5rem;
@@ -101,6 +101,13 @@
 	opacity: 0.8;
 }
 
+
+@media (max-width: 1024px) {
+
+	.services .header-bg-text {
+		font-size: 6.5rem;
+	}
+}
 
 @media (max-width: 768px) {
 

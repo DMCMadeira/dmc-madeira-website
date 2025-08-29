@@ -121,13 +121,46 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+	.welcome {
+		margin: 70px 0;
+		background: white;
+	}
+	.welcome .container {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.welcome .container-grid {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		gap: 50px;
+	}
+
+	.welcome .coming-soon-container {
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.welcome .welcome-images {
+		justify-content: center;
+	}
+
+	.welcome .contact-buttons {
+		justify-content: center;
+		gap: 10px;
+	}
+}
+
 @media (max-width: 768px) {
 	.welcome {
 		margin: 70px 0;
 	}
 
 	.welcome .container-grid {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column-reverse;
 		text-align: center;
 		gap: 20px;
 	}

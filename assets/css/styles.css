@@ -5,7 +5,7 @@
 @import "./footer.css";
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.main-heading {
 		font-size: 2.5rem;
 	}
@@ -66,4 +66,4 @@
 		flex-direction: column;
 		align-items: center;
 	}
-}
+} */
