@@ -5,6 +5,12 @@
 	background: white;
 }
 
+.welcome .container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .welcome .container-grid {
 	display: grid;
 	grid-template-columns: 1fr 2fr;

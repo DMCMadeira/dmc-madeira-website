@@ -1,8 +1,8 @@
 /* Hero Section */
 .hero {
 	position: relative;
-	width: 95%;
-	margin: 20px auto;
+	/* width: 95%; */
+	margin: 30px 30px;
 	border-radius: 20px;
 	/* background-image: url("../images/hero-1.png"); */
 	background-size: cover;

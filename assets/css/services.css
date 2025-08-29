@@ -100,3 +100,25 @@
 	font-weight: 400;
 	opacity: 0.8;
 }
+
+
+@media (max-width: 768px) {
+
+	.services .header-bg-text {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 640px) {
+
+	.services .header-bg-text {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.services .header-bg-text {
+		font-size: 2.5rem;
+	}
+}
+
