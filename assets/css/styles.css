@@ -1,0 +1,69 @@
+@import "./base.css";
+@import "./hero.css";
+@import "./welcome.css";
+@import "./services.css";
+@import "./footer.css";
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.main-heading {
+		font-size: 2.5rem;
+	}
+
+	.brand {
+		font-size: 1.8rem;
+	}
+
+	.welcome .container {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		text-align: center;
+	}
+
+	.welcome-images {
+		justify-content: center;
+	}
+
+	.services-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.services .header-bg-text {
+		font-size: 5.5rem;
+	}
+
+	.footer-bottom {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		padding: 0 20px;
+	}
+
+	.main-heading {
+		font-size: 2rem;
+	}
+
+	.brand {
+		font-size: 1.5rem;
+	}
+
+	.image-placeholder.large {
+		width: 200px;
+		height: 280px;
+	}
+
+	.image-placeholder.small {
+		width: 160px;
+		height: 220px;
+	}
+
+	.welcome-images {
+		flex-direction: column;
+		align-items: center;
+	}
+}
