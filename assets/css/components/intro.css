@@ -1,0 +1,116 @@
+/* ============================================
+   INTRO/PARTNER SECTION COMPONENT
+   ============================================ */
+
+.intro {
+    position: relative;
+    padding: var(--spacing-4xl) 0;
+}
+
+.intro__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    padding-right: var(--container-padding);
+}
+
+/* Image Section - No left padding, bleeds to edge */
+.intro__image-wrapper {
+    position: relative;
+}
+
+.intro__image {
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    overflow: hidden;
+}
+
+.intro__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content Section */
+.intro__content {
+    padding-left: var(--spacing-2xl);
+    max-width: 600px;
+}
+
+.intro__title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.2;
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.intro__subtitle {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent-gold);
+    margin-bottom: var(--spacing-xl);
+}
+
+.intro__description {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+}
+
+.intro__description p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.intro__description p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .intro__content {
+        padding-left: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .intro__container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+        padding-right: 0;
+    }
+
+    .intro__image-wrapper {
+        order: 1;
+    }
+
+    .intro__image {
+        border-radius: 0;
+    }
+
+    .intro__content {
+        order: 2;
+        padding: 0 var(--container-padding);
+        max-width: none;
+    }
+
+    .intro__title {
+        font-size: 1.75rem;
+    }
+
+    .intro__subtitle {
+        font-size: 0.9375rem;
+    }
+
+    .intro__description {
+        font-size: 0.875rem;
+    }
+}

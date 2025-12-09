@@ -1,0 +1,269 @@
+/* ============================================
+   Loyalty Program Page Styles
+   ============================================ */
+
+/* Override button border-radius for this page */
+.btn {
+    border-radius: 0.75rem;
+}
+
+/* Intro Section */
+.loyalty-intro {
+    padding: var(--spacing-5xl) 0 0 0;
+}
+
+.loyalty-intro__content {
+    max-width: 800px;
+}
+
+.loyalty-intro__content p {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.loyalty-intro__content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Exclusivity Section */
+.exclusivity {
+    padding: var(--spacing-4xl) 0;
+}
+
+.exclusivity__title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.exclusivity__text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    max-width: 800px;
+}
+
+/* Marquee Section (reused from press-partners) */
+.loyalty-marquee {
+    padding: var(--spacing-3xl) 0;
+    overflow: hidden;
+    border-top: 1px solid var(--color-border-muted);
+    border-bottom: 1px solid var(--color-border-muted);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.text-gold {
+    color: var(--color-text-muted);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Discretion & Excellence Section (like why-choose) */
+.discretion {
+    padding: var(--spacing-5xl) 0;
+}
+
+.discretion__title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.discretion__intro {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.discretion__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.discretion__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.discretion__card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--spacing-md);
+}
+
+.discretion__card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.discretion__card-divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-border-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.discretion__card-title {
+    font-size: 0.9375rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-white);
+}
+
+/* Partnership Beyond Business Section */
+.partnership-beyond {
+    padding: var(--spacing-5xl) 0;
+}
+
+.partnership-beyond__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+}
+
+.partnership-beyond__title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+}
+
+.partnership-beyond__text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.partnership-beyond__text:last-of-type {
+    margin-bottom: 0;
+}
+
+.partnership-beyond__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.partnership-beyond__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Join the Program Section (like Start your journey) */
+.join-program {
+    background-color: var(--color-text-muted);
+    padding: var(--spacing-5xl) 0;
+    text-align: center;
+}
+
+.join-program__title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.join-program__text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-primary-dark);
+    max-width: 63rem;
+    margin: 0 auto var(--spacing-2xl);
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .discretion__grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .partnership-beyond__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .partnership-beyond__image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .loyalty-intro {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .exclusivity {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .loyalty-marquee {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .marquee-content span {
+        padding-right: 2rem;
+    }
+    
+    .discretion {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .discretion__card {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .partnership-beyond {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .join-program {
+        padding: var(--spacing-4xl) 0;
+    }
+}
+

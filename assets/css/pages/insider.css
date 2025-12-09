@@ -1,0 +1,274 @@
+/* ============================================
+   Insider Page Styles
+   ============================================ */
+
+/* Intro Section */
+.insider-intro {
+    padding: var(--spacing-5xl) 0 var(--spacing-3xl);
+}
+
+.insider-intro__title {
+    font-family: var(--font-primary);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.insider-intro__text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    max-width: 800px;
+}
+
+/* Filter Tags Section */
+.insider-filters {
+    padding-bottom: var(--spacing-3xl);
+}
+
+.insider-filters__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.filter-tag {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8125rem;
+    font-weight: var(--font-weight-medium);
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border-muted);
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-tag:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-text-white);
+    color: var(--color-text-white);
+}
+
+.filter-tag--active {
+    background-color: var(--color-text-muted);
+    border-color: var(--color-text-muted);
+    color: var(--color-primary-dark);
+}
+
+.filter-tag--active:hover {
+    background-color: var(--color-text-muted);
+    border-color: var(--color-text-muted);
+    color: var(--color-primary-dark);
+}
+
+/* Articles Grid Section */
+.articles-grid {
+    padding-bottom: var(--spacing-5xl);
+}
+
+.articles-grid__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-4xl);
+}
+
+/* Article Card */
+.article-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card__image {
+    display: block;
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    margin-bottom: var(--spacing-lg);
+}
+
+.article-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Image zoom effect on hover */
+.article-card__image:hover img {
+    transform: scale(1.3);
+}
+
+.article-card__title {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-white);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+}
+
+/* Read more link with animated underline */
+.article-card__link {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    width: fit-content;
+}
+
+/* Base underline - always visible */
+.article-card__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text-muted);
+}
+
+/* Thicker underline that animates from left to right on hover */
+.article-card__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-text-muted);
+    transition: width 0.3s ease;
+}
+
+.article-card__link:hover::before {
+    width: 100%;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.pagination__btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border-muted);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.pagination__btn:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-text-white);
+}
+
+.pagination__btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.pagination__btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.pagination__numbers {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.pagination__number {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border-muted);
+    background: transparent;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.pagination__number:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-text-white);
+    color: var(--color-text-white);
+}
+
+.pagination__number--active {
+    background-color: var(--color-text-muted);
+    border-color: var(--color-text-muted);
+    color: var(--color-primary-dark);
+}
+
+.pagination__number--active:hover {
+    background-color: var(--color-text-muted);
+    border-color: var(--color-text-muted);
+    color: var(--color-primary-dark);
+}
+
+.pagination__ellipsis {
+    color: var(--color-text-muted);
+    padding: 0 var(--spacing-xs);
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .articles-grid__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .insider-intro {
+        padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+    }
+    
+    .insider-filters__tags {
+        gap: var(--spacing-xs);
+    }
+    
+    .filter-tag {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .articles-grid {
+        padding-bottom: var(--spacing-3xl);
+    }
+    
+    .articles-grid__items {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .pagination__btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pagination__number {
+        width: 36px;
+        height: 36px;
+        font-size: 0.8125rem;
+    }
+}
+
+

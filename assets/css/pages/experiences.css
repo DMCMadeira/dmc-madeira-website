@@ -1,0 +1,256 @@
+/* ============================================
+   Experiences Page Styles
+   ============================================ */
+
+/* ============================================
+   Experts Section - Tailor-made by experts
+   ============================================ */
+
+.experiences-experts {
+    padding: var(--spacing-5xl) 0;
+}
+
+.experiences-experts__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+}
+
+.experiences-experts__content {
+    max-width: 540px;
+}
+
+.experiences-experts__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.2;
+}
+
+.experiences-experts__text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.experiences-experts__text p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.experiences-experts__text p:last-child {
+    margin-bottom: 0;
+}
+
+.experiences-experts__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.experiences-experts__image picture,
+.experiences-experts__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   Discover Our Experiences Section
+   ============================================ */
+
+.experiences-discover {
+    padding: var(--spacing-5xl) 0;
+}
+
+.experiences-discover__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* Experience Accordion */
+.experience-accordion {
+    border-top: 1px solid var(--color-border-subtle);
+}
+
+.experience-accordion:last-of-type {
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.experience-accordion__header {
+    cursor: pointer;
+    padding: var(--spacing-xl) 0;
+    transition: all var(--transition-fast);
+}
+
+.experience-accordion__header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-accordion__heading {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-white);
+    transition: color var(--transition-fast);
+}
+
+.experience-accordion__toggle {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-accordion__icon-close {
+    display: none;
+}
+
+.experience-accordion.is-open .experience-accordion__icon-open {
+    display: none;
+}
+
+.experience-accordion.is-open .experience-accordion__icon-close {
+    display: block;
+}
+
+/* Accordion Content */
+.experience-accordion__content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.experience-accordion.is-open .experience-accordion__content {
+    max-height: 600px;
+}
+
+.experience-accordion__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.experience-accordion__inner {
+    position: relative;
+    z-index: 2;
+    padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+}
+
+.experience-accordion__info {
+    max-width: 700px;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.experience-accordion__subtitle {
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
+.experience-accordion__text {
+    color: var(--color-text-white);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-xl);
+}
+
+.experience-accordion__text:last-of-type {
+    margin-bottom: 0;
+}
+
+.experience-accordion__btn {
+    margin-top: var(--spacing-xl);
+}
+
+/* ============================================
+   CTA Section - Plan Your Next Experience
+   ============================================ */
+
+.experiences-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-5xl) 0;
+    text-align: center;
+}
+
+.experiences-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.experiences-cta__text {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-text-dark);
+    line-height: 1.7;
+}
+
+.experiences-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .experiences-experts__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .experiences-experts__content {
+        max-width: 100%;
+    }
+    
+    .experiences-experts__image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .experiences-experts,
+    .experiences-discover {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .experiences-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .experiences-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experiences-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .experience-accordion__info {
+        max-width: 100%;
+    }
+    
+    .experience-accordion.is-open .experience-accordion__content {
+        max-height: 800px;
+    }
+}

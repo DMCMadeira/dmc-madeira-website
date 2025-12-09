@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insider | DMC Madeira</title>
+    <meta name="description" content="Discover the island beyond the postcards. Stories, traditions, and hidden insights that only locals know.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Insider | DMC Madeira">
+    <meta property="og:description" content="Discover the island beyond the postcards.">
+    <meta property="og:image" content="assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pages/insider.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--transparent">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="our-story.html" class="header__dropdown-link">Our Story</a>
+                            <a href="#" class="header__dropdown-link">Our Team</a>
+                            <a href="sustainability.html" class="header__dropdown-link">Sustainability</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="#" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="#" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="#" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="#" class="header__dropdown-link">Golf</a>
+                            <a href="#" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="#" class="header__dropdown-link">Photography</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="insider.html" class="header__nav-link">Insider</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__language">
+                <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
+                <a href="#" class="active">PT</a>
+                <span class="header__language-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+
+            <button class="btn btn--small btn--glass header__menu-btn">
+                <img src="assets/icons/header-icon-menu.svg" alt="">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="/" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-page hero-page--short">
+            <div class="hero-page__background">
+                <picture>
+                    <img src="assets/images/experience-cultural-topbanner.webp" 
+                         srcset="assets/images/experience-cultural-topbanner.webp 1x, assets/images/experience-cultural-topbanner@2x.webp 2x"
+                         alt="Man playing ukulele in Madeira">
+                </picture>
+            </div>
+            <div class="hero-page__content">
+                <span class="hero-page__breadcrumb">Insider</span>
+                <h1 class="hero-page__title">Discover the island beyond the postcards</h1>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="insider-intro">
+            <div class="container">
+                <h2 class="insider-intro__title">Welcome to the insider side of Madeira</h2>
+                <p class="insider-intro__text">Here, we share stories, traditions, and hidden insights that only locals know, from our wine and folklore to secret viewpoints and timeless customs. As an Insider with DMC Madeira, you'll explore the island through genuine experiences, expert knowledge, and the rhythm of local life.</p>
+            </div>
+        </section>
+
+        <!-- Filter Tags Section -->
+        <section class="insider-filters">
+            <div class="container">
+                <div class="insider-filters__tags">
+                    <button class="filter-tag filter-tag--active" data-filter="all">Most recent</button>
+                    <button class="filter-tag" data-filter="nature">Nature & Wildlife</button>
+                    <button class="filter-tag" data-filter="culture">Culture & Tradition</button>
+                    <button class="filter-tag" data-filter="food">Food & Wine</button>
+                    <button class="filter-tag" data-filter="events">Events & Festivals</button>
+                    <button class="filter-tag" data-filter="travel">Travel Tips</button>
+                    <button class="filter-tag" data-filter="beaches">Beaches & Islands</button>
+                    <button class="filter-tag" data-filter="wellness">Wellness & Sustainability</button>
+                    <button class="filter-tag" data-filter="safety">Safety & Infrastructure</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Grid Section -->
+        <section class="articles-grid">
+            <div class="container">
+                <div class="articles-grid__items">
+                    <!-- Article 1 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-naturewellness-hero.webp" 
+                                 srcset="assets/images/experience-naturewellness-hero.webp 1x, assets/images/experience-naturewellness-hero@2x.webp 2x"
+                                 alt="When is the best time to visit Madeira">
+                        </a>
+                        <h3 class="article-card__title">When is the best time to visit Madeira & Porto Santo?</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 2 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-familyadventures-culture.webp" 
+                                 srcset="assets/images/experience-familyadventures-culture.webp 1x, assets/images/experience-familyadventures-culture@2x.webp 2x"
+                                 alt="How to get around Madeira">
+                        </a>
+                        <h3 class="article-card__title">How to get around Madeira. Driving or transfers?</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 3 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-cultural-experiences.webp" 
+                                 srcset="assets/images/experience-cultural-experiences.webp 1x, assets/images/experience-cultural-experiences@2x.webp 2x"
+                                 alt="What to pack for Madeira">
+                        </a>
+                        <h3 class="article-card__title">What to pack for Madeira. Essentials for every traveler</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 4 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-gastronomywine-hero.webp" 
+                                 srcset="assets/images/experience-gastronomywine-hero.webp 1x, assets/images/experience-gastronomywine-hero@2x.webp 2x"
+                                 alt="Are there dangerous animals in Madeira">
+                        </a>
+                        <h3 class="article-card__title">Are there dangerous animals in Madeira? What you really need to know</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 5 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-madeirabysea-hero.webp" 
+                                 srcset="assets/images/experience-madeirabysea-hero.webp 1x, assets/images/experience-madeirabysea-hero@2x.webp 2x"
+                                 alt="Porto Santo, Selvagens and Desertas">
+                        </a>
+                        <h3 class="article-card__title">Porto Santo, Selvagens & Desertas, hidden islands near Madeira</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 6 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/shorex-banner.webp" 
+                                 srcset="assets/images/shorex-banner.webp 1x, assets/images/shorex-banner@2x.webp 2x"
+                                 alt="Best places to stop in Madeira">
+                        </a>
+                        <h3 class="article-card__title">Best places to stop in Madeira</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 7 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/sustainability-hero.webp" 
+                                 srcset="assets/images/sustainability-hero.webp 1x, assets/images/sustainability-hero@2x.webp 2x"
+                                 alt="Sustainable travel in Madeira">
+                        </a>
+                        <h3 class="article-card__title">Sustainable travel in Madeira – How to be a responsible visitor</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 8 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-gastronomywine-wine.webp" 
+                                 srcset="assets/images/experience-gastronomywine-wine.webp 1x, assets/images/experience-gastronomywine-wine@2x.webp 2x"
+                                 alt="Madeira wine">
+                        </a>
+                        <h3 class="article-card__title">Madeira wine – The toast that shaped history</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 9 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-gastronomywine-espetada.webp" 
+                                 srcset="assets/images/experience-gastronomywine-espetada.webp 1x, assets/images/experience-gastronomywine-espetada@2x.webp 2x"
+                                 alt="Taste Madeira">
+                        </a>
+                        <h3 class="article-card__title">Taste Madeira – 10 traditional dishes you must try</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 10 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-cultural-music.webp" 
+                                 srcset="assets/images/experience-cultural-music.webp 1x, assets/images/experience-cultural-music@2x.webp 2x"
+                                 alt="The rhythm of Madeira">
+                        </a>
+                        <h3 class="article-card__title">The rhythm of Madeira – Folklore, dance & tradition</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 11 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-cultural-history.webp" 
+                                 srcset="assets/images/experience-cultural-history.webp 1x, assets/images/experience-cultural-history@2x.webp 2x"
+                                 alt="Madeira stability">
+                        </a>
+                        <h3 class="article-card__title">Madeira – Stability, simplicity & timeless rhythm</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                    
+                    <!-- Article 12 -->
+                    <article class="article-card">
+                        <a href="#" class="article-card__image">
+                            <img src="assets/images/experience-familyadventures-dolphin.webp" 
+                                 srcset="assets/images/experience-familyadventures-dolphin.webp 1x, assets/images/experience-familyadventures-dolphin@2x.webp 2x"
+                                 alt="Desertas and Selvagens">
+                        </a>
+                        <h3 class="article-card__title">Desertas & Selvagens – The islands of silence</h3>
+                        <a href="#" class="article-card__link">Read more</a>
+                    </article>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination__btn pagination__btn--prev" disabled>
+                        <img src="assets/icons/pagination-arrowleft.svg" alt="Previous">
+                    </button>
+                    <div class="pagination__numbers">
+                        <button class="pagination__number pagination__number--active">1</button>
+                        <button class="pagination__number">2</button>
+                        <span class="pagination__ellipsis">...</span>
+                        <button class="pagination__number">4</button>
+                    </div>
+                    <button class="pagination__btn pagination__btn--next">
+                        <img src="assets/icons/pagination-arrowright.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
+                    </a>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact us</h4>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-email.svg" alt="">
+                        <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-phone.svg" alt="">
+                        <span>+351 291 239 002</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-location.svg" alt="">
+                        <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Terms & conditions</a></li>
+                        <li><a href="#" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="#" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Social media</h4>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCl2jsov1rglJ46sdRgv3qBQ" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <img src="assets/icons/footer-icon-language.svg" alt="">
+                        <a href="#">Portuguese</a>
+                        <span>|</span>
+                        <a href="#" class="active">English</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer__partnerships">
+                <span class="footer__partnerships-title">Partnerships:</span>
+                <div class="footer__partnerships-logos">
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
+                <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/351291000000" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="">
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Filter tags functionality
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('filter-tag--active'));
+                tag.classList.add('filter-tag--active');
+                // Filter logic would go here
+            });
+        });
+    </script>
+</body>
+</html>
+

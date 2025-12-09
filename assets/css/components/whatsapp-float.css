@@ -1,0 +1,72 @@
+/* ============================================
+   WHATSAPP FLOAT BUTTON COMPONENT
+   ============================================ */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    z-index: var(--z-fixed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-text-muted);
+    border-radius: 50%;
+    transition: transform var(--transition-base), bottom var(--transition-base);
+    cursor: pointer;
+    /* Concentric rings using box-shadow */
+    box-shadow: 
+        0 0 0 8px rgba(216, 196, 155, 0.15),
+        0 0 0 16px rgba(216, 196, 155, 0.1),
+        0 0 0 24px rgba(216, 196, 155, 0.05);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+    color: var(--color-text-muted);
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--color-primary-dark);
+}
+
+.whatsapp-float img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hidden when cookie banner is visible */
+.whatsapp-float.cookie-visible {
+    bottom: calc(var(--spacing-xl) + 120px);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+        width: 48px;
+        height: 48px;
+        box-shadow: 
+            0 0 0 6px rgba(216, 196, 155, 0.15),
+            0 0 0 12px rgba(216, 196, 155, 0.1),
+            0 0 0 18px rgba(216, 196, 155, 0.05);
+    }
+
+    .whatsapp-float svg,
+    .whatsapp-float img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .whatsapp-float.cookie-visible {
+        bottom: calc(var(--spacing-lg) + 200px);
+    }
+}

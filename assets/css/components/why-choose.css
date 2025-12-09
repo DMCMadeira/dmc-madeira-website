@@ -1,0 +1,193 @@
+/* ============================================
+   WHY CHOOSE DMC SECTION COMPONENT
+   ============================================ */
+
+.why-choose {
+    padding: var(--spacing-4xl) 0;
+}
+
+.why-choose__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Header */
+.why-choose__header {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.why-choose__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.why-choose__subtitle {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 650px;
+}
+
+/* Features Grid */
+.why-choose__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl) var(--spacing-2xl);
+}
+
+/* Feature Card */
+.why-choose__card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg) 0;
+}
+.why-choose__card-divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-border-subtle);
+    margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+    border: none;
+}
+
+.why-choose__icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.8;
+}
+
+.why-choose__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.why-choose__card-title {
+    font-size: 0.9375rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.why-choose__card-text {
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Carousel Controls - Mobile */
+.why-choose__carousel-wrapper {
+    display: none;
+}
+
+.why-choose__carousel-track {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: var(--spacing-md);
+}
+
+.why-choose__carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.why-choose__carousel-track .why-choose__card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+}
+
+.why-choose__carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-xl);
+}
+
+.why-choose__carousel-progress {
+    flex: 1;
+    height: 2px;
+    background-color: var(--color-border-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.why-choose__carousel-progress-bar {
+    height: 100%;
+    background-color: var(--color-accent-gold);
+    border-radius: var(--radius-full);
+    transition: width var(--transition-base);
+    width: 25%;
+}
+
+.why-choose__carousel-nav {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.why-choose__carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.why-choose__carousel-btn:hover {
+    border-color: var(--color-accent-gold);
+    background-color: rgba(201, 169, 98, 0.1);
+}
+
+.why-choose__carousel-btn img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .why-choose__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .why-choose__grid {
+        display: none;
+    }
+
+    .why-choose__carousel-wrapper {
+        display: block;
+    }
+
+    .why-choose__header {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .why-choose__title {
+        font-size: 1.5rem;
+    }
+
+    .why-choose__subtitle {
+        font-size: 0.875rem;
+    }
+}

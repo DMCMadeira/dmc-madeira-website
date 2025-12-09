@@ -1,12 +1,284 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+/* ============================================
+   BASE STYLES & CSS VARIABLES
+   ============================================ */
+
+:root {
+    /* Colors */
+    --color-primary-dark: #0a1a1f;
+    --color-primary-darker: #061215;
+    --color-secondary-dark: #0f2a2f;
+    --color-accent-gold: #c9a962;
+    --color-accent-gold-hover: #dabb74;
+    --color-accent-gold-dark: #a08040;
+    --color-text-white: #ffffff;
+    --color-text-light: #e8e8e8;
+    --color-text-muted: rgba(216, 196, 155, 1);
+    --color-text-gold: #c9a962;
+    --color-border-subtle: rgba(255, 255, 255, 0.1);
+    --color-border-muted: rgba(255, 255, 255, 0.2);
+    --color-border-gold: rgba(201, 169, 98, 0.3);
+    --color-overlay-dark: rgba(10, 26, 31, 0.85);
+    --color-cookie-bg: rgba(216, 196, 155, 1);
+    
+    /* Footer gradient */
+    --color-footer-gradient: linear-gradient(
+        180deg,
+        rgba(2, 13, 10, 1) 0%,
+        rgba(12, 14, 6, 1) 33%,
+        rgba(10, 30, 36, 1) 66%,
+        rgba(19, 38, 47, 1) 100%
+    );
+
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    --spacing-4xl: 6rem;
+    --spacing-5xl: 8rem;
+
+    /* Container */
+    --container-max-width: 1440px;
+    --container-padding: 3rem;
+
+    /* Header */
+    --header-height: 5rem;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Z-index */
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-tooltip: 600;
 }
 
-/* .container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-} */
+/* ============================================
+   CSS RESET
+   ============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.6;
+    color: var(--color-text-white);
+    background: linear-gradient(90deg,#0B2D3C 0%, #11250E 100%);
+    min-height: 100vh;
+}
+
+main {
+    display: block;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent-gold);
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Button Base Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn--glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--color-text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn--glass:hover {
+    background-color: rgba(10, 26, 31, 0.6);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--color-text-muted);
+}
+
+.btn--white {
+    background-color: #f5f3ef;
+    color: var(--color-primary-dark);
+    border: 1px solid #f5f3ef;
+}
+
+.btn--white:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: var(--color-primary-dark);
+}
+
+.btn--dark {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
+    border: 1px solid var(--color-primary-dark);
+}
+
+.btn--dark:hover {
+    background-color: #0c2429;
+    border-color: #0c2429;
+    color: var(--color-text-white);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: var(--color-text-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn--outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--color-text-white);
+}
+
+/* Gold outline button */
+.btn--outline-gold {
+    background-color: transparent;
+    color: var(--color-accent-gold);
+    border: 1px solid var(--color-accent-gold);
+}
+
+.btn--outline-gold:hover {
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+}
+
+.btn--small {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Section Spacing */
+.section {
+    padding: var(--spacing-4xl) 0;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container-padding: 1.25rem;
+    }
+
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+}

@@ -1,0 +1,108 @@
+/* ============================================
+   SHOREX SECTION COMPONENT
+   ============================================ */
+
+.shorex {
+    padding: var(--spacing-4xl) 0;
+}
+
+.shorex__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Content */
+.shorex__content {
+    padding-right: var(--spacing-xl);
+}
+
+.shorex__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.shorex__description {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+.shorex__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent-gold);
+    border: 1px solid var(--color-accent-gold);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+}
+
+.shorex__btn:hover {
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+}
+
+/* Image */
+.shorex__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.shorex__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .shorex__container {
+        gap: var(--spacing-2xl);
+    }
+
+    .shorex__content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .shorex {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .shorex__container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .shorex__image {
+        order: 1;
+    }
+
+    .shorex__content {
+        order: 2;
+    }
+
+    .shorex__title {
+        font-size: 1.5rem;
+    }
+
+    .shorex__description {
+        font-size: 0.875rem;
+    }
+}

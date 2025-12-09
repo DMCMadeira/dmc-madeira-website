@@ -3,75 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMC Madeira - Creating Travel Memories</title>
+    <title>DMC Madeira - Creating Travel Memories | Luxury Travel Experiences</title>
+    <meta name="description" content="DMC Madeira is a destination management company in Madeira dedicated to luxury travel and tailor-made itineraries. Discover bespoke travel experiences.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DMC Madeira - Creating Travel Memories">
+    <meta property="og:description" content="Luxury, tailor-made & group travel in Madeira and Porto Santo.">
+    <meta property="og:image" content="assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header header--transparent">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="our-story.html" class="header__dropdown-link">Our Story</a>
+                            <a href="#" class="header__dropdown-link">Our Team</a>
+                            <a href="sustainability.html" class="header__dropdown-link">Sustainability</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="#" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="#" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="#" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="#" class="header__dropdown-link">Golf</a>
+                            <a href="#" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="#" class="header__dropdown-link">Photography</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Insider</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__language">
+                <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
+                <a href="#" class="active">PT</a>
+                <span class="header__language-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+
+            <button class="btn btn--small btn--glass header__menu-btn">
+                <img src="assets/icons/header-icon-menu.svg" alt="">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="/" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <img src="assets/images/hero-1.png" alt="Hero Image" class="hero-bg-image">
-            <div class="hero-container">
-               <div class="hero-content">
-                    <div class="brand">
-                        <img src="assets/images/dmc-logo.svg" alt="DMC Madeira Logo" class="logo">
+            <div class="hero__wrapper">
+                <div class="hero__background">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/images/home-hero-mobile.webp 1x, assets/images/home-hero-mobile@2x.webp 2x">
+                        <img src="assets/images/home-hero-desktop.webp" 
+                             srcset="assets/images/home-hero-desktop.webp 1x, assets/images/home-hero-desktop@2x.webp 2x"
+                             alt="Madeira Island landscape at sunset">
+                    </picture>
+                </div>
+                <div class="hero__content">
+                    <p class="hero__subtitle">Unforgettable journeys begin in</p>
+                    <h1 class="hero__title">MADEIRA</h1>
+                    <p class="hero__description">Discover tailor-made travel experiences that celebrate nature, culture, and the art of slow luxury, curated by DMC Madeira, your trusted destination partner.</p>
+                <div class="hero__buttons">
+                    <a href="#" class="btn btn--glass hero__btn">Book now</a>
+                    <a href="#experiences" class="btn btn--white hero__btn">Explore our experiences</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro/Partner Section -->
+        <section class="intro">
+            <div class="intro__container">
+                <div class="intro__image-wrapper">
+                    <div class="intro__image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/home-intro-mobile.webp 1x, assets/images/home-intro-mobile@2x.webp 2x">
+                            <img src="assets/images/home-intro-desktop.webp" 
+                                 srcset="assets/images/home-intro-desktop.webp 1x, assets/images/home-intro-desktop@2x.webp 2x"
+                                 alt="Woman relaxing with Madeira coastline view">
+                        </picture>
                     </div>
-                    <p class="tagline">YOUR PARTNER IN</p>
-                    <h2 class="main-heading">CREATING TRAVEL<br>MEMORIES</h2>
-                    <p class="subtitle">Luxury Travel. Local Expertise. Tailor-Made Experiences in Madeira.</p>
-                    <div class="hero-divider"></div>
-                    <button class="cta-button">
-                        <img src="assets/images/icons/phone-white.svg" alt="Phone">
-                        Let's Plan Your Journey
-                    </button>
+                </div>
+                <div class="intro__content">
+                    <h2 class="intro__title">Your partner in creating travel memories</h2>
+                    <p class="intro__subtitle">Luxury, tailor-made & group travel in Madeira and Porto Santo.</p>
+                    <div class="intro__description">
+                        <p>DMC Madeira is a destination management company in Madeira dedicated to luxury travel and tailor-made itineraries that feel personal and authentic. With five generations of island expertise, we combine bespoke design and eco-friendly travel to deliver journeys.</p>
+                        <p>From private tours and small group experiences to Shorex (shore excursions) for cruise guests, we curate days that balance quiet luxury with real local access. Whether you prefer vineyard lunches, yoga in vineyards, sunset boat dinners, private yacht charters, artisan encounters, or cliff-top views on golf holidays, every detail is tailored by specialists who live the islands.</p>
+                    </div>
                </div>
             </div>
         </section>
 
-        <!-- Welcome Section -->
-        <section class="welcome">
-            <div class="container">
-                <div class="container-grid">
-                    <div class="welcome-images">
-                        <div class="image-placeholder large">
-                            <img src="assets/images/welcome-large.jpg" alt="Welcome to DMC Madeira">
+        <!-- Why Choose DMC Section -->
+        <section class="why-choose">
+            <div class="why-choose__container">
+                <div class="why-choose__header">
+                    <h2 class="why-choose__title">Why choose DMC Madeira</h2>
+                    <p class="why-choose__subtitle">With DMC Madeira, you gain more than a local operator, you gain a strategic partner who represents you, protects you, and supports every detail of your trip or event.</p>
+                </div>
+
+                <!-- Desktop Grid -->
+                <div class="why-choose__grid">
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-savetime.svg" alt="">
                         </div>
-                        <div class="image-placeholder small"> <img src="assets/images/welcome-small.jpg" alt="Welcome to DMC Madeira"></div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Save time</h3>
+                        <p class="why-choose__card-text">Receive complete, tailor-made proposals in record time, created by a local team that truly knows the destination.</p>
                     </div>
-                    <div class="welcome-content">
-                        <div class="coming-soon-container">
-                            <div class="coming-soon">Coming Soon</div>
-                            <div class="line"></div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-avoidstress.svg" alt="">
                         </div>
-                        <h2 class="title">WELCOME TO<br>DMC MADEIRA</h2>
-                        <div class="description">
-                            <p >We are currently working on a new website to better showcase our bespoke travel services.</p>
-                            <p >In the meantime, feel free to contact us directly:</p>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Avoid stress</h3>
+                        <p class="why-choose__card-text">We handle all logistics and operations, anticipating needs and solving issues before they arise.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-enjoyfullcoverage.svg" alt="">
                         </div>
-                        <div class="contact-buttons">
-                            <button class="contact-btn email">
-                                <img src="assets/images/icons/envelope.svg" alt="Email">
-                                <div>
-                                    <strong>Email us</strong>
-                                    <small>travel@dmcmadeira.pt</small>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Enjoy full coverage</h3>
+                        <p class="why-choose__card-text">Our on-site operations team is permanently active across the island, ready to assist you personally whenever needed.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-discreetresolution.svg" alt="">
+                        </div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Swift and discreet resolution</h3>
+                        <p class="why-choose__card-text">For complex situations, our management maintains direct contact with the owners of key suppliers and regional decision-makers, ensuring fast and effective solutions.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-realtimeitinerary.svg" alt="">
+                        </div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Real-time itinerary adjustments</h3>
+                        <p class="why-choose__card-text">We adapt routes and experiences to local conditions, adjusting plans whenever needed to keep the experience running smoothly.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-crisismanagement.svg" alt="">
+                        </div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">On-the-ground crisis management</h3>
+                        <p class="why-choose__card-text">In the event of flight delays, or unexpected incidents, our local team steps in immediately.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-authenticexperiences.svg" alt="">
+                        </div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Authentic experiences</h3>
+                        <p class="why-choose__card-text">We work with trusted partners who deliver quality and genuine local value.</p>
+                    </div>
+                    <div class="why-choose__card">
+                        <div class="why-choose__icon">
+                            <img src="assets/icons/home-icon-continuoussupport.svg" alt="">
+                        </div>
+                        <div class="why-choose__card-divider"></div>
+                        <h3 class="why-choose__card-title">Continuous support</h3>
+                        <p class="why-choose__card-text">From the first interaction to the client's return, you have a single point of contact backed by a 24/7 operational team.</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Carousel -->
+                <div class="why-choose__carousel-wrapper" data-carousel>
+                    <div class="why-choose__carousel-track" data-carousel-track>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-savetime.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Save time</h3>
+                            <p class="why-choose__card-text">Receive complete, tailor-made proposals in record time, created by a local team that truly knows the destination.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-avoidstress.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Avoid stress</h3>
+                            <p class="why-choose__card-text">We handle all logistics and operations, anticipating needs and solving issues before they arise.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-enjoyfullcoverage.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Enjoy full coverage</h3>
+                            <p class="why-choose__card-text">Our on-site operations team is permanently active across the island, ready to assist you personally whenever needed.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-discreetresolution.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Swift and discreet resolution</h3>
+                            <p class="why-choose__card-text">For complex situations, our management maintains direct contact with the owners of key suppliers and regional decision-makers.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-realtimeitinerary.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Real-time itinerary adjustments</h3>
+                            <p class="why-choose__card-text">We adapt routes and experiences to local conditions, adjusting plans whenever needed.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-crisismanagement.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">On-the-ground crisis management</h3>
+                            <p class="why-choose__card-text">In the event of flight delays, or unexpected incidents, our local team steps in immediately.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-authenticexperiences.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Authentic experiences</h3>
+                            <p class="why-choose__card-text">We work with trusted partners who deliver quality and genuine local value.</p>
+                        </div>
+                        <div class="why-choose__card">
+                            <div class="why-choose__icon">
+                                <img src="assets/icons/home-icon-continuoussupport.svg" alt="">
+                            </div>
+                            <h3 class="why-choose__card-title">Continuous support</h3>
+                            <p class="why-choose__card-text">From the first interaction to the client's return, you have a single point of contact.</p>
+                        </div>
                                 </div>
+                    <div class="why-choose__carousel-controls">
+                        <div class="why-choose__carousel-progress">
+                            <div class="why-choose__carousel-progress-bar" data-carousel-progress></div>
+                                </div>
+                        <div class="why-choose__carousel-nav">
+                            <button class="why-choose__carousel-btn" data-carousel-prev>
+                                <img src="assets/icons/pagination-arrowleft.svg" alt="Previous">
                             </button>
-                            <button class="contact-btn phone">
-                                <img src="assets/images/icons/phone.svg" alt="Email">
-                                <div>
-                                    <strong>Call us</strong>
-                                    <small>+351 291 006</small>
-                                </div>
-                            </button>
-                            <button class="contact-btn whatsapp">
-                                <img src="assets/images/icons/whatsapp.svg" alt="Email">
-                                <div>
-                                    <strong>WhatsApp</strong>
-                                    <small>+351 [insert number]</small>
-                                </div>
+                            <button class="why-choose__carousel-btn" data-carousel-next>
+                                <img src="assets/icons/pagination-arrowright.svg" alt="Next">
                             </button>
                         </div>
                     </div>
@@ -79,66 +340,238 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <div class="header-container">
-                    <div class="header-bg-text">OUR SERVICES</div>
-                    <div class="header">
-                        <h2 class="title">OUR SERVICES INCLUDE</h2>
-                        <p class="description">With over five generations of island expertise, we design premium, sustainable journeys that go beyond the ordinary.</p>
+        <!-- Shorex Section -->
+        <section class="shorex">
+            <div class="shorex__container">
+                <div class="shorex__content">
+                    <h2 class="shorex__title">Shorex specialists & cruise logistics</h2>
+                    <p class="shorex__description">Our Madeira shore excursions and Madeira cruise tours include port coordination, multilingual guides, premium vehicles, and weather-responsive timing, ideal for private or small-group Shorex.</p>
+                    <a href="#" class="btn btn--glass">Plan your Shorex program</a>
                     </div>
+                <div class="shorex__image">
+                    <img src="assets/images/home-shorex.webp" 
+                         srcset="assets/images/home-shorex.webp 1x, assets/images/home-shorex@2x.webp 2x"
+                         alt="Cruise ship in Funchal port">
                 </div>
-                    
-                <div class="services-grid">
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-1.png" alt="Welcome to DMC Madeira">
+            </div>
+        </section>
+
+        <!-- Corporate Section -->
+        <section class="corporate">
+            <div class="corporate__container">
+                <div class="corporate__image">
+                    <img src="assets/images/home-corporate.webp" 
+                         srcset="assets/images/home-corporate.webp 1x, assets/images/home-corporate@2x.webp 2x"
+                         alt="Corporate team building event">
+                </div>
+                <div class="corporate__content">
+                    <h2 class="corporate__title">Corporate, MICE & team building</h2>
+                    <p class="corporate__description">For companies, we design incentive travel in Madeira that blends measurable impact with emotion: executive retreats, leadership challenges, team building (treasure hunts, peddy papers), gala dinners in vineyards, and yacht sunsets.</p>
+                    <p class="corporate__description">Logistics are precise; the moments are unforgettable.</p>
+                    <a href="#" class="btn btn--glass">Build your program</a>
                             </div>
-                            <h3>Private shore excursions from Funchal cruise port</h3>
                         </div>
-                       
+        </section>
+
+        <!-- Groups Section -->
+        <section class="groups">
+            <div class="groups__container">
+                <div class="groups__content">
+                    <h2 class="groups__title">Groups & operation</h2>
+                    <p class="groups__description">Coordinating group travel in Madeira requires local knowledge and a team who understands the rhythm of the island. When you work with us, you have a trustworthy partner who manages your groups with clarity, efficiency and the confidence that comes from daily experience on the ground.</p>
+                    <p class="groups__secondary-text">We work with reliable local suppliers, tailoring each programme to the profile and pace of your clients.</p>
+                    <a href="#" class="btn btn--glass">Plan your group trip with us</a>
+                </div>
+                <div class="groups__image">
+                    <img src="assets/images/home-groups.webp" 
+                         srcset="assets/images/home-groups.webp 1x, assets/images/home-groups@2x.webp 2x"
+                         alt="Group hiking in Madeira">
+                </div>
                     </div>
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-2.png" alt="Welcome to DMC Madeira">
+        </section>
+
+        <!-- Designed for You Section -->
+        <section class="designed-for-you">
+            <div class="designed-for-you__container">
+                <h2 class="designed-for-you__title">Designed for you, rooted in Madeira</h2>
+                <p class="designed-for-you__description">We build bespoke itineraries that reflect your pace, style, and priorities, pairing immersive culture with premium comfort. Expect discreet guides, time-optimized routing, and access to places most visitors never see.</p>
+                <a href="#" class="btn btn--glass">View all Experiences</a>
                             </div>
-                            <h3>Exclusive wine & gastronomy tours</h3>
+        </section>
+
+        <!-- Experiences Carousel Section -->
+        <section class="experiences" id="experiences">
+            <div class="experiences__container">
+                <div class="experiences__decoration"></div>
+                <div class="experiences__carousel-wrapper" data-carousel>
+                    <div class="experiences__carousel">
+                        <div class="experiences__carousel-track" data-carousel-track>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-nature.webp" 
+                                         srcset="assets/images/home-experience-nature.webp 1x, assets/images/home-experience-nature@2x.webp 2x"
+                                         alt="Whale watching in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Nature & wellness</h3>
+                                <p class="experiences__card-description">Reconnect with Madeira's nature through mindful escapes, yoga and forest therapy.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-gastronomy.webp" 
+                                         srcset="assets/images/home-experience-gastronomy.webp 1x, assets/images/home-experience-gastronomy@2x.webp 2x"
+                                         alt="Vineyard in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Gastronomy & wine</h3>
+                                <p class="experiences__card-description">Here, gastronomy is not just food, it's storytelling.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-culturaldiscovery.webp" 
+                                         srcset="assets/images/home-experience-culturaldiscovery.webp 1x, assets/images/home-experience-culturaldiscovery@2x.webp 2x"
+                                         alt="Traditional Madeira carnival">
+                                </a>
+                                <h3 class="experiences__card-title">Cultural discovery</h3>
+                                <p class="experiences__card-description">Madeira's culture thrives not just in museums but in its people and traditions.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-photography.webp" 
+                                         srcset="assets/images/home-experience-photography.webp 1x, assets/images/home-experience-photography@2x.webp 2x"
+                                         alt="Traditional accordion player">
+                                </a>
+                                <h3 class="experiences__card-title">Photography</h3>
+                                <p class="experiences__card-description">Trail and capture the perfect landscape.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-golf.webp" 
+                                         srcset="assets/images/home-experience-golf.webp 1x, assets/images/home-experience-golf@2x.webp 2x"
+                                         alt="Golf course in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Golf</h3>
+                                <p class="experiences__card-description">Play on world-class courses surrounded by Atlantic views.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-madeirabysea.webp" 
+                                         srcset="assets/images/home-experience-madeirabysea.webp 1x, assets/images/home-experience-madeirabysea@2x.webp 2x"
+                                         alt="Yacht sailing in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Madeira by sea</h3>
+                                <p class="experiences__card-description">Private charters, dolphin watching, and sunset sails.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-familyadventures.webp" 
+                                         srcset="assets/images/home-experience-familyadventures.webp 1x, assets/images/home-experience-familyadventures@2x.webp 2x"
+                                         alt="Family adventure in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Family adventures</h3>
+                                <p class="experiences__card-description">Experiences designed for all ages, from toddlers to grandparents.</p>
+                            </article>
+                            <article class="experiences__card">
+                                <a href="#" class="experiences__card-image">
+                                    <img src="assets/images/home-experience-privatewinetourism.webp" 
+                                         srcset="assets/images/home-experience-privatewinetourism.webp 1x, assets/images/home-experience-privatewinetourism@2x.webp 2x"
+                                         alt="Wine tasting in Madeira">
+                                </a>
+                                <h3 class="experiences__card-title">Private wine tourism</h3>
+                                <p class="experiences__card-description">Exclusive tastings in historic cellars and boutique estates.</p>
+                            </article>
                         </div>
                     </div>
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-3.png" alt="Welcome to DMC Madeira">
+                    <div class="experiences__controls">
+                        <div class="experiences__progress">
+                            <div class="experiences__progress-bar" data-carousel-progress></div>
                             </div>
-                            <h3>Premium nature and wellness retreats</h3>
+                        <div class="experiences__nav">
+                            <button class="experiences__nav-btn" data-carousel-prev>
+                                <img src="assets/icons/pagination-arrowleft.svg" alt="Previous">
+                            </button>
+                            <button class="experiences__nav-btn" data-carousel-next>
+                                <img src="assets/icons/pagination-arrowright.svg" alt="Next">
+                            </button>
                         </div>
                     </div>
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-4.png" alt="Welcome to DMC Madeira">
                             </div>
-                            <h3>Luxury group travel and corporate incentives</h3>
                         </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="sustainability">
+            <div class="sustainability__container">
+                <div class="sustainability__card">
+                    <div class="sustainability__background">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/images/home-sustainability-mobile.webp 1x, assets/images/home-sustainability-mobile@2x.webp 2x">
+                            <img src="assets/images/home-sustainability-desktop.webp" 
+                                 srcset="assets/images/home-sustainability-desktop.webp 1x, assets/images/home-sustainability-desktop@2x.webp 2x"
+                                 alt="Underwater marine life in Madeira">
+                        </picture>
                     </div>
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-5.png" alt="Welcome to DMC Madeira">
-                            </div>
-                            <h3>Golf escapes, family adventures, and ultra-local cultural moments</h3>
-                        </div>
+                    <div class="sustainability__content">
+                        <h2 class="sustainability__title">Rooted in Sustainability</h2>
+                        <p class="sustainability__description">At DMC Madeira, sustainability is not a trend, it's a way of life.</p>
+                        <a href="#" class="sustainability__btn">See our impact</a>
                     </div>
-                    <div class="service-item">
-                        <div class="service-content">
-                            <div class="service-icon">
-                                <img src="assets/images/services/service-6.png" alt="Welcome to DMC Madeira">
                             </div>
-                            <h3>Custom logistics and transport solutions with our private fleet</h3>
                         </div>
+        </section>
+
+        <!-- Partners Carousel -->
+        <section class="partners">
+            <div class="partners__container">
+                <div class="partners__carousel">
+                    <div class="partners__carousel-track">
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-portobay.svg" alt="PortoBay Hotels">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-pestana.svg" alt="Pestana Hotel Group">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-editory.png" alt="The Editory Hotels">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintadabelavista.png" alt="Quinta da Bela Vista">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintadacasabranca.png" alt="Quinta da Casa Branca">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintinhasaojoao.png" alt="Quintinha São João">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintajardinsdolago.svg" alt="Quinta Jardins do Lago">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-savoy.svg" alt="Savoy Signature">
+                        </a>
+                        <!-- Duplicate for infinite scroll effect -->
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-portobay.svg" alt="PortoBay Hotels">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-pestana.svg" alt="Pestana Hotel Group">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-editory.png" alt="The Editory Hotels">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintadabelavista.png" alt="Quinta da Bela Vista">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintadacasabranca.png" alt="Quinta da Casa Branca">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintinhasaojoao.png" alt="Quintinha São João">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-quintajardinsdolago.svg" alt="Quinta Jardins do Lago">
+                        </a>
+                        <a href="#" class="partners__logo">
+                            <img src="assets/logos/home-logo-savoy.svg" alt="Savoy Signature">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -147,37 +580,110 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-top">
-        <div class="footer-location">
-            <div class="location-icon">
-                <img src="assets/images/location.png" alt="Location">
-            </div>
-            <p class="location-text">Based in Funchal, Madeira | Available Daily: 9am-18:00pm (GMT)</p>
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
+                    </a>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact us</h4>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-email.svg" alt="">
+                        <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-phone.svg" alt="">
+                        <span>+351 291 239 002</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-location.svg" alt="">
+                        <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Terms & conditions</a></li>
+                        <li><a href="#" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="#" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Social media</h4>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCl2jsov1rglJ46sdRgv3qBQ" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <img src="assets/icons/footer-icon-language.svg" alt="">
+                        <a href="#">Portuguese</a>
+                        <span>|</span>
+                        <a href="#" class="active">English</a>
+                    </div>
+                </div>
         </div>
         
-        <div class="social-icons">
-            <a href="https://www.facebook.com/dmcmadeirasa/">
-                <img src="assets/images/social/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/dmcmadeirasa/">
-                <img src="assets/images/social/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://www.youtube.com/channel/UCl2jsov1rglJ46sdRgv3qBQ">
-                <img src="assets/images/social/youtube.svg" alt="YouTube">
+            <div class="footer__partnerships">
+                <span class="footer__partnerships-title">Partnerships:</span>
+                <div class="footer__partnerships-logos">
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
             </a>
         </div>
     </div>
 
-    <div class="footer-bottom">
-        <img src="assets/images/waves/waves.png" alt="waves" class="waves-image">
-        <div class="content">
-            <div>&nbsp;</div>
-            <p>© 2025 DMC Madeira. A new digital experience is coming soon.</p>
-            <div class="scroll-top">
-                <img src="assets/images/icons/chevron-up-circle.svg" alt="Scroll Top">
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
+                <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
             </div>
         </div>
+    </footer>
+
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
     </div>
-</footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

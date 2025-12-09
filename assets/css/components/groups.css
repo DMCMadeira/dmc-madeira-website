@@ -1,0 +1,116 @@
+/* ============================================
+   GROUPS & OPERATION SECTION COMPONENT
+   ============================================ */
+
+.groups {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Content */
+.groups__content {
+    padding-right: var(--spacing-xl);
+}
+
+.groups__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.groups__description {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.groups__secondary-text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+.groups__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent-gold);
+    border: 1px solid var(--color-accent-gold);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+}
+
+.groups__btn:hover {
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+}
+
+/* Image */
+.groups__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.groups__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .groups__container {
+        gap: var(--spacing-2xl);
+    }
+
+    .groups__content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .groups {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .groups__container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .groups__image {
+        order: 1;
+    }
+
+    .groups__content {
+        order: 2;
+    }
+
+    .groups__title {
+        font-size: 1.5rem;
+    }
+
+    .groups__description,
+    .groups__secondary-text {
+        font-size: 0.875rem;
+    }
+}
