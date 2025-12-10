@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf - DMC Madeira | Where the Ocean Meets the Fairway</title>
+    <meta name="description" content="Play world-class golf courses in Madeira and Porto Santo. From Palheiro Golf to Porto Santo, experience stunning ocean views and year-round perfect conditions.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Golf - DMC Madeira">
+    <meta property="og:description" content="Where the ocean meets the fairway in Madeira and Porto Santo.">
+    <meta property="og:image" content="assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pages/golf.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">     
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="our-story.html" class="header__dropdown-link">Our Story</a>
+                            <a href="#" class="header__dropdown-link">Our Team</a>
+                            <a href="sustainability.html" class="header__dropdown-link">Sustainability</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="nature-wellness.html" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="gastronomy-wine.html" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="cultural-discovery.html" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="golf.html" class="header__dropdown-link">Golf</a>
+                            <a href="madeira-by-sea.html" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="photography-birdwatching.html" class="header__dropdown-link">Photography</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="groups-incentives.html" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="insider.html" class="header__nav-link">Insider</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__language">
+                <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
+                <a href="#" class="active">PT</a>
+                <span class="header__language-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+
+            <button class="btn btn--small btn--glass header__menu-btn">
+                <img src="assets/icons/header-icon-menu.svg" alt="">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="contact-us.html" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="experiences.html" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="shorex.html" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="insider.html" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-page hero-page--short">
+            <div class="hero-page__background">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-topbanner.webp, assets/images/experience-golf-topbanner@2x.webp 2x">
+                    <img src="assets/images/experience-golf-topbanner.webp" 
+                         srcset="assets/images/experience-golf-topbanner.webp 1x, assets/images/experience-golf-topbanner@2x.webp 2x" 
+                         alt="Golf course in Madeira with ocean view">
+                </picture>
+            </div>
+            <div class="hero-page__content">
+                <p class="hero-page__breadcrumb">Excellence in Every Swing</p>
+                <h1 class="hero-page__title">Where the ocean meets<br>the fairway</h1>
+                <a href="contact-us.html#travel-advisors-and-partners" class="btn btn--glass">Find your perfect experience</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="golf-intro" id="discover">
+            <div class="container">
+                <div class="golf-intro__grid">
+                    <div class="golf-intro__content">
+                        <p class="golf-intro__text">Few destinations blend nature and elegance like Madeira. Here, fairways overlook cliffs, greens merge with the Atlantic breeze, and hospitality flows as naturally as the scenery itself, creating an unforgettable golf experience surrounded by Madeira's stunning landscapes, on courses crafted by legends like Robert Trent Jones Sr. at Santo da Serra and Cabell B. Robinson at Palheiro Golf.</p>
+                        <p class="golf-intro__text">At DMC Madeira, we craft golf experiences that combine world-class play with the island's signature comfort and authenticity. Whether for private travellers, corporate tournaments, or incentive groups, our programs merge precision logistics, fine accommodation, and tailor-made leisure.</p>
+                        <p class="golf-intro__quote">Golf in Madeira is not just a sport, it's an experience between mountains, sea, and timeless serenity.</p>
+                    </div>
+                    <div class="golf-intro__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-golf-intro.webp, assets/images/experience-golf-intro@2x.webp 2x">
+                            <img src="assets/images/experience-golf-intro.webp" 
+                                 srcset="assets/images/experience-golf-intro.webp 1x, assets/images/experience-golf-intro@2x.webp 2x" 
+                                 alt="Golfer swinging with ocean backdrop">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Courses Section -->
+        <section class="golf-courses">
+            <div class="container">
+                <h2 class="golf-courses__title">The courses – masterpieces in nature</h2>
+                
+                <!-- Palheiro Golf -->
+                <div class="golf-courses__block">
+                    <div class="golf-courses__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-golf-courses-palheiro.webp, assets/images/experience-golf-courses-palheiro@2x.webp 2x">
+                            <img src="assets/images/experience-golf-courses-palheiro.webp" 
+                                 srcset="assets/images/experience-golf-courses-palheiro.webp 1x, assets/images/experience-golf-courses-palheiro@2x.webp 2x" 
+                                 alt="Palheiro Golf Course">
+                        </picture>
+                    </div>
+                    <div class="golf-courses__block-content">
+                        <h3 class="golf-courses__block-title">Palheiro Golf – gardens above the ocean <span>18 holes</span></h3>
+                        <p class="golf-courses__block-text">Designed by Cabell B. Robinson, Palheiro Golf offers a breathtaking course set 500 meters above sea level, surrounded by botanical gardens and Atlantic panoramas. Each hole reveals new views over Funchal Bay, making it as visually rewarding as it is technically challenging.</p>
+                        <p class="golf-courses__block-text">We arrange tee times, private transfers, and clubhouse dining reservations with seamless coordination. Guests can complement play with spa treatments or chef-led dinners in the nearby Casa Velha do Palheiro, a Relais & Châteaux property.</p>
+                    </div>
+                </div>
+
+                <!-- Santo da Serra -->
+                <div class="golf-courses__block">
+                    <div class="golf-courses__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-golf-courses-santodaserra.webp, assets/images/experience-golf-courses-santodaserra@2x.webp 2x">
+                            <img src="assets/images/experience-golf-courses-santodaserra.webp" 
+                                 srcset="assets/images/experience-golf-courses-santodaserra.webp 1x, assets/images/experience-golf-courses-santodaserra@2x.webp 2x" 
+                                 alt="Santo da Serra Golf Course">
+                        </picture>
+                    </div>
+                    <div class="golf-courses__block-content">
+                        <h3 class="golf-courses__block-title">Santo da Serra – The Island's Historic Course <span>27 Holes</span></h3>
+                        <p class="golf-courses__block-text">Home to the Madeira Island Open, the 27-hole Santo da Serra Golf Club offers dramatic elevation changes, lakes, and ocean vistas. Its three loops, Machico, Desertas, and Serras, are masterpieces of Robert Trent Jones Sr. design. DMC Madeira manages all logistics, from green fees to VIP transfers and tournament planning.</p>
+                    </div>
+                </div>
+
+                <!-- Porto Santo -->
+                <div class="golf-courses__block">
+                    <div class="golf-courses__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-golf-courses-portosanto.webp, assets/images/experience-golf-courses-portosanto@2x.webp 2x">
+                            <img src="assets/images/experience-golf-courses-portosanto.webp" 
+                                 srcset="assets/images/experience-golf-courses-portosanto.webp 1x, assets/images/experience-golf-courses-portosanto@2x.webp 2x" 
+                                 alt="Porto Santo Golf Course">
+                        </picture>
+                    </div>
+                    <div class="golf-courses__block-content">
+                        <h3 class="golf-courses__block-title">Porto Santo – A course by Seve Ballesteros</h3>
+                        <p class="golf-courses__block-text">Designed by the legend himself, Porto Santo Golfe stretches along dunes and cliffs, offering both championship-level play and postcard beauty. The 18-hole course features wide fairways, seaside greens, and a sense of space impossible to find elsewhere.</p>
+                        <p class="golf-courses__block-text">Reachable by ferry or short flight, Porto Santo is ideal for 2-3-day golf extensions. Guests can relax in beachfront villas, spa resorts, or combine golf with wellness programs and yacht transfers for a seamless Atlantic escape.</p>
+                    </div>
+                </div>
+
+                <!-- Ponta do Pargo -->
+                <div class="golf-courses__block">
+                    <div class="golf-courses__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-golf-courses-pontadopargogolf.webp, assets/images/experience-golf-courses-pontadopargogolf@2x.webp 2x">
+                            <img src="assets/images/experience-golf-courses-pontadopargogolf.webp" 
+                                 srcset="assets/images/experience-golf-courses-pontadopargogolf.webp 1x, assets/images/experience-golf-courses-pontadopargogolf@2x.webp 2x" 
+                                 alt="Ponta do Pargo Golf Course">
+                        </picture>
+                    </div>
+                    <div class="golf-courses__block-content">
+                        <h3 class="golf-courses__block-title">Ponta do Pargo Golf – A Course by Sir Nick Faldo <span>(under construction)</span></h3>
+                        <p class="golf-courses__block-text">Crafted by the legendary six-time major winner, Ponta do Pargo Golf stretches along cliff-rim vistas and Atlantic panoramas, delivering championship calibre play in a setting of pure drama. Its 18 holes traverse elevation changes, seaside greens, and daring cliff-edge moments that few courses can match (the 16th green lies near the iconic Farol da Ponta do Pargo).</p>
+                        <p class="golf-courses__block-text">Here, fairways descend toward the ocean, greens merge with the horizon, and every shot unfolds as naturally as the scenery itself, an immersive experience designed to balance precision with majesty. Opening in 2027.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tailor-made Golf Experiences Section -->
+        <section class="golf-tailormade">
+            <div class="container">
+                <h2 class="golf-tailormade__title">Tailor-made golf experiences</h2>
+                <div class="golf-tailormade__grid">
+                    <div class="golf-tailormade__card">
+                        <div class="golf-tailormade__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-bespoke.webp, assets/images/experience-golf-bespoke@2x.webp 2x">
+                                <img src="assets/images/experience-golf-bespoke.webp" 
+                                     srcset="assets/images/experience-golf-bespoke.webp 1x, assets/images/experience-golf-bespoke@2x.webp 2x" 
+                                     alt="Bespoke golf itineraries">
+                            </picture>
+                        </div>
+                        <h3 class="golf-tailormade__card-title">Bespoke itineraries</h3>
+                        <p class="golf-tailormade__card-text">We design golf packages Madeira that fit every traveller's rhythm, balancing sport, relaxation, and discovery. Guests can add private wine tastings, cultural tours, or yacht days between rounds.</p>
+                    </div>
+                    <div class="golf-tailormade__card golf-tailormade__card--offset">
+                        <div class="golf-tailormade__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-corporate.webp, assets/images/experience-golf-corporate@2x.webp 2x">
+                                <img src="assets/images/experience-golf-corporate.webp" 
+                                     srcset="assets/images/experience-golf-corporate.webp 1x, assets/images/experience-golf-corporate@2x.webp 2x" 
+                                     alt="Corporate golf events">
+                            </picture>
+                        </div>
+                        <h3 class="golf-tailormade__card-title">Corporate & incentive golf events</h3>
+                        <p class="golf-tailormade__card-text">For incentive planners and travel companies, we manage corporate golf tournaments, executive retreats, and team-building events across Madeira and Porto Santo. Our programs include branding, trophies, gala dinners, and photo documentation, all with DMC Madeira's signature precision.</p>
+                    </div>
+                    <div class="golf-tailormade__card">
+                        <div class="golf-tailormade__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-extensions.webp, assets/images/experience-golf-extensions@2x.webp 2x">
+                                <img src="assets/images/experience-golf-extensions.webp" 
+                                     srcset="assets/images/experience-golf-extensions.webp 1x, assets/images/experience-golf-extensions@2x.webp 2x" 
+                                     alt="Golf extensions and leisure">
+                            </picture>
+                        </div>
+                        <h3 class="golf-tailormade__card-title">Golf extensions & leisure add-ons</h3>
+                        <p class="golf-tailormade__card-text">Combine golf with wellness retreats, gastronomy experiences, or cultural excursions for non-golfing companions. We ensure that every guest, player or not, feels included and inspired.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Banner -->
+        <section class="partnership-marquee">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>"TWO ISLANDS, FOUR COURSES, <span class="text-gold">ONE UNFORGETTABLE DESTINATION</span>."</span>
+                    <span>"TWO ISLANDS, FOUR COURSES, <span class="text-gold">ONE UNFORGETTABLE DESTINATION</span>."</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Stays Section -->
+        <section class="golf-stays">
+            <div class="container">
+                <h2 class="golf-stays__title">Premium Stays & Signature Hospitality</h2>
+                <h3 class="golf-stays__subtitle">Handpicked Hotels & Villas</h3>
+                <p class="golf-stays__text">We select the island's most prestigious accommodations for our golf and leisure clients, ensuring refined service and proximity to courses.</p>
+                <p class="golf-stays__label">Preferred options include:</p>
+                
+                <div class="golf-stays__carousel">
+                    <div class="golf-stays__grid">
+                        <div class="golf-stays__card">
+                            <div class="golf-stays__card-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-premiumstays-1.webp, assets/images/experience-golf-premiumstays-1@2x.webp 2x">
+                                    <img src="assets/images/experience-golf-premiumstays-1.webp" 
+                                         srcset="assets/images/experience-golf-premiumstays-1.webp 1x, assets/images/experience-golf-premiumstays-1@2x.webp 2x" 
+                                         alt="Savoy Palace">
+                                </picture>
+                            </div>
+                            <h4 class="golf-stays__card-title">Savoy Palace</h4>
+                            <p class="golf-stays__card-text">Luxury in the heart of Funchal, with a timeless, refined feel.</p>
+                        </div>
+                        <div class="golf-stays__card">
+                            <div class="golf-stays__card-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-premiumstays-2.webp, assets/images/experience-golf-premiumstays-2@2x.webp 2x">
+                                    <img src="assets/images/experience-golf-premiumstays-2.webp" 
+                                         srcset="assets/images/experience-golf-premiumstays-2.webp 1x, assets/images/experience-golf-premiumstays-2@2x.webp 2x" 
+                                         alt="Hotel PortoBay Serra Golf">
+                                </picture>
+                            </div>
+                            <h4 class="golf-stays__card-title">Hotel PortoBay Serra Golf</h4>
+                            <p class="golf-stays__card-text">Next to Santo da Serra Golf Course, surrounded by nature.</p>
+                        </div>
+                        <div class="golf-stays__card">
+                            <div class="golf-stays__card-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-premiumstays-3.webp, assets/images/experience-golf-premiumstays-3@2x.webp 2x">
+                                    <img src="assets/images/experience-golf-premiumstays-3.webp" 
+                                         srcset="assets/images/experience-golf-premiumstays-3.webp 1x, assets/images/experience-golf-premiumstays-3@2x.webp 2x" 
+                                         alt="The Cliff Bay">
+                                </picture>
+                            </div>
+                            <h4 class="golf-stays__card-title">The Cliff Bay (PortoBay)</h4>
+                            <p class="golf-stays__card-text">Serene comfort and Michelin-star dining.</p>
+                        </div>
+                        <div class="golf-stays__card">
+                            <div class="golf-stays__card-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-premiumstays-4.webp, assets/images/experience-golf-premiumstays-4@2x.webp 2x">
+                                    <img src="assets/images/experience-golf-premiumstays-4.webp" 
+                                         srcset="assets/images/experience-golf-premiumstays-4.webp 1x, assets/images/experience-golf-premiumstays-4@2x.webp 2x" 
+                                         alt="Casa Velha do Palheiro">
+                                </picture>
+                            </div>
+                            <h4 class="golf-stays__card-title">Casa Velha do Palheiro</h4>
+                            <p class="golf-stays__card-text">Historic manor adjacent to Palheiro Golf.</p>
+                        </div>
+                        <div class="golf-stays__card">
+                            <div class="golf-stays__card-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-premiumstays-5.webp, assets/images/experience-golf-premiumstays-5@2x.webp 2x">
+                                    <img src="assets/images/experience-golf-premiumstays-5.webp" 
+                                         srcset="assets/images/experience-golf-premiumstays-5.webp 1x, assets/images/experience-golf-premiumstays-5@2x.webp 2x" 
+                                         alt="Vila Galé Santa Cruz">
+                                </picture>
+                            </div>
+                            <h4 class="golf-stays__card-title">Vila Galé Santa Cruz</h4>
+                            <p class="golf-stays__card-text">A charming hotel with front-row ocean views.</p>
+                        </div>
+                    </div>
+                    <div class="golf-stays__nav">
+                        <button class="golf-stays__nav-btn golf-stays__nav-btn--prev" aria-label="Previous">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="golf-stays__nav-btn golf-stays__nav-btn--next" aria-label="Next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Villas Section -->
+        <section class="golf-villas">
+            <div class="container">
+                <h2 class="golf-villas__title">Private villas & tailored comfort</h2>
+                <p class="golf-villas__text">For groups or long stays, DMC Madeira offers private villas with full concierge service, private chefs, and daily housekeeping. We handle every detail, from transfers and tee times to spa bookings and evening entertainment.</p>
+            </div>
+            <div class="golf-villas__image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-golf-privatevillas.webp, assets/images/experience-golf-privatevillas@2x.webp 2x">
+                    <img src="assets/images/experience-golf-privatevillas.webp" 
+                         srcset="assets/images/experience-golf-privatevillas.webp 1x, assets/images/experience-golf-privatevillas@2x.webp 2x" 
+                         alt="Private villa with golf course view">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Beyond the Course Section -->
+        <section class="golf-beyond">
+            <div class="container">
+                <h2 class="golf-beyond__title">Beyond the course – refined leisure</h2>
+                <div class="golf-beyond__grid">
+                    <div class="golf-beyond__card">
+                        <div class="golf-beyond__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-gastronomy.webp, assets/images/experience-golf-gastronomy@2x.webp 2x">
+                                <img src="assets/images/experience-golf-gastronomy.webp" 
+                                     srcset="assets/images/experience-golf-gastronomy.webp 1x, assets/images/experience-golf-gastronomy@2x.webp 2x" 
+                                     alt="Gastronomy and wine">
+                            </picture>
+                        </div>
+                        <h3 class="golf-beyond__card-title">Gastronomy & wine</h3>
+                        <p class="golf-beyond__card-text">Add a private dinner in a vineyard, a sommelier-led tasting, or a chef's table experience for the perfect pairing to your golf holiday. Our Gastronomy & Wine programs highlight Madeira's best local flavours, curated to match your itinerary.</p>
+                    </div>
+                    <div class="golf-beyond__card golf-beyond__card--offset">
+                        <div class="golf-beyond__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-wellness.webp, assets/images/experience-golf-wellness@2x.webp 2x">
+                                <img src="assets/images/experience-golf-wellness.webp" 
+                                     srcset="assets/images/experience-golf-wellness.webp 1x, assets/images/experience-golf-wellness@2x.webp 2x" 
+                                     alt="Wellness and spa">
+                            </picture>
+                        </div>
+                        <h3 class="golf-beyond__card-title">Wellness & spa</h3>
+                        <p class="golf-beyond__card-text">After a day on the greens, unwind with ocean-view spa rituals or a forest yoga session. Our Nature & Wellness partners offer exclusive treatments designed to restore balance and focus.</p>
+                    </div>
+                    <div class="golf-beyond__card">
+                        <div class="golf-beyond__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-golf-yacht.webp, assets/images/experience-golf-yacht@2x.webp 2x">
+                                <img src="assets/images/experience-golf-yacht.webp" 
+                                     srcset="assets/images/experience-golf-yacht.webp 1x, assets/images/experience-golf-yacht@2x.webp 2x" 
+                                     alt="Yacht and sunset experiences">
+                            </picture>
+                        </div>
+                        <h3 class="golf-beyond__card-title">Yacht & sunset experiences</h3>
+                        <p class="golf-beyond__card-text">Complete your stay with a private sunset cruise, connecting the energy of the course with the calm of the sea. Golf in the morning, sail in the evening. Madeira's rhythm at its finest.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="golf-cta">
+            <div class="container">
+                <h2 class="golf-cta__title">Plan your golf escape</h2>
+                <p class="golf-cta__text">DMC Madeira transforms golf travel into an art form, balancing sport, scenery, and sophistication. From tee times to tastings, every detail is handled with precision and passion. Whether you're rewarding a team, hosting clients, or planning your next personal escape, Madeira is the green that inspires excellence.</p>
+                <div class="golf-cta__buttons">
+                    <a href="contact-us.html" class="btn btn--dark">Request a golf itinerary</a>
+                    <a href="insider.html" class="btn btn--white">Explore Insider Madeira</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
+                    </a>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact us</h4>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-email.svg" alt="">
+                        <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-phone.svg" alt="">
+                        <span>+351 291 239 002</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-location.svg" alt="">
+                        <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="security-csirt.html" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Social media</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <img src="assets/icons/footer-icon-language.svg" alt="">
+                        <a href="#">Portuguese</a>
+                        <span>|</span>
+                        <a href="#" class="active">English</a>
+                    </div>
+                </div>
+        </div>
+        
+            <div class="footer__partnerships">
+                <span class="footer__partnerships-title">Partnerships:</span>
+                <div class="footer__partnerships-logos">
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
+            </a>
+        </div>
+    </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
+                <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Premium Stays Carousel
+        const staysGrid = document.querySelector('.golf-stays__grid');
+        const prevBtn = document.querySelector('.golf-stays__nav-btn--prev');
+        const nextBtn = document.querySelector('.golf-stays__nav-btn--next');
+        
+        if (staysGrid && prevBtn && nextBtn) {
+            const scrollAmount = 300;
+            
+            prevBtn.addEventListener('click', () => {
+                staysGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                staysGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

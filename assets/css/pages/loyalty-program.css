@@ -192,7 +192,7 @@
 /* Join the Program Section (like Start your journey) */
 .join-program {
     background-color: var(--color-text-muted);
-    padding: var(--spacing-5xl) 0;
+    padding: var(--spacing-3xl) 0;
     text-align: center;
 }
 

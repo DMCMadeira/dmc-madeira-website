@@ -121,20 +121,25 @@
 
     .hero__content {
         padding: var(--spacing-3xl) var(--container-padding);
+        width: 100%;
     }
 
     .hero__subtitle {
-        font-size: 0.625rem;
+        font-size: 1.125rem;
+        width: 100%;
+        max-width: 15rem;
+        text-align: center;
+        margin: 0 auto;
         letter-spacing: 0.2em;
     }
 
     .hero__title {
-        font-size: clamp(3rem, 18vw, 5rem);
+        font-size: 3.5rem;
         margin-bottom: var(--spacing-lg);
     }
 
     .hero__description {
-        font-size: 0.875rem;
+        font-size: 1rem;
         margin-bottom: var(--spacing-xl);
     }
 
@@ -144,7 +149,6 @@
     }
 
     .hero__btn {
-        width: 100%;
         max-width: 280px;
     }
 }

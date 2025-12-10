@@ -1,0 +1,116 @@
+/* ==========================================================================
+   404 Error Page Styles
+   ========================================================================== */
+
+.error-page-body header {
+    background: linear-gradient(90deg,#0B2D3C 0%, #11250E 100%);
+}
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-page__background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.error-page__background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+}
+
+.error-page__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.error-page__background picture {
+    height: 100%;
+}
+
+.error-page__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 76.5rem;
+    padding: var(--spacing-2xl);
+}
+
+.error-page__icon {
+    width: 120px;
+    height: auto;
+    margin-bottom: var(--spacing-xl);
+}
+
+.error-page__title {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.error-page__subtitle {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+}
+
+.error-page__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.error-page__buttons {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .error-page__content {
+        padding: var(--spacing-xl);
+    }
+    
+    .error-page__icon {
+        width: 80px;
+    }
+    
+    .error-page__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .error-page__buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+

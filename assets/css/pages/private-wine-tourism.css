@@ -1,0 +1,586 @@
+/* ==========================================================================
+   Private Wine Tourism Page Styles
+   ========================================================================== */
+
+/* Intro Section */
+.wine-intro {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.wine-intro__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    color: var(--color-text-muted);
+    gap: var(--spacing-lg);
+}
+
+.wine-intro__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.wine-intro__quote {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: var(--spacing-xl);
+}
+
+.wine-intro__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.wine-intro__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+/* The Legacy of Madeira Wine Section */
+.wine-legacy {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-legacy__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.wine-legacy__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.wine-legacy__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wine-legacy__card--offset {
+    margin-top: var(--spacing-3xl);
+}
+
+.wine-legacy__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.wine-legacy__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.wine-legacy__card-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.wine-legacy__card-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Vineyard Lunches & Gastronomic Pairings Section */
+.wine-gastronomy {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-gastronomy__layout {
+    display: grid;
+    grid-template-columns: 24.5rem 1fr;
+    gap: var(--spacing-4xl);
+}
+
+.wine-gastronomy__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    line-height: 1.3;
+}
+
+.wine-gastronomy__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl);
+}
+
+.wine-gastronomy__block {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.wine-gastronomy__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.wine-gastronomy__block-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.wine-gastronomy__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.wine-gastronomy__block-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+}
+
+.wine-gastronomy__block-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Partnership Marquee Section */
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hidden Wine Trails Section */
+.wine-trails {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-trails__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.wine-trails__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.wine-trails__block:last-child {
+    margin-bottom: 0;
+}
+
+.wine-trails__block--reverse .wine-trails__block-image {
+    order: 1;
+}
+
+.wine-trails__block--reverse .wine-trails__block-content {
+    order: 0;
+}
+
+.wine-trails__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.wine-trails__block-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.wine-trails__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.wine-trails__block-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.wine-trails__block-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* For Enthusiasts Section */
+.wine-enthusiasts {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-enthusiasts__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.wine-enthusiasts__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.wine-enthusiasts__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wine-enthusiasts__card--offset {
+    margin-top: var(--spacing-3xl);
+}
+
+.wine-enthusiasts__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.wine-enthusiasts__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.wine-enthusiasts__card-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.wine-enthusiasts__card-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Porto Santo & Islands Section */
+.wine-islands {
+    padding: var(--spacing-4xl) 0;
+}
+
+.wine-islands__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.wine-islands__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+.wine-islands__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.wine-islands__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.wine-islands__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.wine-islands__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.wine-islands__card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* CTA Section */
+.cultural-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.cultural-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.cultural-cta__text {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-primary-dark);
+    line-height: 1.7;
+}
+
+.cultural-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .wine-intro__grid {
+        gap: var(--spacing-2xl);
+    }
+    
+    .wine-legacy__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .wine-legacy__card--offset {
+        margin-top: 0;
+    }
+    
+    .wine-legacy__card:last-child {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
+    .wine-gastronomy__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .wine-enthusiasts__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .wine-enthusiasts__card--offset {
+        margin-top: 0;
+    }
+    
+    .wine-enthusiasts__card:last-child {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .wine-intro {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-intro__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .wine-intro__image {
+        order: -1;
+    }
+    
+    .wine-legacy {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-legacy__title {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .wine-legacy__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .wine-legacy__card:last-child {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+    
+    .wine-legacy__card-title {
+        font-size: 1.25rem;
+    }
+    
+    .wine-gastronomy {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-gastronomy__title {
+        font-size: 2rem;
+    }
+    
+    .wine-gastronomy__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .wine-trails {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-trails__title {
+        font-size: 2rem;
+    }
+    
+    .wine-trails__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .wine-trails__block--reverse .wine-trails__block-image {
+        order: 0;
+    }
+    
+    .wine-trails__block--reverse .wine-trails__block-content {
+        order: 1;
+    }
+    
+    .wine-trails__block-image {
+        order: -1;
+    }
+    
+    .wine-trails__block-title {
+        font-size: 1.5rem;
+    }
+    
+    .wine-enthusiasts {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-enthusiasts__title {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .wine-enthusiasts__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .wine-enthusiasts__card:last-child {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+    
+    .wine-enthusiasts__card-title {
+        font-size: 1.25rem;
+    }
+    
+    .wine-islands {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .wine-islands__title {
+        font-size: 2rem;
+    }
+    
+    .wine-islands__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .wine-islands__card-title {
+        font-size: 1.5rem;
+    }
+    
+    .cultural-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .cultural-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cultural-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

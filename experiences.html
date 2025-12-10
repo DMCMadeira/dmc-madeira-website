@@ -18,18 +18,13 @@
     <meta property="og:image" content="assets/og-image.webp">
     <meta property="og:type" content="website">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/pages/experiences.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header header--transparent">
+    <header class="header">
         <div class="header__container">
             <a href="index.html" class="header__logo">
                 <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
@@ -49,24 +44,24 @@
                         </div>
                     </li>
                     <li class="header__nav-item">
-                        <a href="experiences.html" class="header__nav-link">
+                        <a href="#" class="header__nav-link">
                             Experiences
                             <img src="assets/icons/header-icon-chevrondown.svg" alt="">
                         </a>
                         <div class="header__dropdown">
-                            <a href="#" class="header__dropdown-link">Nature & Wellness</a>
-                            <a href="#" class="header__dropdown-link">Gastronomy & Wine</a>
-                            <a href="#" class="header__dropdown-link">Cultural Discovery</a>
-                            <a href="#" class="header__dropdown-link">Golf</a>
-                            <a href="#" class="header__dropdown-link">Madeira by Sea</a>
-                            <a href="#" class="header__dropdown-link">Photography</a>
+                            <a href="nature-wellness.html" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="gastronomy-wine.html" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="cultural-discovery.html" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="golf.html" class="header__dropdown-link">Golf</a>
+                            <a href="madeira-by-sea.html" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="photography-birdwatching.html" class="header__dropdown-link">Photography</a>
                         </div>
                     </li>
                     <li class="header__nav-item">
                         <a href="shorex.html" class="header__nav-link">Shorex</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Groups & Incentives</a>
+                        <a href="groups-incentives.html" class="header__nav-link">Groups & Incentives</a>
                     </li>
                     <li class="header__nav-item">
                         <a href="insider.html" class="header__nav-link">Insider</a>
@@ -90,7 +85,7 @@
         <!-- Mobile Navigation -->
         <nav class="header__mobile-nav">
             <div class="header__mobile-nav-header">
-                <a href="/" class="header__logo">
+                <a href="index.html" class="header__logo">
                     <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
                 </a>
                 <button class="header__mobile-close">
@@ -99,60 +94,46 @@
             </div>
             <ul class="header__mobile-list">
                 <li>
-                    <a href="#" class="header__mobile-link" data-has-submenu>
+                    <a href="contact-us.html" class="header__mobile-link">
                         Who we are
                         <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
                     </a>
-                    <div class="header__mobile-submenu">
-                        <button class="header__mobile-back">
-                            <img src="assets/icons/header-icon-arrowleft-mobile.svg" alt="">
-                            Back
-                        </button>
-                        <a href="our-story.html" class="header__mobile-submenu-link">Our Story</a>
-                        <a href="#" class="header__mobile-submenu-link">Our Team</a>
-                        <a href="sustainability.html" class="header__mobile-submenu-link">Sustainability</a>
-                    </div>
                 </li>
                 <li>
-                    <a href="experiences.html" class="header__mobile-link" data-has-submenu>
+                    <a href="experiences.html" class="header__mobile-link">
                         Experiences
                         <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
                     </a>
-                    <div class="header__mobile-submenu">
-                        <button class="header__mobile-back">
-                            <img src="assets/icons/header-icon-arrowleft-mobile.svg" alt="">
-                            Back
-                        </button>
-                        <a href="#" class="header__mobile-submenu-link">Nature & Wellness</a>
-                        <a href="#" class="header__mobile-submenu-link">Gastronomy & Wine</a>
-                        <a href="#" class="header__mobile-submenu-link">Cultural Discovery</a>
-                        <a href="#" class="header__mobile-submenu-link">Golf</a>
-                        <a href="#" class="header__mobile-submenu-link">Madeira by Sea</a>
-                        <a href="#" class="header__mobile-submenu-link">Photography</a>
-                    </div>
                 </li>
                 <li>
-                    <a href="shorex.html" class="header__mobile-link">Shorex</a>
+                    <a href="shorex.html" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="header__mobile-link">Groups & Incentives</a>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a href="insider.html" class="header__mobile-link">Insider</a>
+                    <a href="insider.html" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
                 </li>
             </ul>
             <div class="header__mobile-footer">
-                <a href="contact-us.html" class="btn btn--white">Become our Partner</a>
                 <div class="header__mobile-language">
-                    <img src="assets/icons/header-icon-language.svg" alt="">
-                    <a href="#" class="active">PT</a>
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
                     <span>|</span>
-                    <a href="#">EN</a>
+                    <a href="#" class="active">English</a>
                 </div>
             </div>
         </nav>
     </header>
-
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookie-banner">
         <p class="cookie-banner__text">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
@@ -176,7 +157,7 @@
             <div class="hero-page__content">
                 <p class="hero-page__breadcrumb">Exclusive Experiences in Madeira & Porto Santo</p>
                 <h1 class="hero-page__title">Travel beyond<br>the ordinary</h1>
-                <a href="#discover" class="btn btn--glass">Find your perfect experience</a>
+                <a href="contact-us.html#travel-advisors-and-partners" class="btn btn--glass">Find your perfect experience</a>
             </div>
         </section>
 
@@ -437,11 +418,11 @@
     </main>
 
    <!-- Footer -->
-<footer class="footer">
+    <footer class="footer">
     <div class="footer__container">
         <div class="footer__main">
             <div class="footer__brand">
-                <a href="/" class="footer__logo">
+                <a href="index.html" class="footer__logo">
                     <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
                 </a>
             </div>
@@ -466,8 +447,8 @@
                 <h4 class="footer__column-title">Support</h4>
                 <ul class="footer__links">
                     <li><a href="#" class="footer__link">Terms & conditions</a></li>
-                    <li><a href="#" class="footer__link">Privacy & cookie policies</a></li>
-                    <li><a href="#" class="footer__link">Security / CSIRT</a></li>
+                    <li><a href="privacy-policy.html" class="footer__link">Privacy & cookie policies</a></li>
+                    <li><a href="security-csirt.html" class="footer__link">Security / CSIRT</a></li>
                     <li>
                         <a href="#" class="footer__link footer__link--external">
                             Livro de reclamações
@@ -480,13 +461,13 @@
             <div class="footer__column">
                 <h4 class="footer__column-title">Social media</h4>
                 <div class="footer__social">
-                    <a href="https://www.facebook.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                         <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
                     </a>
-                    <a href="https://www.instagram.com/dmcmadeirasa/" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                         <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
                     </a>
-                    <a href="https://www.youtube.com/channel/UCl2jsov1rglJ46sdRgv3qBQ" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
                         <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
                     </a>
                     <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
@@ -525,24 +506,24 @@
             <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
         </div>
     </div>
-</footer>
+    </footer>
 
-<div class="cookie-banner">
-    <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
-    <div class="cookie-banner__buttons">
-        <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
-        <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
     </div>
-</div>
 
-<!-- WhatsApp Float Button -->
-<a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
-</a>
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
+    </a>
 
-<!-- Scripts -->
-<script src="assets/js/carousel.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         // Experience Accordions
         document.querySelectorAll('[data-accordion]').forEach(accordion => {

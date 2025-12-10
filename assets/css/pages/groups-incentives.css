@@ -1,0 +1,862 @@
+/* ==========================================================================
+   Groups & Incentives Page Styles
+   ========================================================================== */
+
+/* Intro Section */
+.groups-intro {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-intro__content {
+    max-width: 800px;
+}
+
+.groups-intro__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.groups-intro__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Incentive Travel Section */
+.groups-incentive {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-incentive__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: start;
+}
+
+.groups-incentive__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.groups-incentive__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+}
+
+.groups-incentive__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+}
+
+.groups-incentive__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+.groups-incentive__features-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-top: var(--spacing-lg);
+}
+
+.groups-incentive__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.groups-incentive__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.groups-incentive__feature-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #D8C49B;
+    border: none;
+}
+
+.groups-incentive__feature img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.groups-incentive__feature span {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.groups-incentive__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.groups-incentive__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+.groups-corporate {
+    padding: var(--spacing-3xl) 0;
+    padding-bottom: 0 !important;
+}
+
+.groups-corporate__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.groups-corporate__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.groups-corporate__image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.groups-corporate__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.groups-corporate__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+}
+
+.groups-corporate__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+}
+
+.groups-corporate__subsubtitle {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-muted);
+}
+
+.groups-corporate__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+}
+
+.groups-corporate__features-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+}
+
+.groups-corporate__feature-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #D8C49B;
+    border: none;
+}
+
+.groups-corporate__features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.groups-corporate__feature {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.groups-corporate__feature img {
+    width: 32px;
+    height: 32px;
+}
+
+.groups-corporate__feature span {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+/* Team Building Section */
+.groups-teambuilding {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-teambuilding__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.groups-teambuilding__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.groups-teambuilding__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.groups-teambuilding__formats-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+}
+
+.groups-teambuilding__carousel-wrapper {
+    position: relative;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.groups-teambuilding__carousel {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacing-md);
+}
+
+.groups-teambuilding__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.groups-teambuilding__card {
+    flex: 0 0 calc(20% - var(--spacing-lg));
+    min-width: 180px;
+    scroll-snap-align: start;
+}
+
+.groups-teambuilding__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+.groups-teambuilding__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.groups-teambuilding__card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+.groups-teambuilding__arrows {
+    display: none;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.groups-teambuilding__arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-white);
+    background: transparent;
+    color: var(--color-text-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.groups-teambuilding__arrow:hover {
+    background: var(--color-text-white);
+    color: var(--color-primary-dark);
+}
+
+.groups-teambuilding__groupsize-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.groups-teambuilding__groupsize-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 700px;
+}
+
+/* Partnership Marquee Section */
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Executive Retreats Section */
+.groups-retreats {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-retreats__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.groups-retreats__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.groups-retreats__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+}
+
+.groups-retreats__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+}
+
+.groups-retreats__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+.groups-retreats__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.groups-retreats__image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.groups-retreats__features-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+.groups-retreats__features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.groups-retreats__feature {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.groups-retreats__feature img {
+    width: 32px;
+    height: 32px;
+}
+
+.groups-retreats__feature-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #D8C49B;
+    border: none;
+}
+
+.groups-retreats__feature span {
+    font-size: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+/* Our Clients Section */
+.groups-clients {
+    padding: var(--spacing-3xl) 0;
+}
+
+.groups-clients__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.groups-clients__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.groups-clients__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.groups-clients__tag {
+    max-width: 14.0625rem;
+    padding: 1.5rem 1.3rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    background: rgba(247, 242, 229, 1);
+}
+
+/* Sample Itinerary Section */
+.groups-itinerary {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-itinerary__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* Desktop Table */
+.groups-itinerary__table-wrapper {
+    display: block;
+}
+
+.groups-itinerary__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.groups-itinerary__table thead th {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-bottom: 1px solid white
+}
+
+.groups-itinerary__table tbody td {
+    padding: var(--spacing-lg) var(--spacing-md);
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid white
+}
+
+.groups-itinerary__table tbody td:first-child {
+    font-weight: var(--font-weight-medium);
+    width: 180px;
+}
+
+.groups-itinerary__table tbody td:nth-child(2) {
+    font-weight: var(--font-weight-medium);
+    width: 250px;
+}
+
+/* Mobile Accordion */
+.groups-itinerary__accordion {
+    display: none;
+}
+
+.groups-itinerary__accordion-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.groups-itinerary__accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-lg) 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.groups-itinerary__accordion-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+}
+
+.groups-itinerary__accordion-icon {
+    font-size: 1.5rem;
+    color: var(--color-text-white);
+    transition: transform 0.3s ease;
+}
+
+.groups-itinerary__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.groups-itinerary__accordion-item.active .groups-itinerary__accordion-content {
+    max-height: 200px;
+    padding-bottom: var(--spacing-lg);
+}
+
+.groups-itinerary__accordion-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
+.groups-itinerary__note {
+    margin-top: var(--spacing-2xl);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Why DMC Madeira Section */
+.groups-why {
+    padding: var(--spacing-4xl) 0;
+}
+
+.groups-why__item-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #D8C49B;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.groups-why__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.groups-why__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl) var(--spacing-3xl);
+}
+
+.groups-why__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-lg);
+}
+
+.groups-why__item img {
+    width: 32px;
+    height: 32px;
+}
+
+.groups-why__item span {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+/* CTA Section */
+.groups-cta {
+    background-color: rgba(216, 196, 155, 1);
+}
+
+.groups-cta__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.groups-cta__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.groups-cta__content {
+    padding: var(--spacing-4xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.groups-cta__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-lg);
+}
+
+.groups-cta__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.groups-cta__buttons {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .groups-incentive__layout {
+        gap: var(--spacing-2xl);
+    }
+    
+    .groups-corporate__layout {
+        gap: var(--spacing-2xl);
+    }
+    
+    .groups-corporate__features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .groups-retreats__layout {
+        gap: var(--spacing-2xl);
+    }
+    
+    .groups-retreats__features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .groups-why__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .groups-cta__content {
+        padding: var(--spacing-3xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .groups-intro {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-incentive {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-incentive__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .groups-incentive__image {
+        order: -1;
+    }
+    
+    .groups-incentive__title {
+        font-size: 2rem;
+    }
+    
+    .groups-incentive__features {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-corporate {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-corporate__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .groups-corporate__image {
+        order: -1;
+    }
+    
+    .groups-corporate__title {
+        font-size: 2rem;
+    }
+    
+    .groups-corporate__features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .groups-teambuilding {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-teambuilding__title {
+        font-size: 2rem;
+    }
+    
+    .groups-teambuilding__card {
+        flex: 0 0 70%;
+        min-width: 220px;
+    }
+    
+    .groups-teambuilding__arrows {
+        display: flex;
+    }
+    
+    .groups-retreats {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-retreats__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .groups-retreats__title {
+        font-size: 2rem;
+    }
+    
+    .groups-retreats__features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .groups-clients {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-clients__title {
+        font-size: 2rem;
+    }
+    
+    .groups-itinerary {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-itinerary__title {
+        font-size: 2rem;
+    }
+    
+    .groups-itinerary__table-wrapper {
+        display: none;
+    }
+    
+    .groups-itinerary__accordion {
+        display: block;
+    }
+    
+    .groups-why {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .groups-why__title {
+        font-size: 2rem;
+    }
+    
+    .groups-why__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-cta__layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-cta__image {
+        aspect-ratio: 16/9;
+    }
+    
+    .groups-cta__content {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .groups-cta__title {
+        font-size: 2rem;
+    }
+    
+    .groups-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .groups-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

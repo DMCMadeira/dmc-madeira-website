@@ -1,0 +1,521 @@
+/* ==========================================================================
+   Madeira by Sea Page Styles
+   ========================================================================== */
+
+/* Intro Section */
+.sea-intro {
+    padding: var(--spacing-4xl) 0;
+}
+
+.sea-intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.sea-intro__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    color: var(--color-text-muted);
+    gap: var(--spacing-lg);
+}
+
+.sea-intro__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.sea-intro__quote {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: var(--spacing-xl);
+}
+
+.sea-intro__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.sea-intro__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+/* Private Yacht Charters Section */
+.sea-yacht {
+    padding: var(--spacing-3xl) 0;
+}
+
+.sea-yacht__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.sea-yacht__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+.sea-yacht__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.sea-yacht__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.sea-yacht__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.sea-yacht__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.sea-yacht__card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.sea-yacht__card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Dolphin & Whale Watching Section */
+.sea-dolphins {
+    padding: var(--spacing-4xl) 0;
+}
+
+.sea-dolphins__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.sea-dolphins__block {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.sea-dolphins__block:last-child {
+    margin-bottom: 0;
+}
+
+.sea-dolphins__block--reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.sea-dolphins__block--reverse .sea-dolphins__block-image {
+    order: -1;
+}
+
+.sea-dolphins__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.sea-dolphins__block-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sea-dolphins__block-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+.sea-dolphins__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.sea-dolphins__block-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+/* Partnership Marquee Section */
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Active Adventures Section */
+.sea-adventures {
+    padding: var(--spacing-4xl) 0;
+}
+
+.sea-adventures__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.sea-adventures__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.sea-adventures__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sea-adventures__card--offset {
+    margin-top: var(--spacing-3xl);
+}
+
+.sea-adventures__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.sea-adventures__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.sea-adventures__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.sea-adventures__card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* Porto Santo & Beyond Section */
+.sea-portosanto {
+    padding: var(--spacing-4xl) 0;
+}
+
+.sea-portosanto__title {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.sea-portosanto__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+.sea-portosanto__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.sea-portosanto__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.sea-portosanto__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.sea-portosanto__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.sea-portosanto__card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.sea-portosanto__card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Sea Experiences for Every Traveler Section */
+.sea-travelers {
+    padding: var(--spacing-4xl) 0;
+}
+
+.sea-travelers__layout {
+    display: grid;
+    grid-template-columns: 24.5rem 1fr;
+    gap: var(--spacing-4xl);
+}
+
+.sea-travelers__title {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-white);
+    line-height: 1.3;
+}
+
+.sea-travelers__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl);
+}
+
+.sea-travelers__block {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.sea-travelers__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.sea-travelers__block-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.sea-travelers__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.sea-travelers__block-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+}
+
+.sea-travelers__block-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+.cultural-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.cultural-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.cultural-cta__text {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-primary-dark);
+    line-height: 1.7;
+}
+
+.cultural-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .sea-intro__grid {
+        gap: var(--spacing-2xl);
+    }
+    
+    .sea-travelers__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .sea-travelers__block {
+        grid-template-columns: 220px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sea-intro {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-intro__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .sea-intro__image {
+        order: -1;
+    }
+    
+    .sea-yacht {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-yacht__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .sea-dolphins {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-dolphins__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .sea-dolphins__block--reverse {
+        grid-template-columns: 1fr;
+    }
+    
+    .sea-dolphins__block--reverse .sea-dolphins__block-image {
+        order: 0;
+    }
+    
+    .sea-dolphins__block-image {
+        order: -1;
+    }
+    
+    .sea-adventures {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-adventures__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .sea-adventures__card--offset {
+        margin-top: 0;
+    }
+    
+    .sea-portosanto {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-portosanto__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .sea-travelers {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .sea-travelers__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .cultural-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .cultural-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cultural-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

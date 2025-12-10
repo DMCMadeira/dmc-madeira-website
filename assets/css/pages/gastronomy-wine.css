@@ -1,0 +1,688 @@
+/* ============================================
+   Gastronomy & Wine Page Styles
+   ============================================ */
+
+/* ============================================
+   Intro Section
+   ============================================ */
+
+.gastro-intro {
+    padding: var(--spacing-5xl) 0;
+}
+
+.gastro-intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+}
+
+.gastro-intro__content {
+    max-width: 540px;
+}
+
+.gastro-intro__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.2;
+}
+
+.gastro-intro__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+}
+
+.gastro-intro__text:last-child {
+    margin-bottom: 0;
+}
+
+.gastro-intro__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.gastro-intro__image picture,
+.gastro-intro__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   Legacy of Madeira Wine Section
+   ============================================ */
+
+.gastro-legacy {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-legacy__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+.gastro-legacy__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+}
+
+.gastro-legacy__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.gastro-legacy__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+    aspect-ratio: 16/10;
+}
+
+.gastro-legacy__card-image picture,
+.gastro-legacy__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gastro-legacy__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.gastro-legacy__card-text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.gastro-legacy__card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   Private Chef Section
+   ============================================ */
+
+.gastro-chef {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-chef__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+.gastro-chef__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.gastro-chef__block:last-child {
+    margin-bottom: 0;
+}
+
+.gastro-chef__block--reverse {
+    direction: rtl;
+}
+
+.gastro-chef__block--reverse > * {
+    direction: ltr;
+}
+
+.gastro-chef__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.gastro-chef__image picture,
+.gastro-chef__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gastro-chef__subtitle {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.gastro-chef__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.gastro-chef__text:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   Authentic Dining Section
+   ============================================ */
+
+.gastro-authentic {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-authentic__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+.gastro-authentic__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+}
+
+.gastro-authentic__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.gastro-authentic__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+    aspect-ratio: 4/3;
+}
+
+.gastro-authentic__card-image picture,
+.gastro-authentic__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gastro-authentic__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.gastro-authentic__card-text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.gastro-authentic__card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   Signature Experiences Section
+   ============================================ */
+
+.gastro-signature {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-signature__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+.gastro-signature__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.gastro-signature__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.gastro-signature__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    width: 18rem;
+    height: 13.75rem;
+}
+
+.gastro-signature__card-image picture,
+.gastro-signature__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gastro-signature__card-text {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.gastro-signature__note {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+/* ============================================
+   Gastronomy Meets Culture Section
+   ============================================ */
+
+.gastro-culture {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-culture__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.gastro-culture__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-md);
+}
+
+.gastro-culture__text:last-of-type {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.gastro-culture__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gastro-culture__image picture,
+.gastro-culture__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   Sustainability Section
+   ============================================ */
+
+.gastro-sustainability {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-sustainability__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.2;
+}
+
+.gastro-sustainability__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+/* ============================================
+   Partnership Marquee Section
+   ============================================ */
+
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ============================================
+   Groups & Incentives Section
+   ============================================ */
+
+.gastro-groups {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-groups__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.2;
+}
+
+.gastro-groups__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    max-width: 56.875rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.gastro-groups__text:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   Sample Itinerary Section
+   ============================================ */
+
+.gastro-itinerary {
+    padding: var(--spacing-3xl) 0;
+}
+
+.gastro-itinerary__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+/* Desktop Table */
+.gastro-itinerary__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.gastro-itinerary__table th,
+.gastro-itinerary__table td {
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.gastro-itinerary__table th {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.gastro-itinerary__table td {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+}
+
+.gastro-itinerary__table td:first-child {
+    width: 80px;
+}
+
+.gastro-itinerary__table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Mobile Accordion */
+.gastro-itinerary__accordion {
+    display: none;
+}
+
+.itinerary-item {
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.itinerary-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.itinerary-header__day {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+}
+
+.itinerary-header__icon {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+    transition: transform var(--transition-fast);
+}
+
+.itinerary-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.itinerary-item.active .itinerary-content {
+    max-height: 300px;
+    padding-bottom: var(--spacing-lg);
+}
+
+.itinerary-content__title {
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.itinerary-content__text {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.gastro-itinerary__note {
+    max-width: 50.5rem;
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================
+   CTA Section
+   ============================================ */
+
+.gastro-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.gastro-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.gastro-cta__text {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-primary-dark);
+    line-height: 1.7;
+}
+
+.gastro-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .gastro-intro__grid,
+    .gastro-legacy__grid,
+    .gastro-chef__block,
+    .gastro-authentic__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .gastro-intro__content {
+        max-width: 100%;
+    }
+    
+    .gastro-intro__image {
+        order: -1;
+    }
+    
+    .gastro-chef__block--reverse {
+        direction: ltr;
+    }
+    
+    .gastro-chef__image {
+        order: -1;
+    }
+    
+    .gastro-signature__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gastro-intro,
+    .gastro-legacy,
+    .gastro-chef,
+    .gastro-authentic,
+    .gastro-signature,
+    .gastro-culture,
+    .gastro-sustainability,
+    .gastro-groups,
+    .gastro-itinerary {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .gastro-intro__title,
+    .gastro-legacy__title,
+    .gastro-chef__title,
+    .gastro-authentic__title,
+    .gastro-signature__title,
+    .gastro-culture__title,
+    .gastro-sustainability__title,
+    .gastro-groups__title,
+    .gastro-itinerary__title {
+        font-size: 2rem;
+    }
+    
+    .gastro-legacy__card-title,
+    .gastro-chef__subtitle,
+    .gastro-authentic__card-title {
+        font-size: 1.5rem;
+    }
+    
+    .gastro-signature__grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .gastro-signature__card-image {
+        aspect-ratio: 4/3;
+    }
+    
+    /* Hide table, show accordion on mobile */
+    .gastro-itinerary__table {
+        display: none;
+    }
+    
+    .gastro-itinerary__accordion {
+        display: block;
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .gastro-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .gastro-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gastro-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

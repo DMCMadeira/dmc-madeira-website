@@ -80,6 +80,7 @@
 @media (max-width: 768px) {
     .intro {
         padding: var(--spacing-3xl) 0;
+        padding-top: 0 !important;
     }
 
     .intro__container {

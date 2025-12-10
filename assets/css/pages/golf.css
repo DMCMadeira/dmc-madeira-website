@@ -1,0 +1,579 @@
+/* ============================================
+   Golf Page Styles
+   ============================================ */
+
+/* ============================================
+   Intro Section
+   ============================================ */
+
+.golf-intro {
+    padding: var(--spacing-5xl) 0;
+}
+
+.golf-intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.golf-intro__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.golf-intro__quote {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-xl);
+}
+
+.golf-intro__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.golf-intro__image picture,
+.golf-intro__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   The Courses Section
+   ============================================ */
+
+.golf-courses {
+    padding: var(--spacing-3xl) 0;
+}
+
+.golf-courses__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+}
+
+.golf-courses__block {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
+    align-items: start;
+}
+
+.golf-courses__block:last-child {
+    margin-bottom: 0;
+}
+
+.golf-courses__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.golf-courses__block-image picture,
+.golf-courses__block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.golf-courses__block-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.golf-courses__block-title span {
+    color: var(--color-text-white);
+    font-weight: var(--font-weight-bold);
+}
+
+.golf-courses__block-text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.golf-courses__block-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   Tailor-made Golf Experiences Section
+   ============================================ */
+
+.golf-tailormade {
+    padding: var(--spacing-3xl) 0;
+}
+
+.golf-tailormade__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.golf-tailormade__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.golf-tailormade__card {
+    text-align: center;
+}
+
+.golf-tailormade__card--offset {
+    margin-top: var(--spacing-4xl);
+}
+
+.golf-tailormade__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+    aspect-ratio: 4/5;
+}
+
+.golf-tailormade__card-image picture,
+.golf-tailormade__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.golf-tailormade__card-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+}
+
+.golf-tailormade__card-text {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================
+   Partnership Marquee Section
+   ============================================ */
+
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ============================================
+   Premium Stays Section
+   ============================================ */
+
+.golf-stays {
+    padding: var(--spacing-3xl) 0;
+}
+
+.golf-stays__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.golf-stays__subtitle {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.golf-stays__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    max-width: 800px;
+}
+
+.golf-stays__label {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.golf-stays__carousel {
+    position: relative;
+}
+
+.golf-stays__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.golf-stays__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.golf-stays__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    aspect-ratio: 1/1;
+}
+
+.golf-stays__card-image picture,
+.golf-stays__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.golf-stays__card-title {
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.3;
+}
+
+.golf-stays__card-text {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.golf-stays__nav {
+    display: none;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+}
+
+.golf-stays__nav-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-subtle);
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.golf-stays__nav-btn:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text-white);
+}
+
+/* ============================================
+   Private Villas Section
+   ============================================ */
+
+.golf-villas {
+    padding: var(--spacing-2xl) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+}
+
+.golf-villas__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.golf-villas__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-3xl);
+}
+
+.golf-villas__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.golf-villas__image picture,
+.golf-villas__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   Beyond the Course Section
+   ============================================ */
+
+.golf-beyond {
+    padding: var(--spacing-3xl) 0;
+}
+
+.golf-beyond__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.golf-beyond__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.golf-beyond__card {
+    text-align: center;
+}
+
+.golf-beyond__card--offset {
+    margin-top: var(--spacing-4xl);
+}
+
+.golf-beyond__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+    aspect-ratio: 4/5;
+}
+
+.golf-beyond__card-image picture,
+.golf-beyond__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.golf-beyond__card-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+}
+
+.golf-beyond__card-text {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================
+   CTA Section
+   ============================================ */
+
+.golf-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.golf-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.golf-cta__text {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-primary-dark);
+    line-height: 1.7;
+}
+
+.golf-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .golf-intro__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .golf-intro__image {
+        order: -1;
+    }
+    
+    .golf-courses__block {
+        grid-template-columns: 220px 1fr;
+    }
+    
+    .golf-tailormade__grid,
+    .golf-beyond__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .golf-stays__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .golf-intro,
+    .golf-courses,
+    .golf-tailormade,
+    .golf-stays,
+    .golf-villas,
+    .golf-beyond {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .golf-courses__title,
+    .golf-tailormade__title,
+    .golf-stays__title,
+    .golf-villas__title,
+    .golf-beyond__title {
+        font-size: 2rem;
+    }
+    
+    .golf-stays__subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .golf-courses__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .golf-courses__block-image {
+        max-width: 300px;
+    }
+    
+    .golf-tailormade__grid,
+    .golf-beyond__grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .golf-tailormade__card--offset,
+    .golf-beyond__card--offset {
+        margin-top: 0;
+    }
+    
+    .golf-stays__carousel {
+        overflow: hidden;
+    }
+    
+    .golf-stays__grid {
+        display: flex;
+        gap: var(--spacing-lg);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-bottom: var(--spacing-md);
+    }
+    
+    .golf-stays__grid::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .golf-stays__card {
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+    
+    .golf-stays__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .golf-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .golf-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .golf-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

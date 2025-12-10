@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Adventures - DMC Madeira | Discover Madeira Together</title>
+    <meta name="description" content="Create unforgettable family memories in Madeira. Safe, inspiring adventures for all ages with expert guides, nature experiences, and authentic local encounters.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Family Adventures - DMC Madeira">
+    <meta property="og:description" content="Discover Madeira together. Shared moments, lasting memories.">
+    <meta property="og:image" content="assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pages/family-adventures.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="our-story.html" class="header__dropdown-link">Our Story</a>
+                            <a href="#" class="header__dropdown-link">Our Team</a>
+                            <a href="sustainability.html" class="header__dropdown-link">Sustainability</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="nature-wellness.html" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="gastronomy-wine.html" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="cultural-discovery.html" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="golf.html" class="header__dropdown-link">Golf</a>
+                            <a href="madeira-by-sea.html" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="photography-birdwatching.html" class="header__dropdown-link">Photography</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="groups-incentives.html" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="insider.html" class="header__nav-link">Insider</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__language">
+                <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
+                <a href="#" class="active">PT</a>
+                <span class="header__language-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+
+            <button class="btn btn--small btn--glass header__menu-btn">
+                <img src="assets/icons/header-icon-menu.svg" alt="">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="contact-us.html" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="experiences.html" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="shorex.html" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="insider.html" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-page hero-page--short">
+            <div class="hero-page__background">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-topbanner.webp, assets/images/experience-familyadventures-topbanner@2x.webp 2x">
+                    <img src="assets/images/experience-familyadventures-topbanner.webp" 
+                         srcset="assets/images/experience-familyadventures-topbanner.webp 1x, assets/images/experience-familyadventures-topbanner@2x.webp 2x" 
+                         alt="Family enjoying time together in Madeira">
+                </picture>
+            </div>
+            <div class="hero-page__content">
+                <p class="hero-page__breadcrumb">Shared Moments, Lasting Memories</p>
+                <h1 class="hero-page__title">Discover Madeira<br>together</h1>
+                <a href="contact-us.html#travel-advisors-and-partners" class="btn btn--glass">Find your perfect experience</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="family-intro" id="discover">
+            <div class="container">
+                <div class="family-intro__grid">
+                    <div class="family-intro__content">
+                        <div>
+                            <p class="family-intro__text">Madeira is one of Europe's safest and most inspiring destinations for families. At DMC Madeira, we design family adventures that balance discovery and comfort, authentic activities where parents, children and grandparents can explore, learn and laugh together.</p>
+                            <p class="family-intro__text">Our itineraries combine nature, culture, and local experiences with logistics that make every day simple, safe, and enriching. No stress. No crowds. Just Madeira at its most genuine.</p>
+                        </div>
+                        <p class="family-intro__quote">"Travel becomes unforgettable when shared across generations."</p>
+                    </div>
+                    <div class="family-intro__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-intro.webp, assets/images/experience-familyadventures-intro@2x.webp 2x">
+                            <img src="assets/images/experience-familyadventures-intro.webp" 
+                                 srcset="assets/images/experience-familyadventures-intro.webp 1x, assets/images/experience-familyadventures-intro@2x.webp 2x" 
+                                 alt="Family hiking in Madeira forest">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nature Adventures Section -->
+        <section class="family-nature">
+            <div class="container">
+                <h2 class="family-nature__title">Nature adventures for all ages</h2>
+                <div class="family-nature__grid">
+                    <div class="family-nature__card">
+                        <div class="family-nature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-hikes.webp, assets/images/experience-familyadventures-hikes@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-hikes.webp" 
+                                     srcset="assets/images/experience-familyadventures-hikes.webp 1x, assets/images/experience-familyadventures-hikes@2x.webp 2x" 
+                                     alt="Family on levada walk">
+                            </picture>
+                        </div>
+                        <h3 class="family-nature__card-title">Gentle hikes & levada walks</h3>
+                        <p class="family-nature__card-text">Walk side by side through Madeira's famous levadas, ancient irrigation channels that wind through forests, waterfalls and mountain valleys. Our guides adapt routes for all abilities, turning every path into an outdoor classroom, where kids learn about plants, birds, and geology.</p>
+                    </div>
+                    <div class="family-nature__card family-nature__card--offset">
+                        <div class="family-nature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-jeep.webp, assets/images/experience-familyadventures-jeep@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-jeep.webp" 
+                                     srcset="assets/images/experience-familyadventures-jeep.webp 1x, assets/images/experience-familyadventures-jeep@2x.webp 2x" 
+                                     alt="Family jeep safari">
+                            </picture>
+                        </div>
+                        <h3 class="family-nature__card-title">Jeep & off-road family safaris</h3>
+                        <p class="family-nature__card-text">Adventure with comfort. Our private jeep take families to viewpoints, hidden villages and volcanic plateaus safely, with expert drivers and stops for picnics, poncha or photos.</p>
+                    </div>
+                    <div class="family-nature__card">
+                        <div class="family-nature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-forest.webp, assets/images/experience-familyadventures-forest@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-forest.webp" 
+                                     srcset="assets/images/experience-familyadventures-forest.webp 1x, assets/images/experience-familyadventures-forest@2x.webp 2x" 
+                                     alt="Forest picnic">
+                            </picture>
+                        </div>
+                        <h3 class="family-nature__card-title">Forest picnics & outdoor games</h3>
+                        <p class="family-nature__card-text">We organize eco-picnics in safe forest areas, complete with local snacks and outdoor play.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sea Experiences Section -->
+        <section class="family-sea">
+            <div class="container">
+                <div class="family-sea__layout">
+                    <h2 class="family-sea__title">Sea experiences & water fun</h2>
+                    <div class="family-sea__blocks">
+                        <div class="family-sea__block">
+                            <div class="family-sea__block-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-dolphin.webp, assets/images/experience-familyadventures-dolphin@2x.webp 2x">
+                                    <img src="assets/images/experience-familyadventures-dolphin.webp" 
+                                         srcset="assets/images/experience-familyadventures-dolphin.webp 1x, assets/images/experience-familyadventures-dolphin@2x.webp 2x" 
+                                         alt="Dolphin watching">
+                                </picture>
+                            </div>
+                            <div class="family-sea__block-content">
+                                <h3 class="family-sea__block-title">Dolphin watching & snorkeling</h3>
+                                <p class="family-sea__block-text">Madeira's calm Atlantic waters make it perfect for family-friendly ocean days. Our dolphin watching Madeira tours are small-group and educational, with marine biologists on board. For confident swimmers, snorkeling near Garajau Marine Reserve reveals colorful fish and volcanic reefs.</p>
+                            </div>
+                        </div>
+                        <div class="family-sea__block">
+                            <div class="family-sea__block-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-kayak.webp, assets/images/experience-familyadventures-kayak@2x.webp 2x">
+                                    <img src="assets/images/experience-familyadventures-kayak.webp" 
+                                         srcset="assets/images/experience-familyadventures-kayak.webp 1x, assets/images/experience-familyadventures-kayak@2x.webp 2x" 
+                                         alt="Kayak and SUP">
+                                </picture>
+                            </div>
+                            <div class="family-sea__block-content">
+                                <h3 class="family-sea__block-title">Kayak & SUP for teens</h3>
+                                <p class="family-sea__block-text">We create light adventure programs where teens can paddle in calm bays or practice stand-up paddle boarding under instructor supervision. Every activity includes safety gear and local guides trained in rescue and first aid.</p>
+                            </div>
+                        </div>
+                        <div class="family-sea__block">
+                            <div class="family-sea__block-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-sailing.webp, assets/images/experience-familyadventures-sailing@2x.webp 2x">
+                                    <img src="assets/images/experience-familyadventures-sailing.webp" 
+                                         srcset="assets/images/experience-familyadventures-sailing.webp 1x, assets/images/experience-familyadventures-sailing@2x.webp 2x" 
+                                         alt="Family sailing">
+                                </picture>
+                            </div>
+                            <div class="family-sea__block-content">
+                                <h3 class="family-sea__block-title">Sailing together</h3>
+                                <p class="family-sea__block-text">Families can charter a private yacht Madeira for half a day, sailing, swimming, or enjoying a picnic on board. It's a relaxed way to see the island and share quality time at sea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="family-culture">
+            <div class="container">
+                <h2 class="family-culture__title">Culture, creativity & fun learning</h2>
+            </div>
+            <div class="family-culture__image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-culture.webp, assets/images/experience-familyadventures-culture@2x.webp 2x">
+                    <img src="assets/images/experience-familyadventures-culture.webp" 
+                         srcset="assets/images/experience-familyadventures-culture.webp 1x, assets/images/experience-familyadventures-culture@2x.webp 2x" 
+                         alt="Family in Madeira forest">
+                </picture>
+            </div>
+        </section>
+
+          <!-- Wellness Section -->
+          <section class="family-wellness">
+            <div class="container">
+                <h2 class="family-wellness__title">Madeira's gentle side – wellness & simplicity</h2>
+                <div class="family-wellness__block">
+                    <div class="family-wellness__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-mindfulmoments.webp, assets/images/experience-familyadventures-mindfulmoments@2x.webp 2x">
+                            <img src="assets/images/experience-familyadventures-mindfulmoments.webp" 
+                                 srcset="assets/images/experience-familyadventures-mindfulmoments.webp 1x, assets/images/experience-familyadventures-mindfulmoments@2x.webp 2x" 
+                                 alt="Family mindfulness in nature">
+                        </picture>
+                    </div>
+                    <div class="family-wellness__block-content">
+                        <h3 class="family-wellness__block-title">Mindful moments in nature</h3>
+                        <p class="family-wellness__block-text">Families can practice forest mindfulness sessions together, ideal for reconnecting after busy lives.</p>
+                        <p class="family-wellness__block-text">We choose quiet gardens, vineyards or oceanfront terraces where even children feel peace.</p>
+                    </div>
+                </div>
+
+                <div class="family-wellness__block family-wellness__block--reverse">
+                    <div class="family-wellness__block-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-slowtravel.webp, assets/images/experience-familyadventures-slowtravel@2x.webp 2x">
+                            <img src="assets/images/experience-familyadventures-slowtravel.webp" 
+                                 srcset="assets/images/experience-familyadventures-slowtravel.webp 1x, assets/images/experience-familyadventures-slowtravel@2x.webp 2x" 
+                                 alt="Family relaxing by pool">
+                        </picture>
+                    </div>
+                    <div class="family-wellness__block-content">
+                        <h3 class="family-wellness__block-title">Slow travel for families</h3>
+                        <p class="family-wellness__block-text">We plan relaxed itineraries: two activities a day, plenty of free time, and hotel choices with family rooms or villas.</p>
+                        <p class="family-wellness__block-text">Parents rest, children play, everyone reconnects.</p>
+                    </div>
+                </div>
+
+                <div class="family-wellness__block family-wellness__block">
+                    <div class="family-wellness__block-image">  
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-educational.webp, assets/images/experience-familyadventures-educational@2x.webp 2x">
+                            <img src="assets/images/experience-familyadventures-educational.webp" 
+                                 srcset="assets/images/experience-familyadventures-educational.webp 1x, assets/images/experience-familyadventures-educational@2x.webp 2x" 
+                                 alt="Educational family experience">
+                        </picture>
+                    </div>
+                    <div class="family-wellness__block-content">
+                        <h3 class="family-wellness__block-title">Educational encounters</h3>
+                        <p class="family-wellness__block-text">Add visits to volcanic caves, whale museums, or botanical gardens, curated by our guides to be fun and informative.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <!-- Safety Section -->
+        <section class="family-safety">
+            <div class="container">
+                <h2 class="family-safety__title">Safety, comfort & expertise</h2>
+                <div class="family-safety__grid">
+                    <div class="family-safety__card">
+                        <div class="family-safety__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-familiesinmind.webp, assets/images/experience-familyadventures-familiesinmind@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-familiesinmind.webp" 
+                                     srcset="assets/images/experience-familyadventures-familiesinmind.webp 1x, assets/images/experience-familyadventures-familiesinmind@2x.webp 2x" 
+                                     alt="Family hiking">
+                            </picture>
+                        </div>
+                        <h3 class="family-safety__card-title">Designed with families in mind</h3>
+                        <p class="family-safety__card-text">Our multilingual team plans every detail, transfers with child seats, easy access routes, flexible timings and restaurants with children's menus. Safety and comfort come first, always.</p>
+                    </div>
+                    <div class="family-safety__card family-safety__card--offset">
+                        <div class="family-safety__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-localguides.webp, assets/images/experience-familyadventures-localguides@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-localguides.webp" 
+                                     srcset="assets/images/experience-familyadventures-localguides.webp 1x, assets/images/experience-familyadventures-localguides@2x.webp 2x" 
+                                     alt="Local guide with family">
+                            </picture>
+                        </div>
+                        <h3 class="family-safety__card-title">Experienced local guides</h3>
+                        <p class="family-safety__card-text">All guides are trained to work with families, combining humor, patience, and knowledge.</p>
+                    </div>
+                    <div class="family-safety__card">
+                        <div class="family-safety__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-peaceofmind.webp, assets/images/experience-familyadventures-peaceofmind@2x.webp 2x">
+                                <img src="assets/images/experience-familyadventures-peaceofmind.webp" 
+                                     srcset="assets/images/experience-familyadventures-peaceofmind.webp 1x, assets/images/experience-familyadventures-peaceofmind@2x.webp 2x" 
+                                     alt="Family on beach">
+                            </picture>
+                        </div>
+                        <h3 class="family-safety__card-title">Peace of mind from start to finish</h3>
+                        <p class="family-safety__card-text">We understand how much effort family travel takes. With DMC Madeira, logistics disappear, leaving only laughter, discovery, and connection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="family-cta">
+            <div class="family-cta__image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-familyadventures-bottom-desktop.webp, assets/images/experience-familyadventures-bottom-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="assets/images/experience-familyadventures-bottom-mobile.webp, assets/images/experience-familyadventures-bottom-mobile@2x.webp 2x">
+                    <img src="assets/images/experience-familyadventures-bottom-desktop.webp" 
+                         srcset="assets/images/experience-familyadventures-bottom-desktop.webp 1x, assets/images/experience-familyadventures-bottom-desktop@2x.webp 2x" 
+                         alt="Family at local market">
+                </picture>
+            </div>
+            <div class="family-cta__content">
+                <h2 class="family-cta__title">Why families choose DMC Madeira</h2>
+                <p class="family-cta__text">Because our island is natural, safe, and human. And because DMC Madeira understands what families truly need: time together, simple pleasures, and peace of mind.</p>
+                <p class="family-cta__text">We don't sell tours, we craft shared stories.<br>Stories that your children will remember long after the holiday ends.</p>
+                <div class="family-cta__buttons">
+                    <a href="contact-us.html" class="btn btn--dark">Plan your family adventure</a>
+                    <a href="insider.html" class="btn btn--white">Explore Insider Madeira</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
+                    </a>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact us</h4>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-email.svg" alt="">
+                        <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-phone.svg" alt="">
+                        <span>+351 291 239 002</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-location.svg" alt="">
+                        <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="security-csirt.html" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Social media</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <img src="assets/icons/footer-icon-language.svg" alt="">
+                        <a href="#">Portuguese</a>
+                        <span>|</span>
+                        <a href="#" class="active">English</a>
+                    </div>
+                </div>
+        </div>
+        
+            <div class="footer__partnerships">
+                <span class="footer__partnerships-title">Partnerships:</span>
+                <div class="footer__partnerships-logos">
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
+            </a>
+        </div>
+    </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
+                <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

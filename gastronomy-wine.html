@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomy & Wine - DMC Madeira | A Journey Through Taste and Tradition</title>
+    <meta name="description" content="Discover Madeira's culinary heritage through private wine tastings, chef-led dinners, vineyard visits, and authentic local dining experiences.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gastronomy & Wine - DMC Madeira">
+    <meta property="og:description" content="A journey through taste and tradition in Madeira.">
+    <meta property="og:image" content="assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pages/gastronomy-wine.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="our-story.html" class="header__dropdown-link">Our Story</a>
+                            <a href="#" class="header__dropdown-link">Our Team</a>
+                            <a href="sustainability.html" class="header__dropdown-link">Sustainability</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="nature-wellness.html" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="gastronomy-wine.html" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="cultural-discovery.html" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="golf.html" class="header__dropdown-link">Golf</a>
+                            <a href="madeira-by-sea.html" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="photography-birdwatching.html" class="header__dropdown-link">Photography</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="groups-incentives.html" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="insider.html" class="header__nav-link">Insider</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__language">
+                <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
+                <a href="#" class="active">PT</a>
+                <span class="header__language-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+
+            <button class="btn btn--small btn--glass header__menu-btn">
+                <img src="assets/icons/header-icon-menu.svg" alt="">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="contact-us.html" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="experiences.html" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="shorex.html" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="insider.html" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-page hero-page--short">
+            <div class="hero-page__background">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-topbanner.webp, assets/images/experience-gastronomy-topbanner@2x.webp 2x">
+                    <img src="assets/images/experience-gastronomy-topbanner.webp" 
+                         srcset="assets/images/experience-gastronomy-topbanner.webp 1x, assets/images/experience-gastronomy-topbanner@2x.webp 2x" 
+                         alt="Madeiran gastronomy and local produce">
+                </picture>
+            </div>
+            <div class="hero-page__content">
+                <p class="hero-page__breadcrumb">The Flavours of Madeira</p>
+                <h1 class="hero-page__title">A journey through<br>taste and tradition</h1>
+                <a href="contact-us.html#travel-advisors-and-partners" class="btn btn--glass">Find your perfect experience</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="gastro-intro" id="discover">
+            <div class="container">
+                <div class="gastro-intro__grid">
+                    <div class="gastro-intro__content">
+                        <h2 class="gastro-intro__title">Here, gastronomy is not just food, it's storytelling</h2>
+                        <p class="gastro-intro__text">Madeira is a land of flavours shaped by the sea, the mountains, and the people who live between them.</p>
+                        <p class="gastro-intro__text">At DMC Madeira, we create culinary experiences that connect travellers to the island's heritage through its chefs, vineyards, and family kitchens. From private wine tastings to chef-led dinners, each experience is a celebration of authenticity, creativity, and Madeiran hospitality.</p>
+                    </div>
+                    <div class="gastro-intro__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-intro.webp, assets/images/experience-gastronomy-intro@2x.webp 2x">
+                            <img src="assets/images/experience-gastronomy-intro.webp" 
+                                 srcset="assets/images/experience-gastronomy-intro.webp 1x, assets/images/experience-gastronomy-intro@2x.webp 2x" 
+                                 alt="Dining with ocean view in Madeira">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy of Madeira Wine Section -->
+        <section class="gastro-legacy">
+            <div class="container">
+                <h2 class="gastro-legacy__title">The legacy of Madeira wine</h2>
+                <div class="gastro-legacy__grid">
+                    <div class="gastro-legacy__card">
+                        <div class="gastro-legacy__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-legacy-wine.webp, assets/images/experience-gastronomy-legacy-wine@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-legacy-wine.webp" 
+                                     srcset="assets/images/experience-gastronomy-legacy-wine.webp 1x, assets/images/experience-gastronomy-legacy-wine@2x.webp 2x" 
+                                     alt="Madeira wine bottle">
+                            </picture>
+                        </div>
+                        <h3 class="gastro-legacy__card-title">A wine that crossed oceans</h3>
+                        <p class="gastro-legacy__card-text">For over 500 years, Madeira wine has travelled the world, from royal courts to explorers' ships. Our experiences honour this legacy, offering exclusive access to centuries-old wine cellars and private tastings guided by sommeliers and winemakers.</p>
+                        <p class="gastro-legacy__card-text">Guests can sample the island's iconic styles, Sercial, Verdelho, Bual, and Malvasia, each expressing Madeira's volcanic soil and maritime influence.</p>
+                    </div>
+                    <div class="gastro-legacy__card">
+                        <div class="gastro-legacy__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-legacy-tastings.webp, assets/images/experience-gastronomy-legacy-tastings@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-legacy-tastings.webp" 
+                                     srcset="assets/images/experience-gastronomy-legacy-tastings.webp 1x, assets/images/experience-gastronomy-legacy-tastings@2x.webp 2x" 
+                                     alt="Private vineyard wine tasting">
+                            </picture>
+                        </div>
+                        <h3 class="gastro-legacy__card-title">Private vineyard visits & tastings</h3>
+                        <p class="gastro-legacy__card-text">We partner with family-owned producers across São Vicente, Câmara de Lobos, and Estreito de Câmara de Lobos. Guests enjoy vineyard lunches, wine blending sessions, or barrel tastings paired with local cuisine.</p>
+                        <p class="gastro-legacy__card-text">All experiences are private, sustainable, and led by experts who live their craft daily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Chef Section -->
+        <section class="gastro-chef">
+            <div class="container">
+                <h2 class="gastro-chef__title">Private chef & culinary experiences</h2>
+                
+                <div class="gastro-chef__block">
+                    <div class="gastro-chef__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-dining.webp, assets/images/experience-gastronomy-dining@2x.webp 2x">
+                            <img src="assets/images/experience-gastronomy-dining.webp" 
+                                 srcset="assets/images/experience-gastronomy-dining.webp 1x, assets/images/experience-gastronomy-dining@2x.webp 2x" 
+                                 alt="Private dining experience">
+                        </picture>
+                    </div>
+                    <div class="gastro-chef__content">
+                        <h3 class="gastro-chef__subtitle">Dining tailored to you</h3>
+                        <p class="gastro-chef__text">Imagine a private dinner on a terrace overlooking the Atlantic, with a chef preparing dishes inspired by the island's seasons. Our private chef Madeira experiences combine elegance and intimacy, ideal for couples, small groups, or corporate evenings.</p>
+                        <p class="gastro-chef__text">Menus feature local produce: black scabbard fish with banana, espetada grilled over laurel wood, tropical fruits, and artisan honey cakes, each dish reimagined with modern technique.</p>
+                    </div>
+                </div>
+
+                <div class="gastro-chef__block gastro-chef__block--reverse">
+                    <div class="gastro-chef__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-chefs.webp, assets/images/experience-gastronomy-chefs@2x.webp 2x">
+                            <img src="assets/images/experience-gastronomy-chefs.webp" 
+                                 srcset="assets/images/experience-gastronomy-chefs.webp 1x, assets/images/experience-gastronomy-chefs@2x.webp 2x" 
+                                 alt="Chef in kitchen">
+                        </picture>
+                    </div>
+                    <div class="gastro-chef__content">
+                        <h3 class="gastro-chef__subtitle">The chef's table – culinary art meets hospitality</h3>
+                        <p class="gastro-chef__text">We collaborate with top Madeiran chefs for exclusive tasting menus paired with local wines.</p>
+                        <p class="gastro-chef__text">These events often include behind-the-scenes access to the kitchen or chef introductions, turning dining into a sensory journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authentic Dining Section -->
+        <section class="gastro-authentic">
+            <div class="container">
+                <h2 class="gastro-authentic__title">Authentic dining & local encounters</h2>
+                <div class="gastro-authentic__grid">
+                    <div class="gastro-authentic__card">
+                        <div class="gastro-authentic__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-market.webp, assets/images/experience-gastronomy-market@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-market.webp" 
+                                     srcset="assets/images/experience-gastronomy-market.webp 1x, assets/images/experience-gastronomy-market@2x.webp 2x" 
+                                     alt="Market to table cooking class">
+                            </picture>
+                        </div>
+                        <h3 class="gastro-authentic__card-title">Market to table – eat like a local</h3>
+                        <p class="gastro-authentic__card-text">For travellers seeking authenticity, we organize market-to-table tours in Funchal's Mercado dos Lavradores, followed by a private cooking session. Guests learn about tropical fruits, seafood, and endemic herbs, guided by local chefs.</p>
+                        <p class="gastro-authentic__card-text">It's an intimate, interactive way to discover how Madeira's culture lives through its cuisine.</p>
+                    </div>
+                    <div class="gastro-authentic__card">
+                        <div class="gastro-authentic__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-family.webp, assets/images/experience-gastronomy-family@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-family.webp" 
+                                     srcset="assets/images/experience-gastronomy-family.webp 1x, assets/images/experience-gastronomy-family@2x.webp 2x" 
+                                     alt="Family style dining">
+                            </picture>
+                        </div>
+                        <h3 class="gastro-authentic__card-title">Family meals & hidden taverns</h3>
+                        <p class="gastro-authentic__card-text">Beyond fine dining, true Madeiran gastronomy thrives in small taverns and homes. Our itineraries include family-style dinners, where guests share home-cooked meals, laughter, and stories with locals.</p>
+                        <p class="gastro-authentic__card-text">Each meal is an act of connection, an invitation into everyday life on the island.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Experiences Section -->
+        <section class="gastro-signature">
+            <div class="container">
+                <h2 class="gastro-signature__title">Signature culinary experiences by DMC Madeira</h2>
+                <div class="gastro-signature__grid">
+                    <div class="gastro-signature__card">
+                        <div class="gastro-signature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-signature-1.webp, assets/images/experience-gastronomy-signature-1@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-signature-1.webp" 
+                                     srcset="assets/images/experience-gastronomy-signature-1.webp 1x, assets/images/experience-gastronomy-signature-1@2x.webp 2x" 
+                                     alt="Private Wine & Dine">
+                            </picture>
+                        </div>
+                        <p class="gastro-signature__card-text">Private Wine & Dine: Exceptional moments in Madeira's finest restaurants.</p>
+                    </div>
+                    <div class="gastro-signature__card">
+                        <div class="gastro-signature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-signature-2.webp, assets/images/experience-gastronomy-signature-2@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-signature-2.webp" 
+                                     srcset="assets/images/experience-gastronomy-signature-2.webp 1x, assets/images/experience-gastronomy-signature-2@2x.webp 2x" 
+                                     alt="Gourmet Sail">
+                            </picture>
+                        </div>
+                        <p class="gastro-signature__card-text">Gourmet Sail: Sunset tasting aboard a private yacht with local sommelier.</p>
+                    </div>
+                    <div class="gastro-signature__card">
+                        <div class="gastro-signature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-signature-3.webp, assets/images/experience-gastronomy-signature-3@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-signature-3.webp" 
+                                     srcset="assets/images/experience-gastronomy-signature-3.webp 1x, assets/images/experience-gastronomy-signature-3@2x.webp 2x" 
+                                     alt="Cooking with Locals">
+                            </picture>
+                        </div>
+                        <p class="gastro-signature__card-text">Cooking with Locals: Hands-on class followed by a communal meal.</p>
+                    </div>
+                    <div class="gastro-signature__card">
+                        <div class="gastro-signature__card-image">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-signature-4.webp, assets/images/experience-gastronomy-signature-4@2x.webp 2x">
+                                <img src="assets/images/experience-gastronomy-signature-4.webp" 
+                                     srcset="assets/images/experience-gastronomy-signature-4.webp 1x, assets/images/experience-gastronomy-signature-4@2x.webp 2x" 
+                                     alt="Chocolate & Madeira Wine Pairing">
+                            </picture>
+                        </div>
+                        <p class="gastro-signature__card-text">Chocolate & Madeira Wine Pairing: A sensory journey of contrasts.</p>
+                    </div>
+                </div>
+                <p class="gastro-signature__note">Every experience is tailor-made to the guest's interests, timing, and group size, perfect for couples, small incentive groups, or luxury FIT travellers.</p>
+            </div>
+        </section>
+
+        <!-- Gastronomy Meets Culture Section -->
+        <section class="gastro-culture">
+            <div class="container">
+                <h2 class="gastro-culture__title">Gastronomy meets culture</h2>
+                <p class="gastro-culture__text">Madeira's food is inseparable from its culture. That's why our programs often weave together cultural discovery, music, and dining. Guests might enjoy a private music performance during dinner or learn how local artisans make traditional bread and sweets in remote villages.</p>
+                <p class="gastro-culture__text">These moments reveal what makes Madeiran cuisine unique: it's humble, generous, and deeply human.</p>
+            </div>
+            <div class="gastro-culture__image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/experience-gastronomy-culture.webp, assets/images/experience-gastronomy-culture@2x.webp 2x">
+                    <img src="assets/images/experience-gastronomy-culture.webp" 
+                         srcset="assets/images/experience-gastronomy-culture.webp 1x, assets/images/experience-gastronomy-culture@2x.webp 2x" 
+                         alt="Traditional Madeiran seafood dish">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="gastro-sustainability">
+            <div class="container">
+                <h2 class="gastro-sustainability__title">Sustainability & Local Sourcing</h2>
+                <p class="gastro-sustainability__text">We believe that taste and sustainability go hand in hand. Our culinary experiences prioritize farm-to-table ingredients, plastic-free service, and local producers. By dining with DMC Madeira, guests directly support farmers, fishermen, and artisans who preserve the island's traditions.</p>
+            </div>
+        </section>
+
+        <!-- Marquee Banner -->
+        <section class="partnership-marquee">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>"<span class="text-gold">LUXURY</span> TASTES BETTER WHEN IT'S <span class="text-gold">RESPONSIBLE</span>."</span>
+                    <span>"<span class="text-gold">LUXURY</span> TASTES BETTER WHEN IT'S <span class="text-gold">RESPONSIBLE</span>."</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Groups & Incentives Section -->
+        <section class="gastro-groups">
+            <div class="container">
+                <h2 class="gastro-groups__title">For groups, events & incentives</h2>
+                <p class="gastro-groups__text">Food brings people together, and nowhere more beautifully than in Madeira. We design corporate dinners, wine-themed team building, and VIP galas with unique settings: vineyards, fortresses, oceanfront estates, or historic gardens.</p>
+                <p class="gastro-groups__text">Each event combines creativity, flawless service, and local authenticity, managed by our experienced MICE division. Our attention to detail ensures every taste is unforgettable.</p>
+            </div>
+        </section>
+
+        <!-- Sample Itinerary Section -->
+        <section class="gastro-itinerary">
+            <div class="container">
+                <h2 class="gastro-itinerary__title">Sample itinerary – a taste of Madeira</h2>
+                
+                <!-- Desktop Table -->
+                <table class="gastro-itinerary__table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Experience</th>
+                            <th>Highlight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Arrival Dinner</td>
+                            <td>Private chef at ocean-view villa</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Market & Cooking Class</td>
+                            <td>Hands-on with local ingredients</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Vineyard Visit</td>
+                            <td>Tasting and lunch in São Vicente</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Gourmet Sail</td>
+                            <td>Sunset wine pairing cruise</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Departure</td>
+                            <td>Chocolate and Madeira wine pairing</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Mobile Accordion -->
+                <div class="gastro-itinerary__accordion">
+                    <div class="itinerary-item" data-itinerary>
+                        <button class="itinerary-header" data-itinerary-trigger>
+                            <span class="itinerary-header__day">Day 1</span>
+                            <span class="itinerary-header__icon">+</span>
+                        </button>
+                        <div class="itinerary-content" data-itinerary-content>
+                            <h4 class="itinerary-content__title">Arrival</h4>
+                            <p class="itinerary-content__text">A private chef curates a special menu in an ocean view villa, setting the perfect scene to unwind, toast, and ease into the program.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item" data-itinerary>
+                        <button class="itinerary-header" data-itinerary-trigger>
+                            <span class="itinerary-header__day">Day 2</span>
+                            <span class="itinerary-header__icon">+</span>
+                        </button>
+                        <div class="itinerary-content" data-itinerary-content>
+                            <h4 class="itinerary-content__title">Market and Cooking Class</h4>
+                            <p class="itinerary-content__text">A morning of color and flavor that starts at the local market. Among fresh produce and local stories, the group selects ingredients and moves into a hands on cooking class to cook, taste, and share Madeira at the table.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item" data-itinerary>
+                        <button class="itinerary-header" data-itinerary-trigger>
+                            <span class="itinerary-header__day">Day 3</span>
+                            <span class="itinerary-header__icon">+</span>
+                        </button>
+                        <div class="itinerary-content" data-itinerary-content>
+                            <h4 class="itinerary-content__title">Vineyard Visit</h4>
+                            <p class="itinerary-content__text">A vineyard experience that blends scenery with tradition. The group explores the estate, learns local methods, and ends with a guided tasting and lunch in São Vicente, in a serene and authentic setting.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item" data-itinerary>
+                        <button class="itinerary-header" data-itinerary-trigger>
+                            <span class="itinerary-header__day">Day 4</span>
+                            <span class="itinerary-header__icon">+</span>
+                        </button>
+                        <div class="itinerary-content" data-itinerary-content>
+                            <h4 class="itinerary-content__title">Gourmet Sail</h4>
+                            <p class="itinerary-content__text">The sea becomes the stage for an unforgettable afternoon. On board, gourmet bites and wine pair with the sunset, while the Atlantic breeze and Madeira's coastline frame a light, sophisticated moment.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item" data-itinerary>
+                        <button class="itinerary-header" data-itinerary-trigger>
+                            <span class="itinerary-header__day">Day 5</span>
+                            <span class="itinerary-header__icon">+</span>
+                        </button>
+                        <div class="itinerary-content" data-itinerary-content>
+                            <h4 class="itinerary-content__title">Departure</h4>
+                            <p class="itinerary-content__text">The experience closes with a chocolate and Madeira wine pairing, a final toast that ends the program with flavor, elegance, and a desire to return.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="gastro-itinerary__note">Each itinerary can be adapted for couples, families, or groups, always curated for depth, comfort, and authenticity.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="gastro-cta">
+            <div class="container">
+                <h2 class="gastro-cta__title">Plan your culinary journey</h2>
+                <p class="gastro-cta__text">Madeira's flavours are as diverse as its landscapes. Whether you dream of a vineyard lunch, a chef's table dinner, or a wine and culture retreat, DMC Madeira transforms every meal into a story worth remembering.</p>
+                <div class="gastro-cta__buttons">
+                    <a href="contact-us.html" class="btn btn--dark">Request a Culinary Itinerary</a>
+                    <a href="insider.html" class="btn btn--white">Explore Insider Madeira</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
+                    </a>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact us</h4>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-email.svg" alt="">
+                        <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-phone.svg" alt="">
+                        <span>+351 291 239 002</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <img src="assets/icons/footer-icon-location.svg" alt="">
+                        <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="security-csirt.html" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Social media</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <div class="footer__language">
+                        <img src="assets/icons/footer-icon-language.svg" alt="">
+                        <a href="#">Portuguese</a>
+                        <span>|</span>
+                        <a href="#" class="active">English</a>
+                    </div>
+                </div>
+        </div>
+        
+            <div class="footer__partnerships">
+                <span class="footer__partnerships-title">Partnerships:</span>
+                <div class="footer__partnerships-logos">
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
+            </a>
+        </div>
+    </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
+                <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner">
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <div class="cookie-banner__buttons">
+            <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
+            <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Itinerary Accordion functionality
+        document.querySelectorAll('[data-itinerary]').forEach(item => {
+            const trigger = item.querySelector('[data-itinerary-trigger]');
+            
+            trigger.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+                
+                // Close all accordions
+                document.querySelectorAll('[data-itinerary]').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.itinerary-header__icon').textContent = '+';
+                });
+                
+                // Open clicked one if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    item.querySelector('.itinerary-header__icon').textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,619 @@
+/* ==========================================================================
+   Photography & Birdwatching Page Styles
+   ========================================================================== */
+
+/* Intro Section */
+.photo-intro {
+    padding: var(--spacing-4xl) 0;
+}
+
+.photo-intro__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.photo-intro__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    color: var(--color-text-muted);
+    gap: var(--spacing-lg);
+}
+
+.photo-intro__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.photo-intro__quote {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: var(--spacing-xl);
+}
+
+.photo-intro__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.photo-intro__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+/* Photography Experiences Section */
+.photo-experiences {
+    padding: var(--spacing-3xl) 0;
+}
+
+.photo-experiences__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.photo-experiences__subsection {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.photo-experiences__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-experiences__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 700px;
+}
+
+.photo-experiences__note {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin: var(--spacing-2xl) 0;
+}
+
+/* Photo Locations Carousel */
+.photo-locations {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+}
+
+.photo-locations__carousel {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacing-md);
+}
+
+.photo-locations__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.photo-locations__card {
+    flex: 0 0 calc(25% - var(--spacing-lg));
+    min-width: 240px;
+    scroll-snap-align: start;
+}
+
+.photo-locations__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-locations__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.photo-locations__card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+.photo-locations__arrows {
+    display: none;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.photo-locations__arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-white);
+    background: transparent;
+    color: var(--color-text-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.photo-locations__arrow:hover {
+    background: var(--color-text-white);
+    color: var(--color-primary-dark);
+}
+
+/* Partnership Marquee Section */
+.partnership-marquee {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    border-top: 0;
+}
+
+.partnership-marquee .text-gold {
+    color: var(--color-text-muted);
+    padding: 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee-content span {
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-white);
+    white-space: nowrap;
+    padding-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Birdwatching Section */
+.photo-birdwatching {
+    padding: var(--spacing-4xl) 0;
+}
+
+.photo-birdwatching__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.photo-birdwatching__subsection {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.photo-birdwatching__subtitle {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-birdwatching__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 700px;
+}
+
+/* Species Carousel */
+.photo-species {
+    position: relative;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.photo-species__carousel {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacing-md);
+}
+
+.photo-species__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.photo-species__card {
+    flex: 0 0 calc(25% - var(--spacing-lg));
+    min-width: 240px;
+    scroll-snap-align: start;
+}
+
+.photo-species__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-species__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.photo-species__card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+.photo-species__arrows {
+    display: none;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.photo-species__arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-white);
+    background: transparent;
+    color: var(--color-text-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.photo-species__arrow:hover {
+    background: var(--color-text-white);
+    color: var(--color-primary-dark);
+}
+
+/* Landscapes Section */
+.photo-landscapes {
+    padding: var(--spacing-4xl) 0;
+}
+
+.photo-landscapes__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.photo-landscapes__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.photo-landscapes__block:last-child {
+    margin-bottom: 0;
+}
+
+.photo-landscapes__block--reverse .photo-landscapes__block-image {
+    order: 1;
+}
+
+.photo-landscapes__block--reverse .photo-landscapes__block-content {
+    order: 0;
+}
+
+.photo-landscapes__block-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.photo-landscapes__block-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.photo-landscapes__block-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.photo-landscapes__block-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.photo-landscapes__block-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+/* For Small Groups Section */
+.photo-groups {
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+}
+
+.photo-groups__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-xl);
+}
+
+.photo-groups__text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-3xl);
+}
+
+.photo-groups__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.photo-groups__image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+/* Porto Santo & Islands Section */
+.photo-islands {
+    padding: var(--spacing-4xl) 0;
+}
+
+.photo-islands__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.photo-islands__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+.photo-islands__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-islands__card-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+
+.photo-islands__card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+.photo-islands__card-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-islands__card-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.photo-islands__card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.cultural-cta {
+    background-color: rgba(216, 196, 155, 1);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.cultural-cta__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-xl);
+}
+
+.cultural-cta__text {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-2xl);
+    color: var(--color-primary-dark);
+    line-height: 1.7;
+}
+
+.cultural-cta__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .photo-intro__grid {
+        gap: var(--spacing-2xl);
+    }
+    
+    .photo-locations__card {
+        flex: 0 0 calc(33.333% - var(--spacing-lg));
+    }
+    
+    .photo-species__card {
+        flex: 0 0 calc(33.333% - var(--spacing-lg));
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-intro {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-intro__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .photo-intro__image {
+        order: -1;
+    }
+    
+    .photo-experiences {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-experiences__title {
+        font-size: 2rem;
+    }
+    
+    .photo-locations__card {
+        flex: 0 0 80%;
+        min-width: 260px;
+    }
+    
+    .photo-locations__arrows {
+        display: flex;
+    }
+    
+    .photo-birdwatching {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-birdwatching__title {
+        font-size: 2rem;
+    }
+    
+    .photo-species__card {
+        flex: 0 0 70%;
+        min-width: 220px;
+    }
+    
+    .photo-species__arrows {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .photo-landscapes {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-landscapes__title {
+        font-size: 2rem;
+    }
+    
+    .photo-landscapes__block {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .photo-landscapes__block--reverse .photo-landscapes__block-image {
+        order: 0;
+    }
+    
+    .photo-landscapes__block--reverse .photo-landscapes__block-content {
+        order: 1;
+    }
+    
+    .photo-landscapes__block-image {
+        order: -1;
+    }
+    
+    .photo-landscapes__block-title {
+        font-size: 1.5rem;
+    }
+    
+    .photo-groups {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-groups__title {
+        font-size: 2rem;
+    }
+    
+    .photo-islands {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .photo-islands__title {
+        font-size: 2rem;
+    }
+    
+    .photo-islands__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+    }
+    
+    .photo-islands__card-title {
+        font-size: 1.5rem;
+    }
+    
+    .cultural-cta {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+    
+    .cultural-cta__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cultural-cta__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

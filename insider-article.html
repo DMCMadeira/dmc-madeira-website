@@ -12,26 +12,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/pages/insider-article.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header header--transparent">
+    <header class="header">
         <div class="header__container">
             <a href="index.html" class="header__logo">
                 <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
             </a>
+
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Who we are <img src="assets/icons/header-icon-chevrondown.svg" alt=""></a>
+                        <a href="#" class="header__nav-link">
+                            Who we are
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
                         <div class="header__dropdown">
                             <a href="our-story.html" class="header__dropdown-link">Our Story</a>
                             <a href="#" class="header__dropdown-link">Our Team</a>
@@ -39,29 +38,95 @@
                         </div>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Experiences <img src="assets/icons/header-icon-chevrondown.svg" alt=""></a>
+                        <a href="#" class="header__nav-link">
+                            Experiences
+                            <img src="assets/icons/header-icon-chevrondown.svg" alt="">
+                        </a>
                         <div class="header__dropdown">
-                            <a href="#" class="header__dropdown-link">Nature & Wellness</a>
-                            <a href="#" class="header__dropdown-link">Gastronomy & Wine</a>
-                            <a href="#" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="nature-wellness.html" class="header__dropdown-link">Nature & Wellness</a>
+                            <a href="gastronomy-wine.html" class="header__dropdown-link">Gastronomy & Wine</a>
+                            <a href="cultural-discovery.html" class="header__dropdown-link">Cultural Discovery</a>
+                            <a href="golf.html" class="header__dropdown-link">Golf</a>
+                            <a href="madeira-by-sea.html" class="header__dropdown-link">Madeira by Sea</a>
+                            <a href="photography-birdwatching.html" class="header__dropdown-link">Photography</a>
                         </div>
                     </li>
-                    <li class="header__nav-item"><a href="shorex.html" class="header__nav-link">Shorex</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Groups & Incentives</a></li>
-                    <li class="header__nav-item"><a href="insider.html" class="header__nav-link">Insider</a></li>
+                    <li class="header__nav-item">
+                        <a href="shorex.html" class="header__nav-link">Shorex</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="groups-incentives.html" class="header__nav-link">Groups & Incentives</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="insider.html" class="header__nav-link">Insider</a>
+                    </li>
                 </ul>
             </nav>
+
             <div class="header__language">
                 <img src="assets/icons/header-icon-language.svg" alt="" class="header__language-icon">
                 <a href="#" class="active">PT</a>
                 <span class="header__language-divider">|</span>
                 <a href="#">EN</a>
             </div>
+
             <button class="btn btn--small btn--glass header__menu-btn">
                 <img src="assets/icons/header-icon-menu.svg" alt="">
                 Menu
             </button>
         </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav">
+            <div class="header__mobile-nav-header">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/logos/header-logo-dmcmadeira-nomargin-mobile.svg" alt="DMC Madeira">
+                </a>
+                <button class="header__mobile-close">
+                    <img src="assets/icons/header-icon-close-mobile.svg" alt="Close">
+                </button>
+            </div>
+            <ul class="header__mobile-list">
+                <li>
+                    <a href="contact-us.html" class="header__mobile-link">
+                        Who we are
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="experiences.html" class="header__mobile-link">
+                        Experiences
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="shorex.html" class="header__mobile-link">
+                        Shorex
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile-link">
+                        Groups & Incentives
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="insider.html" class="header__mobile-link">
+                        Insider
+                        <img src="assets/icons/header-icon-arrowright-mobile.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__mobile-footer">
+                <div class="header__mobile-language">
+                    <img src="assets/icons/footer-icon-language.svg" alt="">
+                    <a href="#">Portuguese</a>
+                    <span>|</span>
+                    <a href="#" class="active">English</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="article-page">
@@ -287,15 +352,15 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__main">
                 <div class="footer__brand">
-                    <a href="/" class="footer__logo">
+                    <a href="index.html" class="footer__logo">
                         <img src="assets/logos/footer-logo-dmcmadeira-white.svg" alt="DMC Madeira">
                     </a>
                 </div>
+
                 <div class="footer__column">
                     <h4 class="footer__column-title">Contact us</h4>
                     <div class="footer__contact-item">
@@ -311,24 +376,40 @@
                         <span>Avenida do Mar e das Comunidades Madeirenses 15, 1st floor,<br>Funchal, Madeira, Portugal</span>
                     </div>
                 </div>
+
                 <div class="footer__column">
                     <h4 class="footer__column-title">Support</h4>
                     <ul class="footer__links">
                         <li><a href="#" class="footer__link">Terms & conditions</a></li>
-                        <li><a href="#" class="footer__link">Privacy & cookie policies</a></li>
-                        <li><a href="#" class="footer__link">Security / CSIRT</a></li>
-                        <li><a href="#" class="footer__link footer__link--external">Livro de reclamações <img src="assets/icons/footer-icon-externallink.svg" alt=""></a></li>
+                        <li><a href="privacy-policy.html" class="footer__link">Privacy & cookie policies</a></li>
+                        <li><a href="security-csirt.html" class="footer__link">Security / CSIRT</a></li>
+                        <li>
+                            <a href="#" class="footer__link footer__link--external">
+                                Livro de reclamações
+                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="footer__column">
                     <h4 class="footer__column-title">Social media</h4>
                     <div class="footer__social">
-                        <a href="#" class="footer__social-link"><img src="assets/icons/footer-icon-facebook.svg" alt="Facebook"></a>
-                        <a href="#" class="footer__social-link"><img src="assets/icons/footer-icon-instagram.svg" alt="Instagram"></a>
-                        <a href="#" class="footer__social-link"><img src="assets/icons/footer-icon-youtube.svg" alt="YouTube"></a>
-                        <a href="#" class="footer__social-link"><img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-youtube.svg" alt="YouTube">
+                        </a>
+                        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/footer-icon-linkedin.svg" alt="LinkedIn">
+                        </a>
                     </div>
                 </div>
+
                 <div class="footer__column">
                     <div class="footer__language">
                         <img src="assets/icons/footer-icon-language.svg" alt="">
@@ -337,15 +418,23 @@
                         <a href="#" class="active">English</a>
                     </div>
                 </div>
-            </div>
+        </div>
+        
             <div class="footer__partnerships">
                 <span class="footer__partnerships-title">Partnerships:</span>
                 <div class="footer__partnerships-logos">
-                    <a href="#" class="footer__partnership-logo"><img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands"></a>
-                    <a href="#" class="footer__partnership-logo"><img src="assets/logos/footer-logo-apavt.png" alt="APAVT"></a>
-                    <a href="#" class="footer__partnership-logo"><img src="assets/logos/footer-logo-acif.png" alt="ACIF"></a>
-                </div>
-            </div>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-madeiraislands.svg" alt="Madeira Islands">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-apavt.png" alt="APAVT">
+                    </a>
+                    <a href="#" class="footer__partnership-logo">
+                        <img src="assets/logos/footer-logo-acif.png" alt="ACIF">
+            </a>
+        </div>
+    </div>
+
             <div class="footer__bottom">
                 <p class="footer__copyright">Copyright © 2024 DMC Madeira. All rights reserved.</p>
                 <p class="footer__tagline">Your Partner Creating Travel Memories.</p>
@@ -353,17 +442,17 @@
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
     <div class="cookie-banner">
-        <p class="cookie-banner__text">We use cookies to enhance your experience. See our <a href="#">Cookies Policy</a>.</p>
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
         <div class="cookie-banner__buttons">
             <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
             <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
         </div>
     </div>
 
-    <a href="https://wa.me/351291000000" class="whatsapp-float" aria-label="Contact us on WhatsApp">
-        <img src="assets/icons/button-whatsapp-float.svg" alt="">
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
     </a>
 
     <!-- Lightbox Modal -->
