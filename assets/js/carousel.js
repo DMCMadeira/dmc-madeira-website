@@ -174,8 +174,8 @@ class DMCCarousel {
         }
     }
 
-    goTo(index) {
-        if (this.isAnimating || index === this.currentIndex) return;
+    goTo(index, force = false) {
+        if (this.isAnimating || (!force && index === this.currentIndex)) return;
 
         this.isAnimating = true;
         this.currentIndex = Math.max(0, Math.min(index, this.maxIndex));
@@ -183,6 +183,8 @@ class DMCCarousel {
         const currentOptions = this.getResponsiveOptions();
         const translateX = this.currentIndex * (this.slideWidth + currentOptions.gap);
 
+        // Apply transform with vendor prefixes
+        this.track.style.webkitTransform = `translateX(-${translateX}px)`;
         this.track.style.transform = `translateX(-${translateX}px)`;
 
         this.updateControls();

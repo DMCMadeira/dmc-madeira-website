@@ -680,5 +680,87 @@
     <!-- Scripts -->
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <!-- Why Choose Carousel (Simple Implementation) -->
+    <script>
+    (function() {
+        const wrapper = document.querySelector('.why-choose__carousel-wrapper');
+        if (!wrapper) return;
+
+        const track = wrapper.querySelector('.why-choose__carousel-track');
+        const cards = track.querySelectorAll('.why-choose__card');
+        const prevBtn = wrapper.querySelector('[data-carousel-prev]');
+        const nextBtn = wrapper.querySelector('[data-carousel-next]');
+        const progressBar = wrapper.querySelector('[data-carousel-progress]');
+        
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        const maxIndex = totalCards - 1;
+
+        function updateCarousel() {
+            // Calculate card width including gap
+            const card = cards[0];
+            const cardStyle = window.getComputedStyle(card);
+            const cardWidth = card.offsetWidth;
+            const gap = parseInt(window.getComputedStyle(track).gap) || 16;
+            
+            const translateX = currentIndex * (cardWidth + gap);
+            track.style.transform = 'translateX(-' + translateX + 'px)';
+            
+            // Update progress bar
+            if (progressBar) {
+                const progress = ((currentIndex + 1) / totalCards) * 100;
+                progressBar.style.width = progress + '%';
+            }
+            
+            // Update button states
+            if (prevBtn) prevBtn.disabled = currentIndex === 0;
+            if (nextBtn) nextBtn.disabled = currentIndex >= maxIndex;
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+        }
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0 && currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateCarousel();
+                } else if (diff < 0 && currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            }
+        }, { passive: true });
+
+        // Initial setup
+        updateCarousel();
+    })();
+    </script>
 </body>
 </html>

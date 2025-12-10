@@ -109,6 +109,7 @@
 
 @media (max-width: 768px) {
     .hero {
+        margin-top: 2rem;
         padding: var(--spacing-md);
         padding-top: calc(var(--spacing-md) + 70px);
     }

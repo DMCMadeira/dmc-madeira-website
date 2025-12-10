@@ -47,7 +47,7 @@
 .why-choose__card-divider {
     height: 1px;
     width: 100%;
-    background-color: var(--color-border-subtle);
+    background-color: #D8C49B;
     margin: var(--spacing-md) 0 var(--spacing-lg) 0;
     border: none;
 }
@@ -86,12 +86,14 @@
 
 .why-choose__carousel-track {
     display: flex;
+    flex-wrap: nowrap;
     gap: var(--spacing-lg);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     padding-bottom: var(--spacing-md);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    will-change: transform;
 }
 
 .why-choose__carousel-track::-webkit-scrollbar {
@@ -99,8 +101,8 @@
 }
 
 .why-choose__carousel-track .why-choose__card {
-    flex: 0 0 280px;
-    scroll-snap-align: start;
+    flex: 0 0 calc(100% - 40px);
+    min-width: calc(100% - 40px);
 }
 
 .why-choose__carousel-controls {

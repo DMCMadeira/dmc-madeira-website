@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initCookieBanner();
     initExperiencesCarousel();
-    initWhyChooseCarousel();
+    // initWhyChooseCarousel(); // Handled by inline script in index.html
     initSmoothScroll();
 });
 
@@ -163,23 +163,34 @@ function initWhyChooseCarousel() {
     
     if (!carouselContainer || typeof DMCCarousel === 'undefined') return;
 
-    // Only initialize on mobile
-    if (window.innerWidth <= 768) {
-        new DMCCarousel(carouselContainer, {
-            slidesPerView: 1.2,
-            gap: 16,
-            autoplay: false,
-            infinite: false
-        });
+    let carouselInstance = null;
+
+    function createCarousel() {
+        // Only initialize if visible (container has width)
+        if (carouselContainer.offsetWidth > 0 && !carouselInstance) {
+            carouselInstance = new DMCCarousel(carouselContainer, {
+                slidesPerView: 1.2,
+                gap: 16,
+                autoplay: false,
+                infinite: false
+            });
+        }
     }
 
-    // Re-initialize on resize
+    // Try to initialize immediately
+    createCarousel();
+
+    // Also try on resize (for when switching to mobile view)
     let resizeTimeout;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            if (window.innerWidth <= 768) {
-                // Reinitialize if needed
+            if (!carouselInstance && carouselContainer.offsetWidth > 0) {
+                createCarousel();
+            } else if (carouselInstance) {
+                // Recalculate dimensions on resize
+                carouselInstance.calculateDimensions();
+                carouselInstance.goTo(carouselInstance.currentIndex, true);
             }
         }, 200);
     });
