@@ -117,7 +117,7 @@
 
 :root {
     /* Colors */
-    --color-primary-dark: #0a1a1f;
+    --color-primary-dark: #0D2D18;
     --color-primary-darker: #061215;
     --color-secondary-dark: #0f2a2f;
     --color-accent-gold: #c9a962;
@@ -335,7 +335,7 @@ p:last-child {
 }
 
 .btn--dark {
-    background-color: var(--color-primary-dark);
+    background: linear-gradient(90deg, #0B2D3C 0%, #11250E 100%);
     color: var(--color-text-white);
     border: 1px solid var(--color-primary-dark);
 }

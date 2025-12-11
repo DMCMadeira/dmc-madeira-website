@@ -37,9 +37,6 @@
     width: auto;
 }
 
-/* Column */
-.footer__column {}
-
 .footer__column-title {
     font-size: 0.875rem;
     font-weight: var(--font-weight-semibold);
@@ -179,19 +176,17 @@
 }
 
 .footer__partnerships-title {
-    font-size: 0.8125rem;
-    color: var(--color-text-muted);
+    color: var(--color-text-white);
 }
 
 .footer__partnerships-logos {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2xl);
+    gap: 2.75rem;
 }
 
 .footer__partnership-logo {
     height: 40px;
-    opacity: 0.6;
     transition: opacity var(--transition-fast);
 }
 
