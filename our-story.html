@@ -44,7 +44,7 @@
                         </div>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">
+                        <a href="experiences.html" class="header__nav-link">
                             Experiences
                             <img src="assets/icons/header-icon-chevrondown.svg" alt="">
                         </a>
@@ -227,7 +227,7 @@
                     <h2 class="story-continues__title">Our story continues</h2>
                     <p class="story-continues__text">The future of DMC Madeira is built on innovation, digital tools, AI-assisted logistics, and eco-conscious processes, without ever losing the human touch that defines us. As Madeira evolves, we evolve with it, staying loyal to what matters most: relationships, trust, and purpose.</p>
                 </div>
-                <div class="story-continues__video">
+                <div class="story-continues__video" data-video-id="9drTdFm1xow">
                     <picture>
                         <img src="assets/images/ourstory-video-placeholder.webp" 
                              srcset="assets/images/ourstory-video-placeholder.webp 1x, assets/images/ourstory-video-placeholder@2x.webp 2x"
@@ -367,7 +367,7 @@
     </footer>
 
     <div class="cookie-banner">
-        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="#">Cookies Policy</a>.</p>
+        <p class="cookie-banner__text">We use cookies to enhance your experience, analyse traffic, and ensure website functionality. Manage your preferences at any time. See our <a href="privacy-policy.html">Cookies Policy</a>.</p>
         <div class="cookie-banner__buttons">
             <button class="cookie-banner__btn cookie-banner__btn--accept">Accept all</button>
             <button class="cookie-banner__btn cookie-banner__btn--reject">Reject non-essential</button>
@@ -379,8 +379,77 @@
         <img src="assets/icons/button-whatsapp-float.svg" alt="Contact us on WhatsApp">
     </a>
 
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <button class="video-modal__close" aria-label="Close video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="video-modal__content">
+            <div class="video-modal__wrapper" id="video-wrapper">
+                <iframe id="video-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Video Modal functionality
+        const videoModal = document.getElementById('video-modal');
+        const videoIframe = document.getElementById('video-iframe');
+        const videoCloseBtn = document.querySelector('.video-modal__close');
+        const playButton = document.querySelector('.story-continues__play');
+        const videoContainer = document.querySelector('.story-continues__video');
+
+        function openVideoModal() {
+            const videoId = videoContainer.dataset.videoId;
+            if (videoId && videoIframe) {
+                // Build the YouTube embed URL
+                const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+                
+                // Set src only when opening modal
+                videoIframe.src = embedUrl;
+                
+                videoModal.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeVideoModal() {
+            videoModal.classList.remove('is-open');
+            document.body.style.overflow = '';
+            
+            // Stop video by removing src and reloading iframe
+            if (videoIframe) {
+                videoIframe.src = '';
+            }
+        }
+
+        if (playButton) {
+            playButton.addEventListener('click', openVideoModal);
+        }
+
+        if (videoCloseBtn) {
+            videoCloseBtn.addEventListener('click', closeVideoModal);
+        }
+
+        // Close on backdrop click
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                closeVideoModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && videoModal.classList.contains('is-open')) {
+                closeVideoModal();
+            }
+        });
+    </script>
 </body>
 </html>

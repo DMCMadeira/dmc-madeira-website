@@ -4,19 +4,19 @@
 
 .whatsapp-float {
     position: fixed;
-    bottom: var(--spacing-xl);
-    right: var(--spacing-xl);
+    bottom: 24px;
+    right: 24px;
     z-index: var(--z-fixed);
     display: flex;
+    transform: translateY(200%);
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    width: 3.25rem;
+    height: 3.25rem;
     background-color: var(--color-text-muted);
     border-radius: 50%;
     transition: transform var(--transition-base), bottom var(--transition-base);
     cursor: pointer;
-    /* Concentric rings using box-shadow */
     box-shadow: 
         0 0 0 8px rgba(216, 196, 155, 0.15),
         0 0 0 16px rgba(216, 196, 155, 0.1),

@@ -3,8 +3,8 @@
    ============================================ */
 .cookie-banner {
     position: fixed;
-    bottom: var(--spacing-xl);
-    left: var(--container-padding);
+    bottom: 24px;
+    left: 24px;
     transform: translateY(150%);
     z-index: var(--z-fixed);
     display: flex;
@@ -12,10 +12,10 @@
     justify-content: space-between;
     gap: var(--spacing-xl);
     width: 60%;
-    max-width: 900px;
-    padding: var(--spacing-lg) var(--spacing-xl);
+    max-width: 53.75rem;
+    padding: 1rem;
     background-color: var(--color-cookie-bg);
-    border-radius: var(--radius-2xl);
+    border-radius: 1rem;
     transition: transform var(--transition-slow);
 }
 
@@ -29,6 +29,7 @@
 
 .cookie-banner__text {
     flex: 1;
+    margin: 0;
     font-size: 0.8125rem;
     line-height: 1.6;
     color: var(--color-primary-dark);
@@ -49,7 +50,7 @@
 .cookie-banner__buttons {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 1rem;
     flex-shrink: 0;
 }
 
