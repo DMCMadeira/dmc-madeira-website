@@ -86,7 +86,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-lg);
-    aspect-ratio: 4/5;
 }
 
 .family-nature__card-image picture,
@@ -148,7 +147,6 @@
 .family-sea__block-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    aspect-ratio: 4/3;
 }
 
 .family-sea__block-image picture,
@@ -281,7 +279,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-lg);
-    aspect-ratio: 4/5;
 }
 
 .family-safety__card-image picture,

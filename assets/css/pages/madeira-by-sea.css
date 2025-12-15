@@ -40,11 +40,10 @@
     overflow: hidden;
 }
 
-.sea-intro__image img {
+.sea-intro__image img {     
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 4/3;
 }
 
 /* Private Yacht Charters Section */
@@ -76,10 +75,9 @@
     margin-bottom: var(--spacing-xl);
 }
 
-.sea-yacht__card-image img {
+.sea-yacht__card-image img {     
     width: 100%;
     height: auto;
-    aspect-ratio: 16/10;
     object-fit: cover;
 }
 
@@ -157,10 +155,9 @@
     overflow: hidden;
 }
 
-.sea-dolphins__block-image img {
+.sea-dolphins__block-image img {     
     width: 100%;
     height: auto;
-    aspect-ratio: 16/10;
     object-fit: cover;
 }
 
@@ -247,10 +244,9 @@
     margin-bottom: var(--spacing-xl);
 }
 
-.sea-adventures__card-image img {
+.sea-adventures__card-image img {     
     width: 100%;
     height: auto;
-    aspect-ratio: 3/4;
     object-fit: cover;
 }
 
@@ -297,10 +293,9 @@
     margin-bottom: var(--spacing-xl);
 }
 
-.sea-portosanto__card-image img {
+.sea-portosanto__card-image img {     
     width: 100%;
     height: auto;
-    aspect-ratio: 16/10;
     object-fit: cover;
 }
 
@@ -362,7 +357,6 @@
 .sea-travelers__block-image img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4/3;
     object-fit: cover;
 }
 

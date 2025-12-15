@@ -54,7 +54,6 @@
 
 .experiences__card-image {
     position: relative;
-    aspect-ratio: 3 / 4;
     border-radius: var(--radius-lg);
     overflow: hidden;
     display: block;
@@ -145,18 +144,6 @@
     width: 16px;
     height: 16px;
     opacity: 0.8;
-}
-
-/* Vertical Line Decoration */
-.experiences__decoration {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 60%;
-    background: linear-gradient(180deg, transparent 0%, var(--color-accent-gold) 30%, var(--color-accent-gold) 70%, transparent 100%);
-    opacity: 0.3;
 }
 
 /* ============================================

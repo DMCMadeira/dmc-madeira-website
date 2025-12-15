@@ -81,9 +81,8 @@
 
 .gastro-legacy__card-image {
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: hidden;   
     margin-bottom: var(--spacing-xl);
-    aspect-ratio: 16/10;
 }
 
 .gastro-legacy__card-image picture,
@@ -211,7 +210,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-xl);
-    aspect-ratio: 4/3;
 }
 
 .gastro-authentic__card-image picture,
@@ -655,10 +653,6 @@
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    .gastro-signature__card-image {
-        aspect-ratio: 4/3;
     }
     
     /* Hide table, show accordion on mobile */

@@ -92,12 +92,11 @@
     color: var(--color-text-muted);
     max-width: 900px;
 }
-
+    
 .story-continues__video {
     position: relative;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    aspect-ratio: 16/9;
     overflow: hidden;
 }
 
@@ -231,7 +230,6 @@
 .values__card-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    aspect-ratio: 3/4;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -449,10 +447,6 @@
     .values__card:nth-child(2),
     .values__card:nth-child(3) {
         margin-top: 0;
-    }
-
-    .values__card-image {
-        aspect-ratio: 4/3;
     }
 
     .cta-section {

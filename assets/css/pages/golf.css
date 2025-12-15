@@ -73,7 +73,6 @@
 .golf-courses__block-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    aspect-ratio: 4/3;
 }
 
 .golf-courses__block-image picture,
@@ -144,7 +143,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-lg);
-    aspect-ratio: 4/5;
 }
 
 .golf-tailormade__card-image picture,
@@ -273,7 +271,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
-    aspect-ratio: 1/1;
 }
 
 .golf-stays__card-image picture,
@@ -405,7 +402,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-lg);
-    aspect-ratio: 4/5;
 }
 
 .golf-beyond__card-image picture,

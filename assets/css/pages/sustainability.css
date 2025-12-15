@@ -61,7 +61,6 @@
 .real-actions__image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    aspect-ratio: 1/1;
 }
 
 .real-actions__image img {
@@ -323,7 +322,6 @@
         border-radius: var(--radius-lg);
         overflow: hidden;
         margin-bottom: var(--spacing-lg);
-        aspect-ratio: 16/9;
     }
 
     .real-actions__item-image img {
@@ -352,7 +350,6 @@
 
     .join__image {
         order: 1;
-        aspect-ratio: 4/3;
     }
 
     .join__content {

@@ -207,6 +207,7 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -309,11 +310,12 @@ p:last-child {
 }
 
 .btn--glass {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%), rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.80);
     color: var(--color-text-muted);
-    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn--glass:hover {

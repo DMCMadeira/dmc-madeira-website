@@ -114,7 +114,6 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-lg);
-    aspect-ratio: 4/5;
 }
 
 .cultural-artisans__card-image picture,
@@ -518,9 +517,6 @@
         margin: 0 auto;
     }
     
-    .cultural-artisans__card-image {
-        aspect-ratio: 4/5;
-    }
     
     .cultural-statement {
         padding: var(--spacing-3xl) 0;

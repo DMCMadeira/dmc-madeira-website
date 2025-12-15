@@ -115,17 +115,23 @@
 /* Social Links */
 .footer__social {
     display: flex;
+    flex-direction: column;
     gap: var(--spacing-sm);
+
+    .footer__link {
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+.footer__social_mobile {
+    display: none;
 }
 
 .footer__social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 50%;
     transition: all var(--transition-fast);
 }
 
@@ -271,5 +277,20 @@
         flex-direction: column;
         gap: var(--spacing-md);
         text-align: center;
+    }
+
+    .footer__social_mobile {
+        display: flex;
+        flex-direction: row;
+        gap: var(--spacing-md);
+
+        .footer__link img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    
+    .footer__social {
+        display: none;
     }
 }
