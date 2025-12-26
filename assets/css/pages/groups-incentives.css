@@ -4,18 +4,18 @@
 
 /* Intro Section */
 .groups-intro {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .groups-intro__content {
-    max-width: 800px;
+    max-width: 56.625rem;
 }
 
 .groups-intro__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-lg);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .groups-intro__text:last-child {
@@ -24,51 +24,66 @@
 
 /* Incentive Travel Section */
 .groups-incentive {
-    padding: var(--spacing-4xl) 0;
+    padding:  0 0 3.5rem 0;
 }
 
 .groups-incentive__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4xl);
+    gap: 1.5rem;
     align-items: start;
 }
 
 .groups-incentive__content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    height: 100%;
+    gap: 1rem;
 }
 
 .groups-incentive__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .groups-incentive__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+}
+
+.groups-incentive__text_heading, .groups-incentive__text {
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+
 }
 
 .groups-incentive__text {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .groups-incentive__features-title {
-    font-size: 1.25rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-top: var(--spacing-lg);
+    color: #D8C49B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 2rem;
 }
 
 .groups-incentive__features {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 .groups-incentive__feature {
@@ -86,68 +101,79 @@
 }
 
 .groups-incentive__feature img {
-    width: 24px;
-    height: 24px;
+    width: 1.625rem;
+    height: 1.625rem;
     flex-shrink: 0;
-    margin-top: 2px;
 }
 
 .groups-incentive__feature span {
-    font-size: 1rem;
-    line-height: 1.5;
+    color: var(--Accent, #F7F2E5);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.groups-incentive__title_mobile {
+    display: none;
 }
 
 .groups-incentive__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
+    height: 55.75rem;
     overflow: hidden;
 }
 
-.groups-incentive__image img {
+.groups-incentive__image img, .groups-incentive__image picture {
     width: 100%;
+    display: block;
     height: 100%;
     object-fit: cover;
 }
 
 .groups-corporate {
-    padding: var(--spacing-3xl) 0;
-    padding-bottom: 0 !important;
+    padding: 3.5rem 0;
 }
 
 .groups-corporate__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4xl);
+    gap:6.62rem;
     align-items: center;
-    margin-bottom: var(--spacing-4xl);
 }
 
 .groups-corporate__image {
-    border-radius: var(--radius-lg);
+    width: 32.375rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.groups-corporate__image img {
+.groups-corporate__image img, .groups-corporate__image picture {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .groups-corporate__content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .groups-corporate__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .groups-corporate__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
+    color: #D8C49B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .groups-corporate__subsubtitle {
@@ -157,94 +183,109 @@
 }
 
 .groups-corporate__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    color: var(--color-text-muted);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-.groups-corporate__features-title {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
+.groups-features {
+    padding: 3.5rem 0;
 }
 
-.groups-corporate__feature-divider {
+.groups-features__title {
+    color: #D8C49B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 2.75rem;
+}
+
+.groups-features__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.groups-features__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.groups-features__feature img {
+    width: 1.625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+}
+
+.groups-features__feature span {
+    color: #F7F2E5;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.groups-features__feature-divider {
     height: 1px;
     width: 100%;
     background-color: #D8C49B;
     border: none;
 }
 
-.groups-corporate__features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-xl);
-}
-
-.groups-corporate__feature {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-}
-
-.groups-corporate__feature img {
-    width: 32px;
-    height: 32px;
-}
-
-.groups-corporate__feature span {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-muted);
-}
-
 /* Team Building Section */
 .groups-teambuilding {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .groups-teambuilding__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .groups-teambuilding__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .groups-teambuilding__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 700px;
-    margin-bottom: var(--spacing-2xl);
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 4rem;
 }
 
 .groups-teambuilding__formats-title {
-    font-size: 1.25rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: -0.035rem;
+    margin-bottom: 2.25rem;
 }
 
 .groups-teambuilding__carousel-wrapper {
     position: relative;
-    margin-bottom: var(--spacing-3xl);
 }
 
 .groups-teambuilding__carousel {
     display: flex;
-    gap: var(--spacing-lg);
+    gap: 1.56rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: var(--spacing-md);
 }
 
 .groups-teambuilding__carousel::-webkit-scrollbar {
@@ -252,27 +293,30 @@
 }
 
 .groups-teambuilding__card {
-    flex: 0 0 calc(20% - var(--spacing-lg));
+    flex: 0 0 calc(20% - 1.56rem);
     min-width: 180px;
     scroll-snap-align: start;
 }
 
 .groups-teambuilding__card-image {
-    border-radius: var(--radius-lg);
+    height: 13.75rem;
+    border-radius: 1.5rem;
     overflow: hidden;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1.5rem;
 }
 
-.groups-teambuilding__card-image img {
+.groups-teambuilding__card-image img, .groups-teambuilding__card-image picture {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .groups-teambuilding__card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .groups-teambuilding__arrows {
@@ -286,9 +330,7 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 1px solid var(--color-text-white);
-    background: transparent;
-    color: var(--color-text-white);
+    background: #F7F2E5;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -301,137 +343,109 @@
     color: var(--color-primary-dark);
 }
 
+.groups-teambuilding__groupsize {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3.5rem 0;
+}
+
 .groups-teambuilding__groupsize-title {
+    color: #FFF;
     font-size: 2rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .groups-teambuilding__groupsize-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 700px;
-}
-
-/* Partnership Marquee Section */
-.partnership-marquee {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-2xl) 0;
-    overflow: hidden;
-    border-top: 0;
-}
-
-.partnership-marquee .text-gold {
-    color: var(--color-text-muted);
-    padding: 0;
-    font-weight: var(--font-weight-semibold);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 30s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+    max-width: 50.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Executive Retreats Section */
 .groups-retreats {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .groups-retreats__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4xl);
+    gap: 1.56rem;
     align-items: center;
-    margin-bottom: var(--spacing-4xl);
+    margin-bottom: 4.5rem;
 }
 
 .groups-retreats__content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .groups-retreats__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .groups-retreats__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .groups-retreats__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .groups-retreats__image {
-    border-radius: var(--radius-lg);
+    height: 21.625rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.groups-retreats__image img {
+.groups-retreats__image img, .groups-retreats__image picture {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .groups-retreats__features-title {
+    color: var(--secondary-500, #D8C49B);
     font-size: 2rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-xl);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 2.75rem;
 }
 
 .groups-retreats__features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-xl);
+    gap: 1.5rem;
 }
 
 .groups-retreats__feature {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: 1rem;
 }
 
 .groups-retreats__feature img {
-    width: 32px;
-    height: 32px;
+    width: 1.625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
 }
 
 .groups-retreats__feature-divider {
@@ -442,57 +456,65 @@
 }
 
 .groups-retreats__feature span {
-    font-size: 1rem;
+    color: #F7F2E5;
     font-size: 1.125rem;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Our Clients Section */
 .groups-clients {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .groups-clients__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .groups-clients__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 700px;
-    margin-bottom: var(--spacing-2xl);
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 2.75rem;
 }
 
 .groups-clients__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 1.44rem;
 }
 
 .groups-clients__tag {
     max-width: 14.0625rem;
     padding: 1.5rem 1.3rem;
     border-radius: 1.5rem;
-    font-size: 1rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary-dark);
     background: rgba(247, 242, 229, 1);
+    color: #0D2D18;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    display: flex;
+    align-items: center;
 }
 
 /* Sample Itinerary Section */
 .groups-itinerary {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .groups-itinerary__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 /* Desktop Table */
@@ -506,29 +528,34 @@
 }
 
 .groups-itinerary__table thead th {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #FEFEFE;
     text-align: left;
-    font-size: 1rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-muted);
-    padding: var(--spacing-lg) var(--spacing-md);
-    border-bottom: 1px solid white
+}
+
+.groups-itinerary__table thead th:first-child {
+    padding-left: 0;
+}
+
+.groups-itinerary__table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .groups-itinerary__table tbody td {
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 1.5rem 1rem;
+    color: #D8C49B;
     font-size: 1.125rem;
-    color: var(--color-text-muted);
-    border-bottom: 1px solid white
+    font-weight: 400;
+    border-bottom: 1px solid #FEFEFE;
+    line-height: 1.75rem;
 }
 
 .groups-itinerary__table tbody td:first-child {
-    font-weight: var(--font-weight-medium);
-    width: 180px;
-}
-
-.groups-itinerary__table tbody td:nth-child(2) {
-    font-weight: var(--font-weight-medium);
-    width: 250px;
+    padding-left: 0;
 }
 
 /* Mobile Accordion */
@@ -545,7 +572,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: var(--spacing-lg) 0;
+    padding: 1.5rem 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -554,13 +581,13 @@
 
 .groups-itinerary__accordion-title {
     font-size: 1.25rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
+    font-weight: 600;
+    color: #FFF;
 }
 
 .groups-itinerary__accordion-icon {
     font-size: 1.5rem;
-    color: var(--color-text-white);
+    color: #FFF;
     transition: transform 0.3s ease;
 }
 
@@ -572,26 +599,31 @@
 
 .groups-itinerary__accordion-item.active .groups-itinerary__accordion-content {
     max-height: 200px;
-    padding-bottom: var(--spacing-lg);
+    padding-bottom: 1.5rem;
 }
 
 .groups-itinerary__accordion-content p {
     font-size: 1rem;
     line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-sm);
+    color: #D8C49B;
+}
+
+.groups-itinerary__accordion-content p strong {
+    color: #F7F2E5;
 }
 
 .groups-itinerary__note {
-    margin-top: var(--spacing-2xl);
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    margin-top: 2.25rem;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    max-width: 50.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Why DMC Madeira Section */
 .groups-why {
-    padding: var(--spacing-4xl) 0;
+    padding: 2rem 0 4rem 0;
 }
 
 .groups-why__item-divider {
@@ -599,38 +631,40 @@
     width: 100%;
     background-color: #D8C49B;
     border: none;
-    margin-bottom: 1rem;
 }
 
 .groups-why__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 2.75rem;
 }
 
 .groups-why__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl) var(--spacing-3xl);
+    gap: 1.5rem 2.75rem;
 }
 
 .groups-why__item {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    padding-bottom: var(--spacing-lg);
+    gap: 1rem;
 }
 
 .groups-why__item img {
-    width: 32px;
-    height: 32px;
+    width: 1.625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
 }
 
 .groups-why__item span {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #D8C49B;
 }
 
 /* CTA Section */
@@ -692,7 +726,12 @@
     }
     
     .groups-corporate__layout {
+        grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
+    }
+
+    .groups-corporate__image {
+        width: 100%;
     }
     
     .groups-corporate__features-grid {
@@ -717,17 +756,168 @@
 }
 
 @media (max-width: 768px) {
-    .groups-intro {
-        padding: var(--spacing-3xl) 0;
+    .groups-clients {
+        padding: 2rem 0;
+    }
+
+    .groups-clients__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .groups-clients__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .groups-clients__tags {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .groups-clients__tag {
+        max-width: 100%;
+        padding: 2rem 1.3rem;
+        justify-content: center;
+        text-align: center;
+        color: #0D2D18;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+    }
+
+    .groups-retreats {
+        padding: 2.75rem 0;
+    }
+
+    .groups-retreats__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .groups-retreats__subtitle {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .groups-retreats__text {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
+    .groups-retreats__image {
+        height: 16rem;
+    }
+
+    .groups-retreats__features-title {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
     }
     
+    .groups-retreats__layout {
+        margin-bottom: 2.75rem;
+    }
+
+    .groups-retreats__features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+
+    .groups-teambuilding__groupsize {
+        padding: 2rem 0;
+    }
+
+    .groups-teambuilding__groupsize-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .groups-features {
+        padding: 0 0 2.75rem 0;
+    }
+
+    .groups-features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+
+    .groups-features__title {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .groups-corporate {
+        padding: 0 0 2.75rem 0;
+    }
+
+    .groups-corporate__layout {
+        gap: 2rem;
+    }
+
+    .groups-corporate__image {
+        height: 16rem;
+    }
+
+    .groups-corporate__content {
+        gap: 2rem;
+    }
+
+    .groups-corporate__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .groups-corporate__subtitle {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .groups-intro {
+        padding: 2.75rem 0;
+    }
+    
+    .groups-incentive__title_mobile {
+        display: block;
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        order: -1;
+    }
+
     .groups-incentive {
-        padding: var(--spacing-3xl) 0;
+        padding: 0 0 3.5rem 0;
     }
     
     .groups-incentive__layout {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 2rem;
     }
     
     .groups-incentive__image {
@@ -735,32 +925,25 @@
     }
     
     .groups-incentive__title {
-        font-size: 2rem;
+        display: none;
+    }
+
+    .groups-incentive__features-title {
+        margin-bottom: 0;
+    }
+
+    .groups-incentive__content {
+        gap: 2rem;
+    }
+    .groups-incentive__subtitle {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
     }
     
     .groups-incentive__features {
         grid-template-columns: 1fr;
-    }
-    
-    .groups-corporate {
-        padding: var(--spacing-3xl) 0;
-    }
-    
-    .groups-corporate__layout {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
-    
-    .groups-corporate__image {
-        order: -1;
-    }
-    
-    .groups-corporate__title {
-        font-size: 2rem;
-    }
-    
-    .groups-corporate__features-grid {
-        grid-template-columns: 1fr 1fr;
     }
     
     .groups-teambuilding {
@@ -807,11 +990,17 @@
     }
     
     .groups-itinerary {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0;
     }
     
     .groups-itinerary__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        padding-bottom: 1.5rem;
+        margin: 0;
     }
     
     .groups-itinerary__table-wrapper {
@@ -820,6 +1009,36 @@
     
     .groups-itinerary__accordion {
         display: block;
+    }
+
+    .groups-itinerary__accordion-icon {
+        transition: transform 0.5s ease;
+    }
+
+    .groups-itinerary__accordion-item.active .groups-itinerary__accordion-icon {
+        transform: rotate(180deg);
+    }
+
+    .groups-itinerary__accordion-title {
+        color: #FFF;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .groups-itinerary__accordion-content {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
+    .groups-itinerary__note {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
     }
     
     .groups-why {

@@ -4,18 +4,19 @@
 
 /* Press Intro Section */
 .press-intro {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0;
 }
 
 .press-intro__content {
-    max-width: 800px;
+    max-width: 50.5rem;
 }
 
 .press-intro__content p {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-lg);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
 }
 
 .press-intro__content p:last-child {
@@ -24,49 +25,52 @@
 
 /* Industry Partnerships Section */
 .industry-partnerships {
-    padding: var(--spacing-4xl) 0;
+    padding: 2rem 0 3.5rem 0;
 }
 
 .industry-partnerships__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .industry-partnerships__subtitle {
-    font-family: var(--font-primary);
-    font-size: clamp(1.125rem, 2vw, 1.375rem);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-xl);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .industry-partnerships__text {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-3xl);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 /* Trade Events */
 .trade-events {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-3xl);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .trade-event {
-    background-color: var(--color-text-muted);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
+    background-color: #D8C49B;
+    border-radius: 1.5rem;
+    padding: 1.38rem 1.19rem;
 }
 
 .trade-event__logo {
-    height: 3rem;
-    margin-bottom: var(--spacing-lg);
+    height: 3.125rem;
+    margin-bottom: 1rem;
 }
 
 .trade-event__logo img {
@@ -76,28 +80,31 @@
 }
 
 .trade-event__description {
-    font-size: 0.875rem;
-    color: var(--color-primary-dark);
-    line-height: 1.5;
+    color: #0D2D18;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .industry-partnerships__footer {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Media Mentions Section */
 .media-mentions {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0;
 }
 
 .media-mentions__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 /* Media Carousel */
@@ -113,84 +120,81 @@
     transition: transform 0.5s ease;
 }
 
-/* Media Card - Flip Card */
+/* Media Card - Base */
 .media-card {
     flex: 0 0 calc(25% - 1.125rem);
     min-width: 200px;
     height: 32.5rem;
-    perspective: 1000px;
-    cursor: pointer;
-}
-
-.media-card__inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.media-card:hover .media-card__inner {
-    transform: rotateY(180deg);
-}
-
-.media-card__front,
-.media-card__back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.media-card__front {
-    background-color: var(--color-secondary-dark);
+.media-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.media-card__front img {
+/* Image Card */
+.media-card--image {
+    background-color: #1a1a1a;
+}
+
+.media-card--image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.media-card__back {
-    background-color: var(--color-text-muted);
-    transform: rotateY(180deg);
-    padding: var(--spacing-xl);
+.media-card--image:hover img {
+    transform: scale(1.05);
+}
+
+/* Info Card */
+.media-card--info {
+    background-color: #D8C49B;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .media-card__title {
+    color: #0D2D18;
     font-size: 1.125rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .media-card__label {
-    font-size: 0.75rem;
-    color: var(--color-primary-dark);
+    color: #0D2D18;
+    font-size: 0.875rem;
+    font-weight: 400;
     opacity: 0.7;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 0.25rem;
 }
 
 .media-card__source {
-    font-size: 0.875rem;
-    color: var(--color-primary-dark);
+    color: #0D2D18;
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: auto;
 }
 
 .media-card__link {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-xs);
+    gap: 0.5rem;
+    color: #0D2D18;
     font-size: 0.875rem;
-    color: var(--color-primary-dark);
+    font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 2px;
-    margin-top: var(--spacing-lg);
+    margin-top: 1.5rem;
 }
 
 .media-card__link img {
@@ -199,72 +203,91 @@
     filter: brightness(0);
 }
 
-/* Carousel Progress */
+.media-carousel__track {
+    margin-bottom: 2.75rem;
+}
+
+.media-carousel__controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
 .media-carousel__progress {
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: var(--spacing-3xl) 0 var(--spacing-xl);
-    border-radius: 2px;
-    overflow: hidden;
+    flex: 1;
+    width: 100%;
+    height: 0.35rem;
+    background-color: var(--color-border-subtle);
+    overflow: visible;
 }
 
 .media-carousel__progress-bar {
-    height: 100%;
-    background-color: var(--color-text-muted);
+    height: 0.5rem;
+    background-color: #D8C49B;
+    transition: width var(--transition-base);
     width: 25%;
-    transition: width 0.3s ease;
+    position: relative;
+    top: -0.05rem;
 }
 
-/* Carousel Controls */
-.media-carousel__controls {
+.media-carousel__nav {
     display: flex;
-    justify-content: flex-end;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 }
 
 .media-carousel__btn {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 1px solid var(--color-text-muted);
-    background: transparent;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #F7F2E5;
     transition: all var(--transition-fast);
+    cursor: pointer;
 }
 
-.media-carousel__btn:hover {
-    background-color: rgba(216, 196, 155, 0.1);
+.media-carousel__btn:hover:not(:disabled) {
+    border-color: var(--color-accent-gold);
+}
+
+.media-carousel__btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
 }
 
 .media-carousel__btn img {
     width: 16px;
     height: 16px;
+    opacity: 0.8;
 }
 
 /* Testimonials Section */
 .testimonials {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0;
     text-align: center;
-    border-top: 1px solid var(--color-border-muted);
 }
 
 .testimonials__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1.5rem;
 }
 
 .testimonials__intro {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    max-width: 700px;
-    margin: 0 auto var(--spacing-3xl);
+    color: #D8C49B;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 3.5rem;
 }
 
 .testimonials-carousel {
@@ -283,39 +306,40 @@
 .testimonial-card {
     flex: 0 0 100%;
     width: 100%;
-    background-color: var(--color-text-muted);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-3xl);
+    background-color: #D8C49B;
+    border-radius: 1.5rem;
+    padding: 3.12rem 6.75rem;
     text-align: center;
     box-sizing: border-box;
 }
 
 .testimonial-card__quote {
+    color: #0D2D18;
+    text-align: center;
     font-size: 1.125rem;
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.8;
-    color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-xl);
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-bottom: 0.69rem;
 }
 
 .testimonial-card__author {
-    font-size: 0.9375rem;
-    font-style: normal;
-    color: var(--color-primary-dark);
-    opacity: 0.8;
+    color: #0D2D18;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-/* Carousel Dots */
 .testimonials-carousel__dots {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-xl);
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .testimonials-carousel__dot {
-    width: 8px;
-    height: 8px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0.3);
@@ -329,42 +353,43 @@
 
 /* Partners Section */
 .partners-inspire {
-    padding: 0 0 var(--spacing-3xl)  0;
+    padding: 3.5rem 0;
 }
 
 .partners-inspire__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .partners-inspire__intro {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-3xl);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 2.75rem;
 }
 
 .partners-category {
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: 2.75rem;
 }
 
 .partners-category__title {
-    font-size: 0.875rem;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-xl);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
 }
 
 .partners-logos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--spacing-2xl) var(--spacing-3xl);
+    padding: 2rem 0;
+    gap: 4rem;
 }
 
 .partners-logos--hotels {
@@ -390,60 +415,10 @@
 }
 
 .partners-inspire__footer {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    font-style: italic;
-}
-
-/* Partnership Marquee Section */
-.partnership-marquee {
-    padding: var(--spacing-2xl) 0;
-    overflow: hidden;
-    border-top: 1px solid var(--color-border-muted);
-}
-
-.partnership-marquee .text-gold {
-    color: var(--color-text-muted);
-    padding: 0;
-    font-weight: var(--font-weight-semibold);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 30s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.text-gold {
-    color: var(--color-text-muted);
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* ============================================
@@ -482,11 +457,23 @@
 
 @media (max-width: 768px) {
     .press-intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .trade-event {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 1.19rem;
+    }
+
+    .trade-event__logo {
+        margin-bottom: 1rem;
     }
     
     .industry-partnerships {
-        padding: var(--spacing-3xl) 0;
+        padding: 2rem 0;
     }
     
     .trade-events {
@@ -494,49 +481,77 @@
         gap: var(--spacing-md);
     }
     
-    .trade-event {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        padding: var(--spacing-lg);
-    }
-    
-    .trade-event__logo {
-        height: 2.5rem;
-        min-width: 80px;
-        margin-bottom: 0;
-        margin-right: var(--spacing-lg);
-    }
-    
     .media-mentions {
-        padding: var(--spacing-3xl) 0;
+        padding: 2rem 0;
+    }
+
+    .media-mentions__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
     }
     
     .media-card {
-        flex: 0 0 calc(100% - 2rem);
-        min-width: unset;
+        flex: 0 0 280px;
+        min-width: 280px;
+        height: 22rem;
+    }
+
+    .media-carousel__controls {
+        height: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-lg);
+    }
+
+    .media-carousel__progress {
+        width: 100%;
+        max-width: none;
     }
     
     .testimonials {
-        padding: var(--spacing-3xl) var(--container-padding);
+        padding: 2rem 0;
+    }
+
+    .testimonials-carousel {
+        max-width: 22.125rem;
+    }
+
+    .testimonials__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1rem;
     }
     
     .testimonial-card {
-        padding: var(--spacing-2xl);
-        
+        padding: 3.5rem 1rem;
     }
     
     .partners-inspire {
-        padding: var(--spacing-3xl) 0;
+        padding: 2rem 0 2.75rem 0;
         text-align: center;
     }
-    
-    .partnership-marquee {
-        padding: var(--spacing-3xl) 0;
+
+    .partners-inspire-footer {
+        text-align: center;
     }
-    
-    .marquee-content span {
-        padding-right: 2rem;
+
+    .partners-category {
+        margin-bottom: 0;
+    }
+
+    .partners-logos.partners-logos--hotels {
+        padding: 2.75rem 0 2.25rem 0;
+    }
+
+    .partners-logos.partners-logos--associations {
+        padding: 2.25rem 0 2.75rem 0;
     }
 }
 

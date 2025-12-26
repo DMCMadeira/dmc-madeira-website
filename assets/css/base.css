@@ -119,6 +119,7 @@
     /* Colors */
     --color-primary-dark: #0D2D18;
     --color-primary-darker: #061215;
+    --color-primary-muted: rgba(216, 196, 155, 1);
     --color-secondary-dark: #0f2a2f;
     --color-accent-gold: #c9a962;
     --color-accent-gold-hover: #dabb74;
@@ -239,7 +240,7 @@ a {
     transition: color var(--transition-fast);
 }
 
-a:hover {
+a:hover:not(.header a) {
     color: var(--color-accent-gold);
 }
 

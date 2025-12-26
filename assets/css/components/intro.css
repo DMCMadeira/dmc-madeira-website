@@ -4,8 +4,27 @@
 
 .intro {
     position: relative;
-    padding: var(--spacing-4xl) 0;
+    padding: 6.375rem 0;
 }
+
+.intro-experiences {
+    padding: 6.375rem 0 3.5rem 0;
+}
+
+.intro-experiences .intro__title {
+    color: #F7F2E5;  
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 3.375rem;
+    letter-spacing: -0.06rem;
+}
+
+.intro-experiences .intro__image {
+    border-radius: 0 2.75rem 2.75rem 0;
+    height: 40.375rem;
+}
+
+
 
 .intro__container {
     display: grid;
@@ -15,7 +34,6 @@
     padding-right: var(--container-padding);
 }
 
-/* Image Section - No left padding, bleeds to edge */
 .intro__image-wrapper {
     position: relative;
 }
@@ -35,28 +53,40 @@
 /* Content Section */
 .intro__content {
     padding-left: var(--spacing-2xl);
-    max-width: 600px;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.intro__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .intro__title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.2;
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #F7F2E5;
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.06rem;
 }
 
 .intro__subtitle {
+    color: var(--secondary-500, #D8C49B);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
     font-size: 1rem;
     font-weight: var(--font-weight-medium);
-    color: var(--color-accent-gold);
-    margin-bottom: var(--spacing-xl);
 }
 
 .intro__description {
-    font-size: 0.875rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
+    color: var(--secondary-500, #D8C49B);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .intro__description p {
@@ -83,6 +113,10 @@
         padding-top: 0 !important;
     }
 
+    .intro__image picture {
+        height: 15.25rem;
+    }
+
     .intro__container {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
@@ -104,14 +138,15 @@
     }
 
     .intro__title {
-        font-size: 1.75rem;
+        font-size: 3rem;
+
     }
 
     .intro__subtitle {
-        font-size: 0.9375rem;
+        font-size: 1.25rem;
     }
 
     .intro__description {
-        font-size: 0.875rem;
+        font-size: 1.125rem;
     }
 }

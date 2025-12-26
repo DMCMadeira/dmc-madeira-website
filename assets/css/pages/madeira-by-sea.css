@@ -4,13 +4,13 @@
 
 /* Intro Section */
 .sea-intro {
-    padding: var(--spacing-4xl) 0;
+    padding: 6.75rem 0 3.5rem 0;
 }
 
 .sea-intro__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 30.8125rem 1fr;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -24,15 +24,17 @@
 }
 
 .sea-intro__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .sea-intro__quote {
+    color: #D8C49B;
     font-size: 1.25rem;
-    line-height: 1.5;
-    margin-top: var(--spacing-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.75rem;
 }
 
 .sea-intro__image {
@@ -48,51 +50,57 @@
 
 /* Private Yacht Charters Section */
 .sea-yacht {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .sea-yacht__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .sea-yacht__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
 }
 
 .sea-yacht__card {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .sea-yacht__card-image {
     border-radius: var(--radius-lg);
+    height: 25.1875rem;
     overflow: hidden;
-    margin-bottom: var(--spacing-xl);
 }
 
-.sea-yacht__card-image img {     
+.sea-yacht__card-image img, .sea-yacht__card-image picture {     
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .sea-yacht__card-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .sea-yacht__card-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .sea-yacht__card-text:last-child {
@@ -101,30 +109,28 @@
 
 /* Dolphin & Whale Watching Section */
 .sea-dolphins {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .sea-dolphins__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.75rem;
 }
 
 .sea-dolphins__block {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     align-items: center;
-    margin-bottom: var(--spacing-4xl);
+    margin-bottom: 4.8rem;
 }
 
 .sea-dolphins__block:last-child {
     margin-bottom: 0;
-}
-
-.sea-dolphins__block--reverse {
-    grid-template-columns: 1.2fr 1fr;
 }
 
 .sea-dolphins__block--reverse .sea-dolphins__block-image {
@@ -134,14 +140,15 @@
 .sea-dolphins__block-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
 }
 
 .sea-dolphins__block-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-sm);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .sea-dolphins__block-text {
@@ -161,70 +168,26 @@
     object-fit: cover;
 }
 
-/* Partnership Marquee Section */
-.partnership-marquee {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-2xl) 0;
-    overflow: hidden;
-    border-top: 0;
-}
-
-.partnership-marquee .text-gold {
-    color: var(--color-text-muted);
-    padding: 0;
-    font-weight: var(--font-weight-semibold);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 30s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 /* Active Adventures Section */
 .sea-adventures {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .sea-adventures__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
+    line-height: 2.75rem;
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .sea-adventures__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
     align-items: start;
 }
 
@@ -235,18 +198,26 @@
 }
 
 .sea-adventures__card--offset {
-    margin-top: var(--spacing-3xl);
+    margin-top: 3.7rem;
+}
+
+.sea-adventures__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .sea-adventures__card-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 1.5rem;
+    height: 31.125rem;
 }
 
-.sea-adventures__card-image img {     
+.sea-adventures__card-image img, .sea-adventures__card-image picture {     
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
@@ -265,21 +236,22 @@
 
 /* Porto Santo & Beyond Section */
 .sea-portosanto {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .sea-portosanto__title {
-    font-family: var(--font-secondary);
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .sea-portosanto__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
 }
 
 .sea-portosanto__card {
@@ -290,120 +262,98 @@
 .sea-portosanto__card-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 2rem;
+    height: 25.1875rem;
 }
 
-.sea-portosanto__card-image img {     
+.sea-portosanto__card-image img, .sea-portosanto__card-image picture {     
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 .sea-portosanto__card-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .sea-portosanto__card-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
-.sea-portosanto__card-text:last-child {
-    margin-bottom: 0;
-}
-
-/* Sea Experiences for Every Traveler Section */
 .sea-travelers {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .sea-travelers__layout {
     display: grid;
     grid-template-columns: 24.5rem 1fr;
-    gap: var(--spacing-4xl);
+    gap: 1.5rem;
 }
 
 .sea-travelers__title {
-    font-family: var(--font-secondary);
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-white);
-    line-height: 1.3;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .sea-travelers__blocks {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-3xl);
+    gap: 4rem;
 }
 
 .sea-travelers__block {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: var(--spacing-2xl);
+    grid-template-columns: 18rem 1fr;
+    gap: 1.5rem;
     align-items: start;
 }
 
 .sea-travelers__block-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    height: 12.25rem;
 }
 
 .sea-travelers__block-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .sea-travelers__block-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: 1rem;
 }
 
 .sea-travelers__block-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .sea-travelers__block-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
-.cultural-cta {
-    background-color: rgba(216, 196, 155, 1);
-    padding: var(--spacing-3xl) 0;
-    text-align: center;
-}
-
-.cultural-cta__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-xl);
-}
-
-.cultural-cta__text {
-    max-width: 800px;
-    margin: 0 auto var(--spacing-2xl);
-    color: var(--color-primary-dark);
-    line-height: 1.7;
-}
-
-.cultural-cta__buttons {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    flex-wrap: wrap;
-}
 /* ==========================================================================
    Responsive Styles
    ========================================================================== */
@@ -425,34 +375,107 @@
 
 @media (max-width: 768px) {
     .sea-intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 0 0;
     }
     
     .sea-intro__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 2.75rem;
     }
-    
-    .sea-intro__image {
-        order: -1;
+
+    .sea-intro__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
     }
+
+    .sea-intro__quote {
+        color: #D8C49B;
+        font-size: 1.25rem;
+        font-weight: var(--font-weight-semibold);
+        line-height: 1.75rem;
+    }
+
     
     .sea-yacht {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
+    .sea-yacht__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
+    }
+
     .sea-yacht__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-3xl);
+        gap: 2.75rem;
+    }
+
+    .sea-yacht__card-image {
+        height: 16rem;
+    }
+
+    .sea-yacht__card-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .sea-yacht__card-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
     }
     
     .sea-dolphins {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .sea-dolphins__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
     }
     
     .sea-dolphins__block {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 1.5rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .sea-dolphins__block-image {
+        height: 16rem;
+    }
+
+    .sea-dolphins__block:last-child {
+        margin-bottom: 0;
+    }
+
+    .sea-dolphins__block-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sea-dolphins__block-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
     }
     
     .sea-dolphins__block--reverse {
@@ -468,9 +491,23 @@
     }
     
     .sea-adventures {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
+    .sea-adventures__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .sea-adventures__card-image {
+        height: 22.125rem;
+    }
+
     .sea-adventures__grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-3xl);
@@ -479,18 +516,65 @@
     .sea-adventures__card--offset {
         margin-top: 0;
     }
-    
-    .sea-portosanto {
-        padding: var(--spacing-3xl) 0;
+
+    .sea-adventures__card-title {
+        color: #F7F2E5;
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 0
     }
-    
+
+    .sea-adventures__card-text {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
+    }
+
+    .sea-portosanto {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .sea-portosanto__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .sea-portosanto__card-image {
+        height: 16rem;
+    }
+
     .sea-portosanto__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-3xl);
+        gap: 2.75rem;
+    }
+
+    .sea-portosanto__card-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sea-portosanto__card-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
     }
     
     .sea-travelers {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
     .sea-travelers__block {
@@ -498,18 +582,35 @@
         gap: var(--spacing-lg);
     }
     
-    .cultural-cta {
-        padding: var(--spacing-3xl) var(--spacing-lg);
+    .sea-travelers__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
     }
     
-    .cultural-cta__buttons {
-        flex-direction: column;
-        align-items: center;
+    .sea-travelers__blocks {
+        gap: 2.75rem;
+    }
+
+    .sea-travelers__block-image {
+        height: 16rem;
     }
     
-    .cultural-cta__buttons .btn {
-        width: 100%;
-        max-width: 300px;
+    .sea-travelers__block-title {
+        color: var(--Accent, #F7F2E5);
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .sea-travelers__block-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
     }
 }
 

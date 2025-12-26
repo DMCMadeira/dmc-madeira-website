@@ -4,6 +4,7 @@
 
 .hero {
     padding: var(--spacing-lg);
+    width: 100%;
     padding-top: calc(var(--spacing-lg) + 80px); /* Account for fixed header */
     min-height: 100vh;
 }
@@ -60,38 +61,42 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: var(--spacing-4xl) var(--container-padding);
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__subtitle {
-    font-size: 0.75rem;
+    font-size: 2rem;
+    text-shadow: 5px 20px 50px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
     font-weight: var(--font-weight-medium);
-    letter-spacing: 0.3em;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
     color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
-    opacity: 0.9;
+    text-align: center;
 }
 
 .hero__title {
-    font-size: clamp(4rem, 15vw, 10rem);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 0.05em;
-    line-height: 0.9;
     color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-shadow: 5px 20px 50px rgba(0, 0, 0, 0.10);
+    font-size: 10rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
 }
 
 .hero__description {
-    font-size: 0.9375rem;
-    font-weight: var(--font-weight-light);
-    line-height: 1.7;
-    color: var(--color-text-light);
-    max-width: 600px;
-    margin: 0 auto var(--spacing-2xl);
-    opacity: 0.9;
+    color: var(--color-text-white);
+    max-width: 50.0625rem;
+    text-align: center;
+    text-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.778px 33.422px rgba(0, 0, 0, 0.05), 0 22.336px 17.869px rgba(0, 0, 0, 0.04), 0 12.522px 10.017px rgba(0, 0, 0, 0.04), 0 6.65px 5.32px rgba(0, 0, 0, 0.03), 0 2.767px 2.214px rgba(0, 0, 0, 0.02);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    padding-bottom: 2.75rem;
 }
 
 .hero__buttons {
@@ -107,7 +112,7 @@
    RESPONSIVE
    ============================================ */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero {
         margin-top: 2rem;
         padding: var(--spacing-md);
@@ -126,22 +131,35 @@
     }
 
     .hero__subtitle {
+        color: var(--color-text-white);
+        text-shadow: 5px 20px 50px rgba(0, 0, 0, 0.05);
         font-size: 1.125rem;
-        width: 100%;
-        max-width: 15rem;
+        font-weight: var(--font-weight-medium);
+        letter-spacing: 0.16875rem;
+        text-transform: uppercase;
         text-align: center;
-        margin: 0 auto;
-        letter-spacing: 0.2em;
+        max-width: 14rem;
+        margin: 0;
     }
 
     .hero__title {
+        color: var(--color-text-white);
+        text-align: center;
+        text-shadow: 5px 20px 50px rgba(0, 0, 0, 0.10);
         font-size: 3.5rem;
-        margin-bottom: var(--spacing-lg);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 0.525rem;
+        text-transform: uppercase;
     }
 
     .hero__description {
+        color: var(--color-text-white);
+        text-align: center;
+        text-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.778px 33.422px rgba(0, 0, 0, 0.05), 0 22.336px 17.869px rgba(0, 0, 0, 0.04), 0 12.522px 10.017px rgba(0, 0, 0, 0.04), 0 6.65px 5.32px rgba(0, 0, 0, 0.03), 0 2.767px 2.214px rgba(0, 0, 0, 0.02);
         font-size: 1rem;
-        margin-bottom: var(--spacing-xl);
+        font-weight: var(--font-weight-medium);
+        line-height: 1.3rem;
+        padding-bottom: 1.5rem;
     }
 
     .hero__buttons {

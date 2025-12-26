@@ -3,7 +3,7 @@
    ============================================ */
 
 .experiences {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
     overflow: hidden;
 }
 
@@ -23,8 +23,8 @@
     overflow: hidden;
     margin: 0 calc(-1 * var(--container-padding));
     padding: 0 var(--container-padding);
-    /* Extra padding top to accommodate staggered cards */
     padding-top: 3.7rem;
+    padding-bottom: 3.5rem;
 }
 
 .experiences__carousel-track {
@@ -42,12 +42,10 @@
     flex-direction: column;
 }
 
-/* Odd cards positioned higher (1st, 3rd, 5th, etc.) */
 .experiences__card:nth-child(odd) {
     transform: translateY(-3.7rem);
 }
 
-/* Even cards at normal position */
 .experiences__card:nth-child(even) {
     transform: translateY(0);
 }
@@ -70,46 +68,48 @@
     transform: scale(1.05);
 }
 
-/* Title below image, not inside */
 .experiences__card-title {
-    font-size: 1.125rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-top: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
+    margin-top: 1rem;
+    text-align: center;
+    color: #F7F2E5;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .experiences__card-description {
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    color: var(--color-text-muted);
+    margin-top: 1rem;
+    color: #D8C49B;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.75rem;
 }
 
-/* Carousel Controls */
 .experiences__controls {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: var(--spacing-2xl);
-    padding-top: var(--spacing-xl);
-    border-top: 1px solid var(--color-border-subtle);
+    gap: 3.5rem;
 }
 
 .experiences__progress {
     flex: 1;
-    max-width: 300px;
-    height: 3px;
+    width: 100%;
+    height: 0.35rem;
     background-color: var(--color-border-subtle);
-    border-radius: var(--radius-full);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .experiences__progress-bar {
-    height: 100%;
-    background-color: var(--color-accent-gold);
-    border-radius: var(--radius-full);
+    height: 0.5rem;
+    background-color: #D8C49B;
     transition: width var(--transition-base);
     width: 25%;
+    position: relative;
+    top: -0.05rem;
 }
 
 .experiences__nav {
@@ -118,21 +118,19 @@
 }
 
 .experiences__nav-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--color-border-subtle);
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
-    background-color: transparent;
+    background-color:#F7F2E5;
     transition: all var(--transition-fast);
     cursor: pointer;
 }
 
 .experiences__nav-btn:hover:not(:disabled) {
     border-color: var(--color-accent-gold);
-    background-color: rgba(201, 169, 98, 0.1);
 }
 
 .experiences__nav-btn:disabled {
@@ -164,11 +162,12 @@
 
 @media (max-width: 768px) {
     .experiences {
-        padding: var(--spacing-3xl) 0;
+        padding: 0;
     }
 
     .experiences__carousel {
         padding-top: 2.5rem;
+        padding-bottom: 2.75rem;
     }
 
     .experiences__card {
@@ -177,26 +176,35 @@
     }
 
     .experiences__card:nth-child(odd) {
-        transform: translateY(-2.5rem);
+        transform: translateY(0);
     }
 
     .experiences__card-title {
-        font-size: 1rem;
+        text-align: left;
+        color: var(--Accent, #F7F2E5);
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .experiences__card-description {
+        text-align: left;
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
     }
 
     .experiences__controls {
-        flex-direction: column;
-        align-items: flex-end;
+        height: 3.5rem;
+        justify-content: center;
+        align-items: center;
         gap: var(--spacing-lg);
     }
 
     .experiences__progress {
         width: 100%;
         max-width: none;
-        order: 2;
-    }
-
-    .experiences__nav {
-        order: 1;
     }
 }

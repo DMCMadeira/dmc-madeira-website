@@ -24,6 +24,7 @@
 @import url('./components/sustainability.css');
 @import url('./components/partners-carousel.css');
 @import url('./components/footer.css');
+@import url('./components/marquee.css');
 
 /* Page-Specific Styles */
 @import url('./pages/our-story.css');

@@ -223,6 +223,39 @@
                             <h3 class="real-actions__item-title">Paperless office</h3>
                             <p class="real-actions__item-text">Our workflow is nearly 80% digital. From proposals to itineraries, we minimize paper consumption and waste.</p>
                         </div>
+                        <div class="real-actions__item" data-image="assets/images/sustainability-recycling.webp" data-image-2x="assets/images/sustainability-recycling@2x.webp">
+                            <div class="real-actions__item-image">
+                                <picture>
+                                    <img src="assets/images/sustainability-recycling.webp" 
+                                         srcset="assets/images/sustainability-recycling.webp 1x, assets/images/sustainability-recycling@2x.webp 2x"
+                                         alt="Waste reduction & recycling">
+                                </picture>
+                            </div>
+                            <h3 class="real-actions__item-title">Waste reduction & recycling</h3>
+                            <p class="real-actions__item-text">We actively recycle, separate materials, and reuse resources whenever possible.</p>
+                        </div>
+                        <div class="real-actions__item" data-image="assets/images/sustainability-composting.webp" data-image-2x="assets/images/sustainability-composting@2x.webp">
+                            <div class="real-actions__item-image">
+                                <picture>
+                                    <img src="assets/images/sustainability-composting.webp" 
+                                         srcset="assets/images/sustainability-composting.webp 1x, assets/images/sustainability-composting@2x.webp 2x"
+                                         alt="Organic composting">
+                                </picture>
+                            </div>
+                            <h3 class="real-actions__item-title">Organic composting</h3>
+                            <p class="real-actions__item-text">We compost coffee grounds and organic waste from our office, transforming daily habits into circular solutions.</p>
+                        </div>
+                        <div class="real-actions__item" data-image="assets/images/sustainability-supportingnature.webp" data-image-2x="assets/images/sustainability-supportingnature@2x.webp">
+                            <div class="real-actions__item-image">
+                                <picture>
+                                    <img src="assets/images/sustainability-supportingnature.webp" 
+                                        srcset="assets/images/sustainability-supportingnature.webp 1x, assets/images/sustainability-supportingnature@2x.webp 2x"
+                                         alt="Supporting nature directly">
+                                </picture>
+                            </div>
+                            <h3 class="real-actions__item-title">Supporting nature directly</h3>
+                            <p class="real-actions__item-text">We collaborate with local public and environmental entities to protect Madeira’s ecosystem, supporting levada maintenance, beach clean-ups, and forest care projects that help sustain biodiversity.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,8 +275,8 @@
                              alt="Sustainability video">
                     </picture>
                     <button class="vision__play" aria-label="Play video">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 5v14l11-7z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="52" viewBox="0 0 44 52" fill="none">
+                            <path d="M42.1 22.6237L6.08 0.588748C5.47272 0.21688 4.77717 0.0138706 4.0652 0.000685866C3.35322 -0.0124988 2.65064 0.164619 2.03 0.513748C1.41527 0.857454 0.903191 1.3587 0.54641 1.96593C0.189629 2.57316 0.00102714 3.26446 0 3.96875V48.0338C0.00463191 49.0902 0.428584 50.1016 1.17866 50.8456C1.92873 51.5896 2.94354 52.0052 4 52.0013C4.73738 52.0009 5.46045 51.7977 6.09 51.4138L42.1 29.3787C42.6788 29.0259 43.1572 28.5302 43.4891 27.9392C43.8211 27.3481 43.9954 26.6816 43.9954 26.0037C43.9954 25.3259 43.8211 24.6594 43.4891 24.0683C43.1572 23.4773 42.6788 22.9816 42.1 22.6287V22.6237Z" fill="#0D2D18"/>
                         </svg>
                     </button>
                 </div>
@@ -420,64 +453,188 @@
             const items = document.querySelectorAll('.real-actions__item');
             const itemsContainer = document.querySelector('.real-actions__items');
             const stickyImage = document.getElementById('real-actions-image');
+            const section = document.querySelector('.real-actions');
             
-            if (!stickyImage || window.innerWidth < 769) return;
+            if (!stickyImage || !section || !itemsContainer) return;
 
-            items[0]?.classList.add('active');
-            
-            let currentActive = null;
+            let currentIndex = 0;
+            let isTransitioning = false;
+            let isLocked = false;
+            let lockPosition = 0;
+            let hasCompletedDown = false;
+            let hasCompletedUp = true;
+            let isDesktop = window.innerWidth >= 769;
 
-            function updateActiveItem() {
-                const viewportCenter = window.innerHeight / 2;
-                let closestItem = null;
-                let closestDistance = Infinity;
+            function isMobile() {
+                return window.innerWidth < 769;
+            }
 
-                items.forEach(item => {
-                    const rect = item.getBoundingClientRect();
-                    const itemCenter = rect.top + rect.height / 2;
-                    const distance = Math.abs(viewportCenter - itemCenter);
+            function initDesktop() {
+                if (isMobile()) return;
+                itemsContainer.style.overflow = 'hidden';
+                items[0]?.classList.add('active');
+                itemsContainer?.classList.add('has-active');
+            }
 
-                    if (distance < closestDistance && rect.top < window.innerHeight && rect.bottom > 0) {
-                        closestDistance = distance;
-                        closestItem = item;
-                    }
+            // Calculate item positions for JS scrolling
+            function getItemOffsets() {
+                return Array.from(items).map(item => {
+                    return item.offsetTop - items[0].offsetTop;
                 });
+            }
 
-                if (closestItem && closestItem !== currentActive) {
-                    currentActive = closestItem;
+            function scrollContainerToItem(index) {
+                if (isMobile()) return;
+                
+                const offsets = getItemOffsets();
+                const targetOffset = offsets[index] || 0;
+                
+                const startScroll = itemsContainer.scrollTop;
+                const distance = targetOffset - startScroll;
+                const duration = 300;
+                let startTime = null;
+
+                function animateScroll(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
                     
-                    itemsContainer?.classList.add('has-active');
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    itemsContainer.scrollTop = startScroll + (distance * easeOut);
                     
-                    items.forEach(i => i.classList.remove('active'));
-                    
-                    closestItem.classList.add('active');
-                    
-                    const newSrc = closestItem.dataset.image;
-                    const newSrcset = `${closestItem.dataset.image} 1x, ${closestItem.dataset.image2x} 2x`;
-                    
-                    if (stickyImage.src !== newSrc) {
-                        stickyImage.style.opacity = '0';
-                        setTimeout(() => {
-                            stickyImage.src = newSrc;
-                            stickyImage.srcset = newSrcset;
-                            stickyImage.style.opacity = '1';
-                        }, 150);
+                    if (progress < 1) {
+                        requestAnimationFrame(animateScroll);
+                    }
+                }
+                
+                requestAnimationFrame(animateScroll);
+            }
+
+            function setActiveItem(index, force = false) {
+                if (isMobile()) return false;
+                if (index < 0 || index >= items.length || isTransitioning) return false;
+                if (!force && index === currentIndex) return false;
+                
+                isTransitioning = true;
+                currentIndex = index;
+                const item = items[index];
+                
+                items.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                
+                scrollContainerToItem(index);
+                
+                const newSrc = item.dataset.image;
+                const newSrcset = `${item.dataset.image} 1x, ${item.dataset.image2x} 2x`;
+                
+                stickyImage.style.opacity = '0';
+                setTimeout(() => {
+                    stickyImage.src = newSrc;
+                    stickyImage.srcset = newSrcset;
+                    stickyImage.style.opacity = '1';
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 150);
+                }, 150);
+                
+                return true;
+            }
+
+            // Add click handlers to each item (desktop only)
+            items.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    if (isMobile()) return;
+                    item.style.cursor = 'pointer';
+                    setActiveItem(index, true);
+                });
+            });
+
+            function shouldLockScroll() {
+                if (isMobile()) return false;
+                
+                const rect = section.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                const lockThreshold = viewportHeight * 0.3;
+                
+                return rect.top <= lockThreshold && rect.bottom >= viewportHeight * 0.7;
+            }
+
+            function lockScroll() {
+                if (isMobile()) return;
+                if (!isLocked) {
+                    isLocked = true;
+                    lockPosition = window.scrollY;
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function unlockScroll() {
+                if (isLocked) {
+                    isLocked = false;
+                    document.body.style.overflow = '';
+                }
+            }
+
+            function handleWheel(e) {
+                if (isMobile()) return;
+                if (!shouldLockScroll()) {
+                    unlockScroll();
+                    return;
+                }
+
+                const scrollingDown = e.deltaY > 0;
+                const scrollingUp = e.deltaY < 0;
+
+                if (scrollingDown && currentIndex < items.length - 1) {
+                    lockScroll();
+                    e.preventDefault();
+                    if (!isTransitioning) {
+                        setActiveItem(currentIndex + 1);
+                        hasCompletedUp = false;
+                    }
+                } else if (scrollingUp && currentIndex > 0) {
+                    lockScroll();
+                    e.preventDefault();
+                    if (!isTransitioning) {
+                        setActiveItem(currentIndex - 1);
+                        hasCompletedDown = false;
+                    }
+                } else if (scrollingDown && currentIndex === items.length - 1) {
+                    if (!hasCompletedDown) {
+                        hasCompletedDown = true;
+                        e.preventDefault();
+                    } else {
+                        unlockScroll();
+                    }
+                } else if (scrollingUp && currentIndex === 0) {
+                    if (!hasCompletedUp) {
+                        hasCompletedUp = true;
+                        e.preventDefault();
+                    } else {
+                        unlockScroll();
                     }
                 }
             }
 
-            let ticking = false;
+            window.addEventListener('wheel', handleWheel, { passive: false });
+
             window.addEventListener('scroll', function() {
-                if (!ticking) {
-                    window.requestAnimationFrame(function() {
-                        updateActiveItem();
-                        ticking = false;
-                    });
-                    ticking = true;
+                if (isMobile()) return;
+                if (isLocked) {
+                    window.scrollTo(0, lockPosition);
+                }
+            }, { passive: true });
+
+            // Handle resize - unlock scroll if switching to mobile
+            window.addEventListener('resize', function() {
+                if (isMobile() && isLocked) {
+                    unlockScroll();
+                    itemsContainer.style.overflow = '';
                 }
             });
 
-            updateActiveItem();
+            // Initialize for desktop
+            initDesktop();
         });
     </script>
 </body>

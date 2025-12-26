@@ -377,7 +377,12 @@
                     <div class="nature-itinerary__accordion-item">
                         <button class="nature-itinerary__accordion-header">
                             <span class="nature-itinerary__accordion-title">Arrival</span>
-                            <span class="nature-itinerary__accordion-icon">+</span>
+                            <span class="nature-itinerary__accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                         <div class="nature-itinerary__accordion-content">
                             <p>Unwind with a welcome herbal infusion and a session of oceanfront meditation.</p>
@@ -386,7 +391,12 @@
                     <div class="nature-itinerary__accordion-item">
                         <button class="nature-itinerary__accordion-header">
                             <span class="nature-itinerary__accordion-title">Day 2</span>
-                            <span class="nature-itinerary__accordion-icon">+</span>
+                            <span class="nature-itinerary__accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                         <div class="nature-itinerary__accordion-content">
                             <p><strong>Laurisilva</strong> – Hike Forest therapy & mindful photography</p>
@@ -395,7 +405,12 @@
                     <div class="nature-itinerary__accordion-item">
                         <button class="nature-itinerary__accordion-header">
                             <span class="nature-itinerary__accordion-title">Day 3</span>
-                            <span class="nature-itinerary__accordion-icon">+</span>
+                            <span class="nature-itinerary__accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                         <div class="nature-itinerary__accordion-content">
                             <p><strong>Vineyard</strong> – Yoga Morning session + local organic lunch</p>
@@ -404,7 +419,12 @@
                     <div class="nature-itinerary__accordion-item">
                         <button class="nature-itinerary__accordion-header">
                             <span class="nature-itinerary__accordion-title">Day 4</span>
-                            <span class="nature-itinerary__accordion-icon">+</span>
+                            <span class="nature-itinerary__accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                         <div class="nature-itinerary__accordion-content">
                             <p><strong>Spa & Sea</strong> – Aromatherapy ritual & sunset meditation cruise</p>
@@ -413,7 +433,12 @@
                     <div class="nature-itinerary__accordion-item">
                         <button class="nature-itinerary__accordion-header">
                             <span class="nature-itinerary__accordion-title">Day 5</span>
-                            <span class="nature-itinerary__accordion-icon">+</span>
+                            <span class="nature-itinerary__accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                         <div class="nature-itinerary__accordion-content">
                             <p><strong>Departure</strong> – Reflection circle & organic brunch</p>
@@ -426,11 +451,11 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cultural-cta">
+        <section class="cta-section">
             <div class="container">
-                <h2 class="cultural-cta__title">Plan your wellness escape</h2>
-                <p class="cultural-cta__text">DMC Madeira's Nature & Wellness programs invite guests to slow down and rediscover joy through simplicity. Our island's power lies not in its luxury, but in its purity, silence, and soul. We curate every moment to bring travelers closer to that essence.</p>
-                <div class="cultural-cta__buttons">
+                <h2 class="cta-section__title">Plan your wellness escape</h2>
+                <p class="cta-section__text">DMC Madeira's Nature & Wellness programs invite guests to slow down and rediscover joy through simplicity. Our island's power lies not in its luxury, but in its purity, silence, and soul. We curate every moment to bring travelers closer to that essence.</p>
+                <div class="cta-section__buttons">
                     <a href="contact-us.html" class="btn btn--dark">Start your wellness journey</a>
                     <a href="insider.html" class="btn btn--white">Explore Insider Madeira</a>
                 </div>
@@ -589,13 +614,18 @@
                 // Close all items
                 document.querySelectorAll('.nature-itinerary__accordion-item').forEach(i => {
                     i.classList.remove('active');
-                    i.querySelector('.nature-itinerary__accordion-icon').textContent = '+';
+                    i.querySelector('.nature-itinerary__accordion-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+  <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+</svg>`;
                 });
                 
                 // Open clicked item if it was closed
                 if (!isOpen) {
                     item.classList.add('active');
-                    button.querySelector('.nature-itinerary__accordion-icon').textContent = '−';
+                    button.querySelector('.nature-itinerary__accordion-icon').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+</svg>`;
                 }
             });
         });

@@ -3,7 +3,7 @@
    ============================================ */
 
 .corporate {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .corporate__container {
@@ -31,29 +31,29 @@
 /* Content */
 .corporate__content {
     padding-left: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+.corporate__content-container {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .corporate__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.2;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .corporate__description {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
-}
-
-.corporate__highlight {
-    font-size: 0.9375rem;
-    font-weight: var(--font-weight-medium);
-    font-style: italic;
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-xl);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .corporate__btn {
@@ -92,19 +92,25 @@
 
 @media (max-width: 768px) {
     .corporate {
-        padding: var(--spacing-3xl) 0;
+        padding: 2rem 0;
     }
 
     .corporate__container {
         grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
+        gap: 2rem;
     }
 
     .corporate__title {
-        font-size: 1.5rem;
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
     }
 
     .corporate__description {
-        font-size: 0.875rem;
+        color: #D8C49B;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
     }
 }

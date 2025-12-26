@@ -4,13 +4,13 @@
 
 /* Intro Section */
 .photo-intro {
-    padding: var(--spacing-4xl) 0;
+    padding: 6.75rem 0 3.5rem 0;
 }
 
 .photo-intro__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 30.8125rem 1fr;
+    gap: 1.6875rem;
     align-items: center;
 }
 
@@ -24,69 +24,76 @@
 }
 
 .photo-intro__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .photo-intro__quote {
+    color: var(--secondary-500, #D8C49B);
     font-size: 1.25rem;
-    line-height: 1.5;
-    margin-top: var(--spacing-xl);
+    font-weight: 600;
+    line-height: 1.75rem;
 }
 
 .photo-intro__image {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    height: 29.9375rem;
 }
-    
+
+.photo-intro__image picture,
 .photo-intro__image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
 }
-
-/* Photography Experiences Section */
+    
 .photo-experiences {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .photo-experiences__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 2rem;
 }
 
 .photo-experiences__subsection {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: 2.75rem;
 }
 
 .photo-experiences__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .photo-experiences__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 700px;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .photo-experiences__note {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin: var(--spacing-2xl) 0;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-/* Photo Locations Carousel */
 .photo-locations {
     position: relative;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 2.75rem;
 }
 
 .photo-locations__carousel {
@@ -96,7 +103,6 @@
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: var(--spacing-md);
 }
 
 .photo-locations__carousel::-webkit-scrollbar {
@@ -110,37 +116,40 @@
 }
 
 .photo-locations__card-image {
+    height: 13.75rem;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1.5rem;
 }
 
-.photo-locations__card-image img {
+.photo-locations__card-image img,
+.photo-locations__card-image picture {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .photo-locations__card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-.photo-locations__arrows {
+.photo-locations__arrows, .photo-species__arrows {
     display: none;
-    justify-content: center;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    justify-content: flex-end;
+    gap: 1rem;
 }
 
-.photo-locations__arrow {
-    width: 48px;
-    height: 48px;
+.photo-locations__arrow, .photo-species__arrow {
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     border: 1px solid var(--color-text-white);
-    background: transparent;
-    color: var(--color-text-white);
+    background: #F7F2F5;
+    color: #FFF;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -148,102 +157,84 @@
     transition: all 0.3s ease;
 }
 
-.photo-locations__arrow:hover {
+.photo-locations__arrow:hover, .photo-species__arrow:hover {
     background: var(--color-text-white);
     color: var(--color-primary-dark);
 }
 
-/* Partnership Marquee Section */
-.partnership-marquee {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-2xl) 0;
-    overflow: hidden;
-    border-top: 0;
+.photo-tailor-made, .photo-field-ethics {
+    padding: 3.5rem 0;
 }
 
-.partnership-marquee .text-gold {
-    color: var(--color-text-muted);
-    padding: 0;
-    font-weight: var(--font-weight-semibold);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+.photo-tailor-made__title, .photo-field-ethics__title {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 40s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+.photo-tailor-made__text, .photo-field-ethics__text {
+    color: #D8C49B;
+    max-width:  54rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Birdwatching Section */
 .photo-birdwatching {
-    padding: var(--spacing-4xl) 0;
-}
-
-.photo-birdwatching__title {
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    padding: 3.5rem 0;
 }
 
 .photo-birdwatching__subsection {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: 2rem;
+}
+
+.photo-birdwatching__title {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 2rem;
 }
 
 .photo-birdwatching__subtitle {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
-.photo-birdwatching__text {
+.photo-birdwatching__text_main, .photo-birdwatching__text_highlights {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 700px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.photo-birdwatching__text_main {
+    max-width: 45.625rem;
 }
 
 /* Species Carousel */
 .photo-species {
     position: relative;
-    margin-bottom: var(--spacing-3xl);
 }
 
 .photo-species__carousel {
     display: flex;
-    gap: var(--spacing-lg);
+    gap: 1.5rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: var(--spacing-md);
+    padding-bottom: 2rem;
 }
 
 .photo-species__carousel::-webkit-scrollbar {
@@ -257,67 +248,46 @@
 }
 
 .photo-species__card-image {
+    height: 13.75rem;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1.5rem;
 }
 
-.photo-species__card-image img {
+.photo-species__card-image img, .photo-species__card-image picture {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .photo-species__card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-muted);
+    color:#D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
 }
 
-.photo-species__arrows {
-    display: none;
-    justify-content: center;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-}
 
-.photo-species__arrow {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 1px solid var(--color-text-white);
-    background: transparent;
-    color: var(--color-text-white);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.photo-species__arrow:hover {
-    background: var(--color-text-white);
-    color: var(--color-primary-dark);
-}
-
-/* Landscapes Section */
 .photo-landscapes {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .photo-landscapes__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .photo-landscapes__block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    gap: 1.5rem;
     align-items: center;
-    margin-bottom: var(--spacing-4xl);
+    margin-bottom: 3.5rem;
 }
 
 .photo-landscapes__block:last-child {
@@ -333,83 +303,96 @@
 }
 
 .photo-landscapes__block-image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
+    height: 25.1875rem;
     overflow: hidden;
 }
 
-.photo-landscapes__block-image img {
+.photo-landscapes__block-image img, .photo-landscapes__block-image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 .photo-landscapes__block-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .photo-landscapes__block-title {
+    color: #FFF;
     font-size: 2rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .photo-landscapes__block-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-/* For Small Groups Section */
 .photo-groups {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
     text-align: center;
 }
 
 .photo-groups__title {
+    color: #FFF;
+    text-align: center;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .photo-groups__text {
+    color: #D8C49B;
+    text-align: center;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    max-width: 800px;
-    margin: 0 auto var(--spacing-3xl);
+    max-width: 52.0625rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin: 0 auto 3.5rem auto;
 }
 
 .photo-groups__image {
-    border-radius: var(--radius-lg);
+    height: 34.625rem;
+    margin: 0 auto;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.photo-groups__image img {
+.photo-groups__image img, .photo-groups__image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 /* Porto Santo & Islands Section */
 .photo-islands {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .photo-islands__title {
+    color: #FFF;
     font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .photo-islands__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
 }
 
 .photo-islands__card {
@@ -418,29 +401,33 @@
 }
 
 .photo-islands__card-image {
-    border-radius: var(--radius-lg);
+    height: 25.1875rem;
+    border-radius: 1.5rem;
     overflow: hidden;
     margin-bottom: var(--spacing-xl);
 }
 
 .photo-islands__card-image img {
     width: 100%;
-    height: auto;
+    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .photo-islands__card-title {
+    color: #FFF;
     font-size: 2rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .photo-islands__card-text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .photo-islands__card-text:last-child {
@@ -494,120 +481,265 @@
 }
 
 @media (max-width: 768px) {
+    .photo-landscapes {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .photo-landscapes__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
+    }
+
+    .photo-landscapes__block {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .photo-landscapes__block-image {
+        height: 16rem;
+    }
+
+    .photo-landscapes__block-content {
+        gap: 1.5rem;
+    }
+
+    .photo-landscapes__block-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .photo-landscapes__block-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+    
+
+    .photo-tailor-made, .photo-field-ethics {
+        padding: 2.75rem 0;
+    }
+
+    .photo-tailor-made__title, .photo-field-ethics__title {
+        color: #FFF;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .photo-tailor-made__text, .photo-field-ethics__text {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
     .photo-intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 0 0;
     }
     
     .photo-intro__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 2.75rem;
     }
-    
+
     .photo-intro__image {
-        order: -1;
+        height: 16rem;
     }
+
+    .photo-intro__text{
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
+    .photo-intro__quote {
+        color: #D8C49B;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+    }
+
     
     .photo-experiences {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 0 0;
     }
-    
+
     .photo-experiences__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1.5rem;
     }
-    
+
+    .photo-experiences__note {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+
+    .photo-experiences__subsection {
+        margin-bottom: 2.75rem;
+    }
+
+    .photo-experiences__subtitle {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .photo-experiences__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+
+    .photo-locations__carousel {
+        gap: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .photo-locations__card-image {
+        height: 13.75rem;
+        margin-bottom: 1rem;
+    }
+
     .photo-locations__card {
-        flex: 0 0 80%;
-        min-width: 260px;
+        flex: 0 0 280px;
+        min-width: 280px;
     }
-    
-    .photo-locations__arrows {
+
+    .photo-locations__arrows, .photo-species__arrows {
         display: flex;
     }
-    
-    .photo-birdwatching {
-        padding: var(--spacing-3xl) 0;
+
+    .photo-species__carousel {
+        gap: 1.5rem;
     }
-    
-    .photo-birdwatching__title {
-        font-size: 2rem;
-    }
-    
+
     .photo-species__card {
-        flex: 0 0 70%;
-        min-width: 220px;
+        flex: 0 0 280px;
+        min-width: 280px;
     }
-    
+
     .photo-species__arrows {
         display: flex;
-        justify-content: flex-end;
     }
-    
-    .photo-landscapes {
-        padding: var(--spacing-3xl) 0;
-    }
-    
-    .photo-landscapes__title {
+
+    /* Birdwatching Section Mobile */
+    .photo-birdwatching__title {
         font-size: 2rem;
+        line-height: 2.5rem;
     }
-    
+
+    .photo-birdwatching__subtitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .photo-landscapes {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .photo-landscapes__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
+    }
+
     .photo-landscapes__block {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 1.5rem;
+        margin-bottom: 2.75rem;
     }
-    
+
     .photo-landscapes__block--reverse .photo-landscapes__block-image {
         order: 0;
     }
-    
+
     .photo-landscapes__block--reverse .photo-landscapes__block-content {
         order: 1;
     }
-    
-    .photo-landscapes__block-image {
-        order: -1;
-    }
-    
+
     .photo-landscapes__block-title {
         font-size: 1.5rem;
+        line-height: 2rem;
     }
-    
+
     .photo-groups {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
-    
+
     .photo-groups__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1.5rem;
     }
-    
-    .photo-islands {
-        padding: var(--spacing-3xl) 0;
+
+    .photo-groups__text {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin: 0 auto 2.75rem auto;
     }
-    
+
+    .photo-groups__image {
+        max-width: 100%;
+        height: 16rem;
+    }
+
     .photo-islands__title {
         font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 2.75rem;
     }
-    
+
     .photo-islands__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-3xl);
+        gap: 2.75rem;
     }
-    
+
+    .photo-islands__card-image {
+        height: 16rem;
+        margin-bottom: 1.5rem;
+    }
+
     .photo-islands__card-title {
-        font-size: 1.5rem;
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
     }
-    
-    .cultural-cta {
-        padding: var(--spacing-3xl) var(--spacing-lg);
-    }
-    
-    .cultural-cta__buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cultural-cta__buttons .btn {
-        width: 100%;
-        max-width: 300px;
+
+    .photo-islands__card-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.75rem;
     }
 }
 

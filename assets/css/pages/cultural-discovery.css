@@ -7,7 +7,7 @@
    ============================================ */
 
 .cultural-intro {
-    padding: var(--spacing-5xl) 0;
+    padding: 6.75rem 0 3.5rem 0;
 }
 
 .cultural-intro__grid {
@@ -19,20 +19,24 @@
 
 .cultural-intro__content {
     max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .cultural-intro__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .cultural-intro__text {
-    color: var(--color-text-muted);
-    line-height: 1.7;
-    margin-bottom: var(--spacing-lg);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .cultural-intro__text:last-child {
@@ -42,12 +46,14 @@
 .cultural-intro__image {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    height: 29.9375rem;
+
 }
 
 .cultural-intro__image picture,
 .cultural-intro__image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -56,7 +62,7 @@
    ============================================ */
 
 .cultural-artisans {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .cultural-artisans__header {
@@ -65,34 +71,33 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: 3.5rem;
 }
 
 .cultural-artisans__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    text-align: center;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
     line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    text-align: center;
 }
 
 .cultural-artisans__subtitle {
-    font-weight: var(--font-weight-bold);
-    font-size: 2rem;
-    color: var(--color-text-muted);
-    line-height: 2.5rem;
+    color: #D8C49B;
     text-align: center;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .cultural-artisans__description {
+    color: #D8C49B;
     text-align: center;
-    color: var(--color-text-muted);
-    max-width: 50.5rem;
     font-size: 1.125rem;
-    max-width: 700px;
+    font-weight: var(--font-weight-regular);
     line-height: 1.75rem;
-    margin: 0 auto var(--spacing-3xl);
-    line-height: 1.7;
 }
 
 .cultural-artisans__grid {
@@ -113,7 +118,7 @@
 .cultural-artisans__card-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 1.5rem;
 }
 
 .cultural-artisans__card-image picture,
@@ -125,16 +130,26 @@
 }
 
 .cultural-artisans__card-title {
-    font-size: 1.25rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-sm);
+    color: #F7F2E5;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .cultural-artisans__card-text {
-    color: var(--color-text-muted);
-    font-size: 0.9375rem;
-    line-height: 1.6;
+    color: #D8C49B;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.75rem;
+}
+
+.cultural-artisans__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* ============================================
@@ -163,14 +178,14 @@
 
 
 .cultural-statement__title {
-    font-weight: 800;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    letter-spacing: -0.02em;
-    color: var(--color-text-white);
+    color: #FFF;
     max-width: 45.75rem;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    letter-spacing: -0.07rem;
 }
 
 /* ============================================
@@ -178,7 +193,7 @@
    ============================================ */
 
 .cultural-heritage {
-    padding: var(--spacing-5xl) 0;
+    padding: 6.75rem 0 4rem 0;
 }
 
 .cultural-heritage__block {
@@ -188,29 +203,39 @@
     align-items: start;
 }
 
+.cultural-heritage__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cultural-heritage__content-first, .cultural-heritage__content-second {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .cultural-heritage__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .cultural-heritage__subtitle {
+    color: #D8C49B;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-xl);
-}
-
-.cultural-heritage__subtitle:first-of-type {
-    margin-top: 0;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .cultural-heritage__text {
-    color: var(--color-text-muted);
-    line-height: 1.7;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .cultural-heritage__image {
@@ -230,7 +255,7 @@
    ============================================ */
 
 .cultural-music {
-    padding: var(--spacing-3xl) 0;
+    padding: 4rem 0 3.5rem 0;
 }
 
 .cultural-music__block {
@@ -240,30 +265,39 @@
     align-items: start;
 }
 
+.cultural-music__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cultural-music__content-first, .cultural-music__content-second {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .cultural-music__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .cultural-music__subtitle {
+    color: #D8C49B;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-xl);
-}
-
-.cultural-music__subtitle:first-of-type {
-    margin-top: 0;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .cultural-music__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .cultural-music__image {
@@ -283,39 +317,49 @@
    ============================================ */
 
 .cultural-sustainability {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0;
 }
 
 .cultural-sustainability__wrapper {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto var(--spacing-3xl);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 .cultural-sustainability__title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .cultural-sustainability__text {
-    color: var(--color-text-light);
-    line-height: 1.7;
+    color: #D8C49B;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    max-width: 52.0625rem;
+    margin: 0 auto;
+    line-height: 1.75rem;
 }
 
 .cultural-sustainability__image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    max-width: 1000px;
+    max-width: 76.5rem;
     margin: 0 auto;
+    height: 34.625rem;
 }
 
 .cultural-sustainability__image picture,
 .cultural-sustainability__image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -345,7 +389,19 @@
    ============================================ */
 
 .cultural-experiences {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0;
+}
+
+.cultural-experiences__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cultural-experiences__content-first, .cultural-experiences__content-second {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .cultural-experiences__grid {
@@ -368,29 +424,26 @@
 }
 
 .cultural-experiences__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
 }
 
 .cultural-experiences__subtitle {
+    color: #D8C49B;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-xl);
-}
-
-.cultural-experiences__subtitle:first-of-type {
-    margin-top: 0;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .cultural-experiences__text {
+    color: var(--secondary-500, #D8C49B);
     font-size: 1.125rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 /* ============================================
@@ -424,44 +477,6 @@
     flex-wrap: wrap;
 }
 
-/* Partnership Marquee Section */
-.partnership-marquee {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-2xl) 0;
-    overflow: hidden;
-    border-top: 0;
-}
-
-.partnership-marquee .text-gold {
-    color: var(--color-text-muted);
-    padding: 0;
-    font-weight: var(--font-weight-semibold);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 30s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
 /* ============================================
    Responsive Styles
    ============================================ */
@@ -489,22 +504,202 @@
     }
     
     .cultural-heritage__image,
-    .cultural-music__image,
-    .cultural-experiences__image {
+    .cultural-music__image {
         order: -1;
     }
 }
 
 @media (max-width: 768px) {
-    .cultural-intro,
-    .cultural-artisans,
-    .cultural-heritage,
-    .cultural-music,
-    .cultural-sustainability,
     .cultural-experiences {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0;
     }
-    
+
+    .cultural-experiences__grid {
+        grid-template-columns: 1fr;
+        gap: 2.75rem;
+    }
+
+    .cultural-experiences__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .cultural-experiences__subtitle {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .cultural-experiences__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
+    .cultural-experiences__image {
+        order: 2;
+    }
+
+    .cultural-sustainability  {
+        padding: 2.75rem 0;
+    }
+
+    .cultural-sustainability__wrapper {
+        margin-bottom: 1.5rem;
+    }
+
+    .cultural-sustainability__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .cultural-sustainability__text {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
+    .cultural-sustainability__image {
+        height: 22.125rem;
+    }
+
+    .cultural-music {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .cultural-heritage {
+        padding: 2.75rem 0 0 0;
+    }
+
+    .cultural-heritage__block, .cultural-music__block {
+        gap: 1.5rem;
+    }
+
+    .cultural-heritage__title, .cultural-music__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .cultural-heritage__subtitle, .cultural-music__subtitle {
+        color: #D8C49B;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .cultural-heritage__text, .cultural-music__text {
+        color: var(--secondary-500, #D8C49B);
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;   
+    }
+
+    .cultural-statement {
+        padding: 2.8rem 0;
+    }
+
+    .cultural-statement__eyebrow {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.875rem;
+    }
+
+    .cultural-statement__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 3rem;
+        letter-spacing: -0.05rem;
+    }   
+
+    .cultural-artisans {
+        padding: 2.75rem 0;
+    }
+
+    .cultural-artisans__header {
+        margin-bottom: 2.75rem;
+    }
+
+    .cultural-artisans__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .cultural-artisans__subtitle {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .cultural-artisans__description {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
+    .cultural-artisans__card-image {
+        height: 22.125rem;
+    }
+
+    .cultural-artisans__card:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .cultural-intro {
+        padding: 2.75rem 0 0 0;
+    }
+
+    .cultural-intro__image {
+        order: 2;
+    }
+
+    .cultural-intro__content {
+        order: 1;
+    }
+
+    .cultural-intro__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .cultural-intro__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
     .cultural-statement__title {
         font-size: 2.5rem;
         max-width: 100%;

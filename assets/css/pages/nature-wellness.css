@@ -4,13 +4,13 @@
 
 /* Intro Section */
 .nature-intro {
-    padding: var(--spacing-4xl) 0;
+    padding: 6.75rem 0 3.5rem 0;
 }
 
 .nature-intro__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -24,44 +24,50 @@
 }
 
 .nature-intro__text {
+    color: #D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .nature-intro__quote {
+    color: #D8C49B;
     font-size: 1.25rem;
-    line-height: 1.5;
-    margin-top: var(--spacing-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.75rem;
 }
 
 .nature-intro__image {
     border-radius: var(--radius-lg);
+    height: 29.9375rem;
     overflow: hidden;
 }
 
 .nature-intro__image img {
     width: 100%;
     height: 100%;       
+    display: block;
     object-fit: cover;
 }
 
 /* The Power of Slow Travel Section */
 .nature-slow {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .nature-slow__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .nature-slow__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
 }
 
 .nature-slow__card {
@@ -72,27 +78,31 @@
 .nature-slow__card-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 2rem;
+    height: 25.1875rem;
 }
 
-.nature-slow__card-image img {
+.nature-slow__card-image img, .nature-slow__card-image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 .nature-slow__card-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .nature-slow__card-text {
+    color: var(--secondary-500, #D8C49B);
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .nature-slow__card-text:last-child {
@@ -101,21 +111,23 @@
 
 /* Forests, Waterfalls & Hidden Sanctuaries Section */
 .nature-forests {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .nature-forests__title {
+    color: #FFF;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .nature-forests__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    gap: 1.5rem;
     align-items: start;
 }
 
@@ -126,52 +138,62 @@
 }
 
 .nature-forests__card--offset {
-    margin-top: var(--spacing-3xl);
+    margin-top: 3.7rem;
 }
 
 .nature-forests__card-image {
     border-radius: var(--radius-lg);
+    height: 31.125rem;
     overflow: hidden;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 1.5rem;
 }
 
-.nature-forests__card-image img {
+.nature-forests__card-image img, .nature-forests__card-image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 .nature-forests__card-title {
+    color: var(--Accent, #F7F2E5);
+    text-align: center;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .nature-forests__card-text {
+    color:  #D8C49B;
+    text-align: center;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Wellness with a Local Soul Section */
 .nature-wellness {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .nature-wellness__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
 .nature-wellness__block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    gap: 3.19rem;
     align-items: center;
-    margin-bottom: var(--spacing-4xl);
+    margin-bottom: 5rem;
 }
 
 .nature-wellness__block:last-child {
@@ -193,47 +215,52 @@
 .nature-wellness__block-image {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    height: 25.1875rem;
 }
 
-.nature-wellness__block-image img {
+.nature-wellness__block-image img, .nature-wellness__block-image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 .nature-wellness__block-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .nature-wellness__block-title {
+    color: #FFF;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-sm);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
 }
 
 .nature-wellness__block-text {
+    color: var(--secondary-500, #D8C49B);
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
-/* Ideal for Every Traveler Section */
 .nature-travelers {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0;
 }
 
 .nature-travelers__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 2.75rem;
 }
 
 .nature-travelers__block {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: 2.75rem;
 }
 
 .nature-travelers__block:last-child {
@@ -241,32 +268,35 @@
 }
 
 .nature-travelers__block-title {
-    font-size: 1.5rem;
+    color: #FFF;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .nature-travelers__block-text {
+    color:#D8C49B;
     font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
     max-width: 800px;
 }
 
-/* Sample Itinerary Section */
 .nature-itinerary {
-    padding: var(--spacing-4xl) 0;
+    padding: 3.5rem 0 5rem 0;
 }
 
 .nature-itinerary__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
-/* Desktop Table */
 .nature-itinerary__table-wrapper {
     display: block;
 }
@@ -277,35 +307,31 @@
 }
 
 .nature-itinerary__table thead th {
-    text-align: left;
-    font-size: 1rem;
+    color: var(--White, #FFF);
+    font-size: 1.125rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--color-text-muted);
+    line-height: 1.75rem;
     padding: var(--spacing-lg) var(--spacing-md);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #FEFEFE;
+    text-align: left;
 }
+
+.nature-itinerary__table thead th:first-child {
+    padding-left: 0;
+}
+
+.nature-itinerary__table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
 
 .nature-itinerary__table tbody td {
     padding: var(--spacing-lg) var(--spacing-md);
+    color: var(--secondary-500, #D8C49B);
     font-size: 1.125rem;
-    color: var(--color-text-muted);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nature-itinerary__table tbody td:first-child {
-    color: var(--color-text-white);
-    font-weight: var(--font-weight-medium);
-    width: 80px;
-}
-
-.nature-itinerary__table tbody td:nth-child(2) {
-    color: var(--color-text-white);
-    font-weight: var(--font-weight-medium);
-    width: 200px;
-}
-
-.nature-itinerary__table tbody td:last-child {
-    color: var(--color-text-muted);
+    font-weight: var(--font-weight-regular);
+    border-bottom: 1px solid #FEFEFE;
+    line-height: 1.75rem;
 }
 
 /* Mobile Accordion */
@@ -359,10 +385,12 @@
 }
 
 .nature-itinerary__note {
-    margin-top: var(--spacing-2xl);
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    margin-top: 2.25rem;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    max-width: 50.375rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 /* CTA Section */
@@ -419,47 +447,87 @@
 
 @media (max-width: 768px) {
     .nature-intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 0 0;
     }
     
     .nature-intro__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 2.75rem;
     }
     
     .nature-intro__image {
-        order: -1;
+        height: 16rem;
     }
-    
+
+    .nature-intro__text {
+        color: var(--secondary-500, #D8C49B);
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
+    .nature-intro__quote {
+        color: var(--secondary-500, #D8C49B);
+        font-size: 1.25rem;
+        font-weight: var(--font-weight-semibold);
+        line-height: 1.75rem;
+    }
+
     .nature-slow {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
     .nature-slow__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
     }
     
     .nature-slow__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-3xl);
+        gap: 2.75rem;
     }
     
     .nature-slow__card-title {
-        font-size: 1.5rem;
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
     }
     
+    .nature-slow__card-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
+    }
+
     .nature-forests {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
     .nature-forests__title {
+        color: #FFF;
+        text-align: center;
         font-size: 2rem;
-        text-align: left;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
     }
     
     .nature-forests__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-3xl);
+        gap: 2.75rem;
+    }
+
+    .nature-forests__card-image {
+        height: 22.125rem;
     }
     
     .nature-forests__card:last-child {
@@ -468,20 +536,51 @@
     }
     
     .nature-forests__card-title {
-        font-size: 1.5rem;
+        color: var(--Accent, #F7F2E5);
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+        margin-bottom: 1.5rem;
     }
-    
+
+    .nature-forests__card-text {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
+    }
+
     .nature-wellness {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
     
     .nature-wellness__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 2.75rem;
     }
     
+    .nature-wellness__block-image {
+        height: 16rem;
+    }
+
+    .nature-wellness__block-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
+    }
+
     .nature-wellness__block {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 1.5rem;
+        margin-bottom: 2.75rem;
     }
     
     .nature-wellness__block--reverse .nature-wellness__block-image {
@@ -501,41 +600,87 @@
     }
     
     .nature-travelers {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 0 0;
     }
     
     .nature-travelers__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .nature-travelers__block {
+        margin-bottom: 1.5rem;
+    }
+
+    .nature-travelers__block-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .nature-travelers__block-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
     }
     
     .nature-itinerary {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0 2rem 0;
     }
-    
+
+    .nature-itinerary__accordion-icon {
+        transition: transform .5s ease;
+    }
+
+    .nature-itinerary__accordion-item.active .nature-itinerary__accordion-icon {
+        transform: rotate(180deg);
+    }
+
     .nature-itinerary__title {
+        color: #FFF;
         font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        padding-bottom: 1.5rem;
+        margin: 0;
+    }
+
+    .nature-itinerary__accordion-title {
+        color: #FFF;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .nature-itinerary__accordion-content {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
     }
     
+    .nature-itinerary__note {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
     .nature-itinerary__table-wrapper {
         display: none;
     }
     
     .nature-itinerary__accordion {
         display: block;
-    }
-    
-    .cultural-cta {
-        padding: var(--spacing-3xl) var(--spacing-lg);
-    }
-    
-    .cultural-cta__buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cultural-cta__buttons .btn {
-        width: 100%;
-        max-width: 300px;
     }
 }
 

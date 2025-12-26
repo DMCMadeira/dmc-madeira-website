@@ -47,48 +47,6 @@
     max-width: 800px;
 }
 
-/* Marquee Section (reused from press-partners) */
-.loyalty-marquee {
-    padding: var(--spacing-3xl) 0;
-    overflow: hidden;
-    border-top: 1px solid var(--color-border-muted);
-    border-bottom: 1px solid var(--color-border-muted);
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 40s linear infinite;
-}
-
-.marquee-content span {
-    font-family: var(--font-primary);
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    white-space: nowrap;
-    padding-right: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.text-gold {
-    color: var(--color-text-muted);
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 /* Discretion & Excellence Section (like why-choose) */
 .discretion {
     padding: var(--spacing-5xl) 0;
@@ -239,14 +197,6 @@
     
     .exclusivity {
         padding: var(--spacing-3xl) 0;
-    }
-    
-    .loyalty-marquee {
-        padding: var(--spacing-2xl) 0;
-    }
-    
-    .marquee-content span {
-        padding-right: 2rem;
     }
     
     .discretion {
