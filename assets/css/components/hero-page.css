@@ -15,6 +15,8 @@
 /* Short hero variant for inner pages */
 .hero-page--short {
     min-height: 60vh;
+    padding-top: 5.6875rem;
+
 }
 
 
@@ -29,6 +31,7 @@
 
 .hero-page__background picture {
     display: block;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -57,9 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
     text-align: center;
-    padding: var(--spacing-4xl) var(--container-padding);
     max-width: 900px;
 }
 
@@ -69,6 +70,7 @@
     font-size: 1.25rem;
     font-weight: var(--font-weight-medium);
     line-height: 1.875rem;
+    margin-bottom: 1rem;
 }
 
 .hero-page__title {
@@ -78,6 +80,7 @@
     font-weight: var(--font-weight-bold);
     line-height: 3.375rem;
     letter-spacing: -0.06rem;
+    margin-bottom: 2rem;
 }
 
 .hero-page__subtitle {
@@ -104,7 +107,7 @@
     }
 
     .hero-page__content {
-        padding: var(--spacing-3xl) var(--container-padding);
+        padding: 0 var(--container-padding);
         gap: 0.5rem;
         padding-bottom: 0;
     }
@@ -113,6 +116,7 @@
         font-size: 1.125rem;
         font-weight: var(--font-weight-medium);
         line-height: 1.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .hero-page__title {
@@ -122,6 +126,7 @@
         font-size: 2.25rem;
         line-height: 2.75rem;
         letter-spacing: -0.045rem;
+        margin-bottom: 1rem;
     }
 
     .hero-page__subtitle {

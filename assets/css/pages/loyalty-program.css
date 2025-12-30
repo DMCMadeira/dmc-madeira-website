@@ -9,18 +9,18 @@
 
 /* Intro Section */
 .loyalty-intro {
-    padding: var(--spacing-5xl) 0 0 0;
+    padding: 5rem 0 3.5rem 0;
 }
 
 .loyalty-intro__content {
-    max-width: 800px;
+    max-width: 57rem;
 }
 
 .loyalty-intro__content p {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-lg);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .loyalty-intro__content p:last-child {
@@ -29,61 +29,62 @@
 
 /* Exclusivity Section */
 .exclusivity {
-    padding: var(--spacing-4xl) 0;
+    padding: 0 0 5rem 0;
 }
 
 .exclusivity__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .exclusivity__text {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    max-width: 800px;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
-/* Discretion & Excellence Section (like why-choose) */
 .discretion {
-    padding: var(--spacing-5xl) 0;
+    padding: 5rem 0 3.5rem 0;
 }
 
 .discretion__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-lg);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .discretion__intro {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    max-width: 700px;
-    margin-bottom: var(--spacing-3xl);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 3.5rem;
 }
 
 .discretion__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
+    gap: 1.5rem;
 }
 
 .discretion__card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.25rem;
 }
 
 .discretion__card-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: var(--spacing-md);
+    width: 2rem;
+    height: 2rem;
 }
 
 .discretion__card-icon img {
@@ -95,41 +96,42 @@
 .discretion__card-divider {
     height: 1px;
     width: 100%;
-    background-color: var(--color-border-muted);
-    margin-bottom: var(--spacing-lg);
+    background-color: #D8C49B;
 }
 
 .discretion__card-title {
-    font-size: 0.9375rem;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-white);
+    color: #F7F2E5;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 /* Partnership Beyond Business Section */
 .partnership-beyond {
-    padding: var(--spacing-5xl) 0;
+    padding: 3.5rem 0 5rem 0;
 }
 
 .partnership-beyond__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4xl);
+    grid-template-columns: 1fr 37.5rem;
+    gap: 2rem;
     align-items: center;
 }
 
 .partnership-beyond__title {
-    font-family: var(--font-primary);
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-xl);
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1.38rem;
 }
 
 .partnership-beyond__text {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-lg);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .partnership-beyond__text:last-of-type {
@@ -177,43 +179,53 @@
 @media (max-width: 1024px) {
     .discretion__grid {
         grid-template-columns: 1fr;
-        gap: 0;
-    }
-    
-    .partnership-beyond__grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
-    }
-    
-    .partnership-beyond__image {
-        order: -1;
+        gap: 2rem;
     }
 }
 
 @media (max-width: 768px) {
     .loyalty-intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0;
     }
     
     .exclusivity {
-        padding: var(--spacing-3xl) 0;
+        padding: 0 0 2.75rem 0;
     }
     
     .discretion {
-        padding: var(--spacing-3xl) 0;
+        padding: 2.75rem 0;
     }
     
-    .discretion__card {
-        align-items: center;
-        text-align: center;
+    .discretion__intro {
+        margin-bottom: 3rem;
+    }
+
+    .discretion__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
     }
     
+    .partnership-beyond__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .partnership-beyond__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+    
+    .partnership-beyond__image {
+        height: 16rem;
+    }
+
     .partnership-beyond {
-        padding: var(--spacing-3xl) 0;
-    }
-    
-    .join-program {
-        padding: var(--spacing-4xl) 0;
+        padding: 2rem 0 2.75rem 0;
     }
 }
 

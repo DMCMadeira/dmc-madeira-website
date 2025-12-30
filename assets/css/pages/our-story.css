@@ -575,6 +575,9 @@
     .cta-section__buttons .btn {
         width: 100%;
         max-width: 100%;
+        text-align: center;
+        white-space: normal;
+        line-height: 1.5;
     }
 
     .video-modal__close {

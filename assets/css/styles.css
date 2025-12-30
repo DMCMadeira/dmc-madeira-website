@@ -1,14 +1,5 @@
-/* ============================================
-   DMC MADEIRA - MAIN STYLESHEET
-   ============================================
-   This file imports all component styles.
-   Order matters for CSS cascade.
-   ============================================ */
-
-/* Base Styles & Variables */
 @import url('./base.css');
 
-/* Component Styles */
 @import url('./components/header.css');
 @import url('./components/hero.css');
 @import url('./components/hero-page.css');
@@ -26,7 +17,6 @@
 @import url('./components/footer.css');
 @import url('./components/marquee.css');
 
-/* Page-Specific Styles */
 @import url('./pages/our-story.css');
 @import url('./pages/sustainability.css');
 @import url('./pages/shorex.css');

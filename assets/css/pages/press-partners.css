@@ -123,24 +123,28 @@
 /* Media Card - Base */
 .media-card {
     flex: 0 0 calc(25% - 1.125rem);
-    min-width: 200px;
-    height: 32.5rem;
+    width: 22.125rem;
+    height: 32.4375rem;
     border-radius: 1.5rem;
     overflow: hidden;
     cursor: pointer;
     text-decoration: none;
     display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .media-card:hover {
-    transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Image Card */
 .media-card--image {
     background-color: #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.media-card--image:hover {
+    transform: translateY(-4px);
 }
 
 .media-card--image img {
@@ -164,24 +168,24 @@
 
 .media-card__title {
     color: #0D2D18;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1rem;
 }
 
 .media-card__label {
     color: #0D2D18;
-    font-size: 0.875rem;
-    font-weight: 400;
-    opacity: 0.7;
-    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
 }
 
 .media-card__source {
     color: #0D2D18;
-    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.75rem;
     margin-bottom: auto;
 }
 
@@ -190,10 +194,10 @@
     align-items: center;
     gap: 0.5rem;
     color: #0D2D18;
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     font-weight: 500;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    line-height: 1.75rem;
+    text-decoration-line: underline;
     margin-top: 1.5rem;
 }
 
@@ -456,6 +460,39 @@
 }
 
 @media (max-width: 768px) {
+    .media-card__title {
+        color: #0D2D18;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+    }
+
+    .media-card__source {
+        color: #0D2D18;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    .media-card__label {
+        color: #0D2D18;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .media-card__link {
+        color: #0D2D18;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    .media-card {
+        background: #F7F2E5;
+    }
+
     .press-intro {
         padding: 2.75rem 0 2rem 0;
     }

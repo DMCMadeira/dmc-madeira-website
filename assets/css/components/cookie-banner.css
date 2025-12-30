@@ -10,8 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-xl);
-    width: 60%;
+    gap: 1rem;
     max-width: 53.75rem;
     padding: 1rem;
     background-color: var(--color-cookie-bg);
@@ -30,22 +29,20 @@
 .cookie-banner__text {
     flex: 1;
     margin: 0;
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    color: var(--color-primary-dark);
+    color: #000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
 }
 
 .cookie-banner__text a {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    font-weight: var(--font-weight-medium);
+    color: #000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-decoration-line: underline;
 }
 
-.cookie-banner__text a:hover {
-    color: var(--color-primary-dark);
-    opacity: 0.8;
-}
 
 .cookie-banner__buttons {
     display: flex;
@@ -55,19 +52,21 @@
 }
 
 .cookie-banner__btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.8125rem;
-    font-weight: var(--font-weight-medium);
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    padding: 1rem;
+    color: var(--Accent, #F7F2E5);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
     white-space: nowrap;
     cursor: pointer;
 }
 
 .cookie-banner__btn--accept {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-white);
-    border: 1px solid var(--color-primary-dark);
+    border-radius: 1rem;
+    background: var(--Gradient-Background, linear-gradient(90deg, #0B2D3C 0%, #11250E 100%));
+    box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(6px);
+    color: #F7F2E5;
 }
 
 .cookie-banner__btn--accept:hover {
@@ -76,9 +75,11 @@
 }
 
 .cookie-banner__btn--reject {
-    background-color: #f5f3ef;
-    color: var(--color-primary-dark);
-    border: 1px solid #f5f3ef;
+    border-radius: 1rem;
+    background: #F7F2E5;
+    box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(6px);
+    color: #0D2D18;
 }
 
 .cookie-banner__btn--reject:hover {

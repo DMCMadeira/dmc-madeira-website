@@ -603,9 +603,10 @@
 }
 
 .groups-itinerary__accordion-content p {
-    font-size: 1rem;
-    line-height: 1.7;
     color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .groups-itinerary__accordion-content p strong {
@@ -664,7 +665,7 @@
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.75rem;
-    color: #D8C49B;
+    color: #F7F2E5;
 }
 
 /* CTA Section */
@@ -747,7 +748,9 @@
     }
     
     .groups-why__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);       
+        row-gap: 2.75rem;
+        column-gap: 1.5rem;
     }
     
     .groups-cta__content {
@@ -1040,6 +1043,10 @@
         font-weight: 400;
         line-height: 1.75rem;
     }
+
+    .groups-itinerary__table {
+        display: none;
+    }
     
     .groups-why {
         padding: var(--spacing-3xl) 0;
@@ -1047,10 +1054,6 @@
     
     .groups-why__title {
         font-size: 2rem;
-    }
-    
-    .groups-why__grid {
-        grid-template-columns: 1fr;
     }
     
     .groups-cta__layout {

@@ -6,9 +6,8 @@
     position: fixed;
     bottom: 24px;
     right: 24px;
-    z-index: var(--z-fixed);
+    z-index: 9999;
     display: flex;
-    transform: translateY(200%);
     align-items: center;
     justify-content: center;
     width: 3.25rem;
@@ -17,31 +16,55 @@
     border-radius: 50%;
     transition: transform var(--transition-base), bottom var(--transition-base);
     cursor: pointer;
-    box-shadow: 
-        0 0 0 8px rgba(216, 196, 155, 0.15),
-        0 0 0 16px rgba(216, 196, 155, 0.1),
-        0 0 0 24px rgba(216, 196, 155, 0.05);
+}
+
+/* Wave Animation */
+@keyframes wave-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.whatsapp-float__circle_1 {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 2px solid #D8C49B;
+    border-radius: 50%;
+    animation: wave-pulse 2s ease-out infinite;
+}
+
+.whatsapp-float__circle_2 {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border: 1.5px solid #D8C49B;
+    border-radius: 50%;
+    animation: wave-pulse 2s ease-out infinite;
+    animation-delay: 0.5s;
+}
+
+.whatsapp-float__circle_3 {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 1px solid #D8C49B;
+    border-radius: 50%;
+    animation: wave-pulse 2s ease-out infinite;
+    animation-delay: 1s;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.05);
     color: var(--color-text-muted);
-}
-
-.whatsapp-float svg {
-    width: 28px;
-    height: 28px;
-    fill: var(--color-primary-dark);
-}
-
-.whatsapp-float img {
-    width: 28px;
-    height: 28px;
-}
-
-/* Hidden when cookie banner is visible */
-.whatsapp-float.cookie-visible {
-    bottom: calc(var(--spacing-xl) + 120px);
 }
 
 /* ============================================
@@ -64,9 +87,5 @@
     .whatsapp-float img {
         width: 24px;
         height: 24px;
-    }
-
-    .whatsapp-float.cookie-visible {
-        bottom: calc(var(--spacing-lg) + 200px);
     }
 }

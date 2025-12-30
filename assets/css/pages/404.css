@@ -17,6 +17,7 @@
 
 .error-page__background {
     position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../images/404-background.webp') lightgray 50% / cover no-repeat;
     inset: 0;
     z-index: 0;
 }
@@ -25,11 +26,6 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-    );
 }
 
 .error-page__background img {
@@ -114,3 +110,9 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .error-page__content {
+        position: absolute;
+        bottom: 0;
+    }
+}

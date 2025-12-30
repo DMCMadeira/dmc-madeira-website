@@ -53,7 +53,7 @@ function initHeader() {
 function initMobileMenu() {
     const menuBtn = document.querySelector('.header__menu-btn');
     const mobileNav = document.querySelector('.header__mobile-nav');
-    const closeBtn = document.querySelector('.header__mobile-close');
+    const closeBtns = document.querySelectorAll('.header__mobile-close');
     const body = document.body;
 
     if (!menuBtn || !mobileNav) return;
@@ -65,14 +65,45 @@ function initMobileMenu() {
 
     function closeMenu() {
         mobileNav.classList.remove('active');
+        mobileNav.classList.remove('submenu-active');
         body.style.overflow = '';
+        // Close all submenus when closing main menu
+        document.querySelectorAll('.header__mobile-submenu').forEach(submenu => {
+            submenu.classList.remove('active');
+        });
     }
 
     menuBtn.addEventListener('click', openMenu);
     
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeMenu);
-    }
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', closeMenu);
+    });
+
+    // Handle submenu triggers
+    const submenuTriggers = document.querySelectorAll('.header__mobile-link[data-submenu]');
+    submenuTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const submenuId = trigger.getAttribute('data-submenu');
+            const submenu = document.querySelector(`.header__mobile-submenu[data-submenu="${submenuId}"]`);
+            if (submenu) {
+                submenu.classList.add('active');
+                mobileNav.classList.add('submenu-active');
+            }
+        });
+    });
+
+    // Handle back buttons
+    const backBtns = document.querySelectorAll('.header__mobile-back');
+    backBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const submenu = btn.closest('.header__mobile-submenu');
+            if (submenu) {
+                submenu.classList.remove('active');
+                mobileNav.classList.remove('submenu-active');
+            }
+        });
+    });
 
     // Close on escape key
     document.addEventListener('keydown', (e) => {

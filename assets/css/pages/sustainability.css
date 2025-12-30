@@ -252,24 +252,21 @@
 /* Join Section - Full width background */
 .join {
     background-color: rgba(216, 196, 155, 1);
-    height: 43.75rem;
 }
 
 .join__container {
     display: grid;
     grid-template-columns: 45% 55%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .join__image {
     height: 100%;
 }
 
-.join__image picture {
-    display: block;
-    height: 100%;
-}
 
-.join__image img {
+.join__image img, .join__image picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -280,31 +277,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 500px;
+    max-width: 47.75rem;
     padding: var(--spacing-5xl) var(--spacing-4xl);
     padding-right: 0;
 }
 
 .join__title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: #0D2D18;
+    line-height: 2.75rem;   
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
 }
 
 .join__text {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-primary-dark);
-    opacity: 0.8;
-    margin-bottom: var(--spacing-xl);
+    color: #0D2D18;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .join__buttons {
     display: flex;
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
+    gap: 1.25rem;
 }
 
 /* ============================================
@@ -477,12 +473,38 @@
         height: 1.625rem;
     }
 
+    .join {
+        height: 100%;
+    }
+
     .join__container {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
 
     .join__image {
         order: 1;
+    }
+
+    .join__title {
+        color: #0D2D18;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .join__text {
+        color: #0D2D18;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        margin-bottom: 2rem;
     }
 
     .join__content {
@@ -493,10 +515,11 @@
 
     .join__buttons {
         flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .join__buttons .btn {
-        width: 100%;
         max-width: 280px;
     }
 }
@@ -505,6 +528,88 @@
 @media (min-width: 769px) {
     .real-actions__item-image {
         display: none;
+    }
+}
+
+/* ============================================
+   Video Modal
+   ============================================ */
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 26, 31, 0.95);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.video-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-modal__close {
+    position: absolute;
+    top: var(--spacing-xl);
+    right: var(--spacing-xl);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-muted);
+    background: transparent;
+    color: var(--color-text-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    z-index: 10;
+}
+
+.video-modal__close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.video-modal__content {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.video-modal__wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-color: #000;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.video-modal__wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-modal__close {
+        top: var(--spacing-lg);
+        right: var(--spacing-lg);
+        width: 40px;
+        height: 40px;
+    }
+
+    .video-modal__content {
+        width: 95%;
     }
 }
 
