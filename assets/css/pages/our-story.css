@@ -40,9 +40,10 @@
 }
 
 .heritage__text-bottom {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
     max-width: 400px;
 }
 
@@ -67,9 +68,10 @@
 }
 
 .heritage__text {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    color: var(--color-text-muted);
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
 }
 
 .heritage__image--secondary {
