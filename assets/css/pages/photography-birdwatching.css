@@ -82,6 +82,7 @@
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.75rem;
+    max-width: 45.625rem;
 }
 
 .photo-experiences__note {
@@ -164,6 +165,7 @@
 
 .photo-tailor-made, .photo-field-ethics {
     padding: 3.5rem 0;
+    padding-bottom: 0;
 }
 
 .photo-tailor-made__title, .photo-field-ethics__title {

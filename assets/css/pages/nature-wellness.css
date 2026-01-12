@@ -38,12 +38,12 @@
 }
 
 .nature-intro__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     height: 29.9375rem;
     overflow: hidden;
 }
 
-.nature-intro__image img {
+.nature-intro__image img, .nature-intro__image picture {
     width: 100%;
     height: 100%;       
     display: block;

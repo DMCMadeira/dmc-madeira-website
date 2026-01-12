@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header header--transparent">
         <div class="header__container">
             <a href="index.html" class="header__logo">
                 <img src="assets/logos/header-logo-dmcmadeira.svg" alt="DMC Madeira">
@@ -87,9 +87,9 @@
                     <path d="M17.1667 8.83333C17.1667 13.4357 13.4357 17.1667 8.83333 17.1667M17.1667 8.83333C17.1667 4.23096 13.4357 0.5 8.83333 0.5M17.1667 8.83333H0.5M8.83333 17.1667C4.23096 17.1667 0.5 13.4357 0.5 8.83333M8.83333 17.1667C10.9177 14.8847 12.1023 11.9233 12.1667 8.83333C12.1023 5.74336 10.9177 2.78196 8.83333 0.5M8.83333 17.1667C6.74893 14.8847 5.56437 11.9233 5.5 8.83333C5.56437 5.74336 6.74893 2.78196 8.83333 0.5M0.5 8.83333C0.5 4.23096 4.23096 0.5 8.83333 0.5" stroke="#D8C49B" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div class="header__language-links">
-                    <a href="#" class="active">PT</a>
+                    <a href="#">PT</a>
                     <span class="header__language-divider">|</span>
-                    <a href="#">EN</a>
+                    <a href="#" class="active">EN</a>
                 </div>
             </div>
 
@@ -337,6 +337,7 @@
                 <div class="reach-us__grid">
                     <div class="reach-us__item">
                         <h3 class="reach-us__item-title">Office Address</h3>
+                        <hr class="reach-us__item-divider">
                         <p class="reach-us__item-text">
                             Avenida do Mar e das Comunidades<br>
                             Madeirenses 15, 1st floor. 9000–054<br>
@@ -345,6 +346,7 @@
                     </div>
                     <div class="reach-us__item">
                         <h3 class="reach-us__item-title">Office Hours</h3>
+                        <hr class="reach-us__item-divider">
                         <p class="reach-us__item-text">
                             Monday to Friday:<br>
                             09:00–18:00 (local Madeira time)
@@ -353,6 +355,7 @@
                     </div>
                     <div class="reach-us__item">
                         <h3 class="reach-us__item-title">General Inquiries</h3>
+                        <hr class="reach-us__item-divider">
                         <p class="reach-us__item-text">
                             <a href="mailto:travel@dmcmadeira.pt">Send us an e-mail</a><br>
                             Tel.: +351 291 239 002
@@ -368,78 +371,102 @@
                 <h2 class="contact-accordions__title">Let's start a conversation</h2>
             </div>
             
-            <div class="contact-accordion" data-accordion>
-                <div class="contact-accordion__header" data-accordion-trigger>
-                    <div class="container" id="travel-advisors-and-partners">
-                        <h3 class="contact-accordion__heading">For travel advisors & partners</h3>
-                        <button class="contact-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="contact-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="contact-accordion__icon-close">
-                        </button>
+            <div class="contact-accordion-container" data-accordion>
+                <div class="contact-accordion__background" style="background-image: url('assets/images/experiences-main-topbanner.webp')"></div>
+                <div class="contact-accordion container">
+                    <div class="contact-accordion__header" data-accordion-trigger>
+                        <div class="container" id="travel-advisors-and-partners">
+                            <h3 class="contact-accordion__heading">For travel advisors & partners</h3>
+                            <button class="contact-accordion__toggle" aria-label="Toggle accordion">
+                                <span class="contact-accordion__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                        <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-accordion__content" data-accordion-content>
-                    <div class="contact-accordion__background" style="background-image: url('assets/images/experiences-main-topbanner.webp')"></div>
-                    <div class="container">
-                        <div class="contact-accordion__inner">
-                            <p class="contact-accordion__text">Request tailor-made itineraries for FITs, honeymooners, families, or groups. Let's discuss commission structures, exclusive experiences, or co-created packages.</p>
-                            <div class="contact-accordion__contact">
-                                <a href="mailto:bookings@dmcmadeira.pt">Send us an e-mail</a>
-                                <span>Tel.: +351 291 239 006 / +351 962 733 607</span>
+                    <div class="contact-accordion__content" data-accordion-content>
+                        <div class="container">
+                            <div class="contact-accordion__inner">
+                                <div class="contact-accordion__info">
+                                    <p class="contact-accordion__text">Request tailor-made itineraries for FITs, honeymooners, families, or groups. Let's discuss commission structures, exclusive experiences, or co-created packages.</p>
+                                    <div class="contact-accordion__contact">
+                                        <a href="mailto:bookings@dmcmadeira.pt">Send us an e-mail</a>
+                                        <p class="contact-accordion__text">Tel.: +351 291 239 006 / +351 962 733 607</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="contact-accordion" data-accordion>
-                <div class="contact-accordion__header" data-accordion-trigger>
-                    <div class="container" id="corporate-event-planners">
-                        <h3 class="contact-accordion__heading">For corporate & event planners</h3>
-                        <button class="contact-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="contact-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="contact-accordion__icon-close">
-                        </button>
+            <div class="contact-accordion-container" data-accordion>
+                <div class="contact-accordion__background" style="background-image: url('assets/images/groups-topbanner.webp')"></div>
+                <div class="contact-accordion container">
+                    <div class="contact-accordion__header" data-accordion-trigger>
+                        <div class="container" id="corporate-event-planners">
+                            <h3 class="contact-accordion__heading">For corporate & event planners</h3>
+                            <button class="contact-accordion__toggle" aria-label="Toggle accordion">
+                                <span class="contact-accordion__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                        <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-accordion__content" data-accordion-content>
-                    <div class="contact-accordion__background" style="background-image: url('assets/images/groups-topbanner.webp')"></div>
-                    <div class="container">
-                        <div class="contact-accordion__inner">
-                            <p class="contact-accordion__text">Request proposals for MICE, incentive travel, or executive retreats. We'll align every detail with your objectives, brand identity, and budget.</p>
-                            <div class="contact-accordion__contact">
-                                <a href="mailto:groups@dmcmadeira.pt">Send us an e-mail</a>
+                    <div class="contact-accordion__content" data-accordion-content>
+                        <div class="container">
+                            <div class="contact-accordion__inner">
+                                <div class="contact-accordion__info">
+                                    <p class="contact-accordion__text">Request proposals for MICE, incentive travel, or executive retreats. We’ll align every detail with your objectives, brand identity, and budget.</p>
+                                    <div class="contact-accordion__contact">
+                                        <a href="mailto:groups@dmcmadeira.pt">Send us an e-mail</a>
+                                        <p class="contact-accordion__text">Tel.: +351 291 239 007 / +351 966 779 520</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="contact-accordion" data-accordion id="cruise-shorex">
-                <div class="contact-accordion__header" data-accordion-trigger>
-                    <div class="container">
-                        <h3 class="contact-accordion__heading">For cruise & Shorex partners</h3>
-                        <button class="contact-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="contact-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="contact-accordion__icon-close">
-                        </button>
+            <div class="contact-accordion-container" data-accordion id="cruise-shorex">
+                <div class="contact-accordion__background" style="background-image: url('assets/images/shorex-topbanner.webp')"></div>
+                <div class="contact-accordion container">
+                    <div class="contact-accordion__header" data-accordion-trigger>
+                        <div class="container">
+                            <h3 class="contact-accordion__heading">For cruise & Shorex partners</h3>
+                            <button class="contact-accordion__toggle" aria-label="Toggle accordion">
+                                <span class="contact-accordion__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                        <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-accordion__content" data-accordion-content>
-                    <div class="contact-accordion__background" style="background-image: url('assets/images/shorex-topbanner.webp')"></div>
-                    <div class="container">
-                        <div class="contact-accordion__inner">
-                            <p class="contact-accordion__text">Discuss shore excursion programs, cruise line partnerships, or port logistics. We're ready to deliver seamless guest experiences at scale.</p>
-                            <div class="contact-accordion__contact">
-                                <a href="mailto:operation@dmcmadeira.pt">Send us an e-mail</a>
-                                <span>Tel.: +351 291 239 005 / +351 964 890 685</span>
+                    <div class="contact-accordion__content" data-accordion-content>
+                        <div class="container">
+                            <div class="contact-accordion__inner">
+                                <div class="contact-accordion__info">
+                                    <p class="contact-accordion__text">Discuss shore excursion programs, cruise line partnerships, or port logistics. We're ready to deliver seamless guest experiences at scale.</p>
+                                    <div class="contact-accordion__contact">
+                                        <a href="mailto:operation@dmcmadeira.pt">Send us an e-mail</a>
+                                        <p class="contact-accordion__text">Tel.: +351 291 239 005 / +351 964 890 685</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Response Time Guarantee -->
             <div class="response-guarantee">
                 <div class="container">
                     <h3 class="response-guarantee__title">Response time guarantee</h3>
@@ -451,14 +478,13 @@
             </div>
         </section>
 
-        <!-- Visit us in Funchal Section -->
-        <section class="visit-funchal">
+        <section class="cta-section">
             <div class="container">
-                <h2 class="visit-funchal__title">Visit us in Funchal</h2>
-                <p class="visit-funchal__text">If you're in Madeira, we'd be delighted to welcome you to our office.<br>
+                <h2 class="cta-section__title">Visit us in Funchal</h2>
+                <p class="cta-section__text">If you're in Madeira, we'd be delighted to welcome you to our office.<br>
                 Come meet the team, discuss new collaborations, or simply enjoy a coffee while discovering how we work.<br>
                 We believe in transparency, hospitality, and long-term vision, values that define everything we do.</p>
-                <div class="visit-funchal__buttons">
+                <div class="cta-section__buttons">
                     <a href="experiences.html" class="btn btn--dark">Explore our experiences</a>
                     <a href="press-partners.html" class="btn btn--white">Become a Partner</a>
                 </div>
@@ -506,7 +532,9 @@
                         <li>
                             <a href="#" class="footer__link footer__link--external">
                                 Livro de reclamações
-                                <img src="assets/icons/footer-icon-externallink.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+  <path d="M15 5.625C15 5.79076 14.9342 5.94973 14.8169 6.06694C14.6997 6.18415 14.5408 6.25 14.375 6.25C14.2092 6.25 14.0503 6.18415 13.9331 6.06694C13.8158 5.94973 13.75 5.79076 13.75 5.625V2.13438L8.56797 7.31719C8.45069 7.43446 8.29163 7.50035 8.12578 7.50035C7.95993 7.50035 7.80087 7.43446 7.68359 7.31719C7.56632 7.19991 7.50043 7.04085 7.50043 6.875C7.50043 6.70915 7.56632 6.55009 7.68359 6.43281L12.8656 1.25H9.375C9.20924 1.25 9.05027 1.18415 8.93306 1.06694C8.81585 0.949731 8.75 0.79076 8.75 0.625C8.75 0.45924 8.81585 0.300269 8.93306 0.183058C9.05027 0.0658481 9.20924 0 9.375 0H14.375C14.5408 0 14.6997 0.0658481 14.8169 0.183058C14.9342 0.300269 15 0.45924 15 0.625V5.625ZM11.875 7.5C11.7092 7.5 11.5503 7.56585 11.4331 7.68306C11.3158 7.80027 11.25 7.95924 11.25 8.125V13.75H1.25V3.75H6.875C7.04076 3.75 7.19973 3.68415 7.31694 3.56694C7.43415 3.44973 7.5 3.29076 7.5 3.125C7.5 2.95924 7.43415 2.80027 7.31694 2.68306C7.19973 2.56585 7.04076 2.5 6.875 2.5H1.25C0.918479 2.5 0.600537 2.6317 0.366116 2.86612C0.131696 3.10054 0 3.41848 0 3.75V13.75C0 14.0815 0.131696 14.3995 0.366116 14.6339C0.600537 14.8683 0.918479 15 1.25 15H11.25C11.5815 15 11.8995 14.8683 12.1339 14.6339C12.3683 14.3995 12.5 14.0815 12.5 13.75V8.125C12.5 7.95924 12.4342 7.80027 12.3169 7.68306C12.1997 7.56585 12.0408 7.5 11.875 7.5Z" fill="#D8C49B"/>
+</svg>
                             </a>
                         </li>
                     </ul>
@@ -639,6 +667,7 @@
         document.querySelectorAll('[data-accordion]').forEach(accordion => {
             const trigger = accordion.querySelector('[data-accordion-trigger]');
             const content = accordion.querySelector('[data-accordion-content]');
+            const icon = trigger.querySelector('.contact-accordion__icon');
             
             trigger.addEventListener('click', () => {
                 const isOpen = accordion.classList.contains('is-open');
@@ -647,13 +676,98 @@
                 document.querySelectorAll('[data-accordion]').forEach(other => {
                     if (other !== accordion) {
                         other.classList.remove('is-open');
+                        const otherIcon = other.querySelector('.contact-accordion__icon');
+                        if (otherIcon) {
+                            otherIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/><path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/></svg>';
+                        }
                     }
                 });
                 
                 // Toggle current accordion
-                accordion.classList.toggle('is-open');
+                if (!isOpen) {
+                    accordion.classList.add('is-open');
+                    if (icon) {
+                        icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4L20 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/><path d="M20 4L4 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/></svg>';
+                    }
+                } else {
+                    accordion.classList.remove('is-open');
+                    if (icon) {
+                        icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/><path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/></svg>';
+                    }
+                }
             });
         });
+
+        // Auto-open accordion from URL hash and scroll to it
+        function openAccordionFromHash() {
+            const hash = window.location.hash;
+            if (!hash) return;
+
+            // Remove the # from hash
+            const targetId = hash.substring(1);
+            
+            // Try to find element by ID (could be in header div or container)
+            let targetElement = document.getElementById(targetId);
+            
+            // If not found, try to find accordion container with that ID
+            if (!targetElement) {
+                const accordionContainer = document.querySelector(`[data-accordion]#${targetId}`);
+                if (accordionContainer) {
+                    targetElement = accordionContainer;
+                }
+            }
+            
+            if (targetElement) {
+                // Find the accordion container (could be the element itself or a parent)
+                let accordionContainer = targetElement.closest('[data-accordion]');
+                
+                // If targetElement is the container itself
+                if (targetElement.hasAttribute('data-accordion')) {
+                    accordionContainer = targetElement;
+                }
+                
+                if (accordionContainer) {
+                    // Close all other accordions
+                    document.querySelectorAll('[data-accordion]').forEach(other => {
+                        if (other !== accordionContainer) {
+                            other.classList.remove('is-open');
+                            const otherIcon = other.querySelector('.contact-accordion__icon');
+                            if (otherIcon) {
+                                otherIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/><path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/></svg>';
+                            }
+                        }
+                    });
+                    
+                    // Open the target accordion
+                    accordionContainer.classList.add('is-open');
+                    const targetIcon = accordionContainer.querySelector('.contact-accordion__icon');
+                    if (targetIcon) {
+                        targetIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4L20 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/><path d="M20 4L4 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/></svg>';
+                    }
+                    
+                    // Wait a bit for the accordion to open, then scroll
+                    setTimeout(() => {
+                        const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }, 100);
+                }
+            }
+        }
+
+        // Run on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', openAccordionFromHash);
+        } else {
+            openAccordionFromHash();
+        }
+
+        // Also handle hash changes (if user clicks another anchor link)
+        window.addEventListener('hashchange', openAccordionFromHash);
     </script>
 </body>
 </html>

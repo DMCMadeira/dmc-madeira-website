@@ -78,11 +78,6 @@
     border-top: 1px solid var(--color-border-subtle);
 }
 
-.experience-accordion:last-of-type {
-    border-bottom: 1px solid var(--color-border-subtle);
-}
-
-
 
 .experience-accordion__header {
     cursor: pointer;

@@ -344,7 +344,7 @@
    ============================================ */
 
 .gastro-sustainability {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-sustainability__title {
@@ -359,7 +359,7 @@
     font-size: 1.125rem;
     color: var(--color-text-muted);
     line-height: 1.7;
-    max-width: 800px;
+    max-width: 56.8125rem;
 }
 
 /* ============================================
@@ -367,7 +367,7 @@
    ============================================ */
 
 .gastro-groups {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0 1.5rem 0;
 }
 
 .gastro-groups__title {
@@ -395,50 +395,52 @@
    ============================================ */
 
 .gastro-itinerary {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0 5rem 0;
 }
 
 .gastro-itinerary__title {
+    color: #FFF;
     font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-3xl);
-    line-height: 1.2;
+    line-height: 2.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 3.5rem;
 }
 
-/* Desktop Table */
+.gastro-itinerary__table-wrapper {
+    display: block;
+}
+
 .gastro-itinerary__table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: var(--spacing-2xl);
 }
 
-.gastro-itinerary__table th,
-.gastro-itinerary__table td {
+.gastro-itinerary__table thead th {
+    color: var(--White, #FFF);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.75rem;
     padding: var(--spacing-lg) var(--spacing-md);
+    border-bottom: 1px solid #FEFEFE;
     text-align: left;
-    border-bottom: 1px solid var(--color-border-subtle);
 }
 
-.gastro-itinerary__table th {
-    font-size: 0.875rem;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.gastro-itinerary__table td {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-}
-
-.gastro-itinerary__table td:first-child {
-    width: 80px;
+.gastro-itinerary__table thead th:first-child {
+    padding-left: 0;
 }
 
 .gastro-itinerary__table tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.03);
+}
+
+.gastro-itinerary__table tbody td {
+    padding: var(--spacing-lg) var(--spacing-md);
+    color: var(--secondary-500, #D8C49B);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    border-bottom: 1px solid #FEFEFE;
+    line-height: 1.75rem;
 }
 
 /* Mobile Accordion */
@@ -446,15 +448,15 @@
     display: none;
 }
 
-.itinerary-item {
-    border-bottom: 1px solid var(--color-border-subtle);
+.gastro-itinerary__accordion-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.itinerary-header {
-    width: 100%;
+.gastro-itinerary__accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: var(--spacing-lg) 0;
     background: none;
     border: none;
@@ -462,47 +464,41 @@
     text-align: left;
 }
 
-.itinerary-header__day {
+.gastro-itinerary__accordion-title {
     font-size: 1.25rem;
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-white);
 }
 
-.itinerary-header__icon {
+.gastro-itinerary__accordion-icon {
     font-size: 1.5rem;
-    color: var(--color-text-muted);
-    transition: transform var(--transition-fast);
+    color: var(--color-text-white);
+    transition: transform 0.3s ease;
 }
 
-.itinerary-content {
+.gastro-itinerary__accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
 
-.itinerary-item.active .itinerary-content {
-    max-height: 300px;
+.gastro-itinerary__accordion-item.active .gastro-itinerary__accordion-content {
+    max-height: 200px;
     padding-bottom: var(--spacing-lg);
 }
 
-.itinerary-content__title {
+.gastro-itinerary__accordion-content p {
     font-size: 1rem;
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-white);
-    margin-bottom: var(--spacing-sm);
-}
-
-.itinerary-content__text {
-    font-size: 1rem;
-    color: var(--color-text-muted);
     line-height: 1.7;
+    color: var(--color-text-muted);
 }
 
 .gastro-itinerary__note {
-    max-width: 50.5rem;
+    color: #D8C49B;
     font-size: 1.125rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
+    margin-top: 2.75rem;
 }
 
 /* ============================================
@@ -551,6 +547,10 @@
     
     .gastro-intro__content {
         max-width: 100%;
+    }
+
+    .gastro-itinerary__note {
+        margin-top: 1.5rem;
     }
     
     .gastro-intro__image {
@@ -608,14 +608,56 @@
         margin-right: auto;
     }
     
-    /* Hide table, show accordion on mobile */
-    .gastro-itinerary__table {
+    .gastro-itinerary {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .gastro-itinerary__accordion-icon {
+        transition: transform .5s ease;
+    }
+
+    .gastro-itinerary__accordion-item.active .gastro-itinerary__accordion-icon {
+        transform: rotate(180deg);
+    }
+
+    .gastro-itinerary__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        padding-bottom: 1.5rem;
+        margin: 0;
+    }
+
+    .gastro-itinerary__accordion-title {
+        color: #FFF;
+        font-size: 1.75rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .gastro-itinerary__accordion-content {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+    
+    .gastro-itinerary__note {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-regular);
+        line-height: 1.75rem;
+    }
+
+    .gastro-itinerary__table-wrapper {
         display: none;
     }
     
     .gastro-itinerary__accordion {
         display: block;
-        margin-bottom: var(--spacing-2xl);
     }
     
     .gastro-cta {

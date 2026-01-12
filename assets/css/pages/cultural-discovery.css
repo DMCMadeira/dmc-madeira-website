@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-4xl);
-    align-items: center;
+    align-items: start;
 }
 
 .cultural-intro__content {
@@ -44,7 +44,7 @@
 }
 
 .cultural-intro__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
     height: 29.9375rem;
 
@@ -116,7 +116,7 @@
 }
 
 .cultural-artisans__card-image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
 }
@@ -239,7 +239,7 @@
 }
 
 .cultural-heritage__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -301,7 +301,7 @@
 }
 
 .cultural-music__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -348,7 +348,7 @@
 }
 
 .cultural-sustainability__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
     max-width: 76.5rem;
     margin: 0 auto;
@@ -407,12 +407,12 @@
 .cultural-experiences__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4xl);
-    align-items: center;
+    gap: 6.5rem;
+    align-items: flex-start;
 }
 
 .cultural-experiences__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 

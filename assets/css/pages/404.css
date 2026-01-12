@@ -50,6 +50,11 @@
     padding: var(--spacing-2xl);
 }
 
+.error-page__content img {
+    width: 14.625rem;
+    height: 14.625rem;
+}
+
 .error-page__icon {
     width: 120px;
     height: auto;
@@ -102,6 +107,11 @@
     .error-page__buttons {
         flex-direction: column;
         align-items: center;
+    }
+
+    .error-page__content img {
+        width: 12.75rem;
+        height: 12.75rem;
     }
     
     .error-page__buttons .btn {

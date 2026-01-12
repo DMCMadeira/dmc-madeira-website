@@ -93,6 +93,21 @@
     background: rgba(255, 255, 255, 0.10);
 }
 
+/* Active state for current page (desktop nav) */
+.header__nav-link.active {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.header__nav-link svg {
+    transition: transform var(--transition-fast);
+}
+
+.header__nav-link:hover svg,
+.header__nav-link.active svg,
+.header__nav-item:hover .header__nav-link svg {
+    transform: rotate(180deg);
+}
+
 .header__dropdown--experiences {
     min-width: 16.4375rem;
 }

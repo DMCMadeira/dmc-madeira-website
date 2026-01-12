@@ -199,6 +199,10 @@
     border-color: var(--color-text-white);
 }
 
+.pagination__btn:hover:not(:disabled) path {
+    fill: #FFF;
+}
+
 .pagination__btn:disabled {
     opacity: 0.3;
     cursor: not-allowed;

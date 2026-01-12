@@ -225,7 +225,6 @@
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-text-white);
-    margin-bottom: var(--spacing-md);
 }
 
 .sea-adventures__card-text {

@@ -28,7 +28,7 @@
             opacity: 1;
         }
         .lazy-image.error {
-            opacity: 0.5;
+            opacity: 1;
         }
     `;
 
