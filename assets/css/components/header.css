@@ -170,6 +170,11 @@
     transition: font-weight var(--transition-fast);
 }
 
+/* Active state for dropdown links (current page) */
+.header__dropdown-link.active {
+    text-decoration: underline;
+}
+
 .header__language {
     display: flex;
     align-items: center;
@@ -351,6 +356,11 @@
 
 .header__mobile-submenu-list .header__mobile-link {
     color: #FFF;
+}
+
+.header__dropdown-link:has(.header__dropdown-link--viewall) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
 }
 
 .header__mobile-link--title {
