@@ -163,7 +163,7 @@
 
 @media (max-width: 768px) {
     .why-choose {
-        padding: var(--spacing-3xl) 0;
+        padding: 2rem 0;
     }
 
     .why-choose__carousel-track {

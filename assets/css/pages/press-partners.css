@@ -489,20 +489,24 @@
         overflow-y: hidden;
         flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--color-border-muted) transparent;
+        scrollbar-width: none;
+        min-height: 4rem;
+    }
+
+    .partners-logos img {
+        flex-shrink: 0;
+        height: 2.5rem;
+        width: auto;
+    }
+
+    .partners-logos--associations img {
+        height: 2.5rem;
     }
 
     .partners-logos::-webkit-scrollbar {
-        height: 6px;
-        background: transparent;
+        display: none;
+     
     }
-
-    .partners-logos::-webkit-scrollbar-thumb {
-        background-color: var(--color-border-muted);
-        border-radius: 3px;
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -533,10 +537,6 @@
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5rem;
-    }
-
-    .media-card {
-        background: #F7F2E5;
     }
 
     .press-intro {

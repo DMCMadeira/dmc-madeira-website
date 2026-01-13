@@ -24,7 +24,12 @@
     height: 40.375rem;
 }
 
-
+.intro-experiences .intro__image img, .intro-experiences .intro__image picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
 
 .intro__container {
     display: grid;
@@ -74,12 +79,10 @@
 }
 
 .intro__subtitle {
-    color: var(--secondary-500, #D8C49B);
+    color:#D8C49B;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.75rem;
-    font-size: 1rem;
-    font-weight: var(--font-weight-medium);
 }
 
 .intro__description {
@@ -109,7 +112,7 @@
 
 @media (max-width: 768px) {
     .intro {
-        padding: var(--spacing-3xl) 0;
+        padding: 0 0 2rem 0;
         padding-top: 0 !important;
     }
 
@@ -138,8 +141,11 @@
     }
 
     .intro__title {
-        font-size: 3rem;
-
+        color: #F7F2E5;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
     }
 
     .intro__subtitle {
@@ -148,5 +154,49 @@
 
     .intro__description {
         font-size: 1.125rem;
+    }
+
+    .intro-experiences .intro__image {
+        height: 15.25rem;
+        width: 100vw;
+    }
+
+    .intro-experiences .intro__image img, .intro-experiences .intro__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .intro-experiences .intro__title {
+        color: var(--Accent, #F7F2E5);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .intro-experiences .intro__description {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
+    .intro-experiences {
+        padding: 2.75rem 0 0 0;
+        padding-top: 2.75rem !important;
+    }
+
+    .intro-experiences .intro__container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.75rem;
+        padding-right: 0;
+    }
+
+    .intro-experiences .intro__image-wrapper .intro__image {
+        border-radius: 0;
+        width: 100vw;
     }
 }

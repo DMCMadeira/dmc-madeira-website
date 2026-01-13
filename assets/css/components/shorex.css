@@ -83,6 +83,15 @@
 
     .shorex__image {
         order: 1;
+        height: 16rem;
+    }
+
+    .shorex__image img, 
+    .shorex__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
     }
 
     .shorex__content {

@@ -7,7 +7,7 @@
    ============================================ */
 
 .gastro-intro {
-    padding: var(--spacing-5xl) 0;
+    padding: 6.75rem 0 3.5rem 0;
 }
 
 .gastro-intro__grid {
@@ -57,7 +57,7 @@
    ============================================ */
 
 .gastro-legacy {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-legacy__title {
@@ -117,7 +117,7 @@
    ============================================ */
 
 .gastro-chef {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-chef__title {
@@ -184,7 +184,7 @@
    ============================================ */
 
 .gastro-authentic {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-authentic__title {
@@ -244,7 +244,7 @@
    ============================================ */
 
 .gastro-signature {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-signature__title {
@@ -284,15 +284,20 @@
 }
 
 .gastro-signature__card-text {
-    font-size: 0.9375rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
 }
 
 .gastro-signature__note {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
+    color: #D8C49B;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-top: 2.75rem;
+    max-width:  56.9375rem;
 }
 
 /* ============================================
@@ -300,7 +305,7 @@
    ============================================ */
 
 .gastro-culture {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0;
 }
 
 .gastro-culture__title {
@@ -449,7 +454,30 @@
 }
 
 .gastro-itinerary__accordion-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Full-width border effect */
+.gastro-itinerary__accordion-item::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
+}
+
+.gastro-itinerary__accordion-item:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
 }
 
 .gastro-itinerary__accordion-header {
@@ -457,7 +485,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: var(--spacing-lg) 0;
+    padding: 2.75rem 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -470,21 +498,40 @@
     color: var(--color-text-white);
 }
 
+.gastro-itinerary__accordion-toggle {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gastro-itinerary__accordion-icon {
     font-size: 1.5rem;
     color: var(--color-text-white);
-    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gastro-itinerary__accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
 }
 
-.gastro-itinerary__accordion-item.active .gastro-itinerary__accordion-content {
-    max-height: 200px;
+.gastro-itinerary__accordion-item.is-open .gastro-itinerary__accordion-content {
+    max-height: 600px;
     padding-bottom: var(--spacing-lg);
+}
+
+.gastro-itinerary__accordion-item.is-open .gastro-itinerary__accordion-icon {
+    transform: rotate(180deg);
 }
 
 .gastro-itinerary__accordion-content p {
@@ -571,6 +618,30 @@
 }
 
 @media (max-width: 768px) {
+    .gastro-culture__title {
+        text-align: left;
+    }
+
+    .gastro-culture__text {
+        text-align: left;
+    }
+    .gastro-signature__card-image {
+        height: 16rem;
+        width: 100%;
+    }
+
+    .gastro-culture__image {
+        border-radius: 0;
+        height: 16rem;
+    }
+
+    .gastro-culture__image img, .gastro-culture__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
     .gastro-intro,
     .gastro-legacy,
     .gastro-chef,
@@ -594,32 +665,110 @@
     .gastro-itinerary__title {
         font-size: 2rem;
     }
+
+    .gastro-authentic {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .gastro-signature {
+        padding: 2.75rem 0 2rem 0;
+    }
+
+    .gastro-culture {
+        padding: 2.75rem 0 0 0;
+    }
+
+    .gastro-groups {
+        padding: 2.75rem 0;
+    }
+
+    .gastro-itinerary {
+        padding: 0 0 5rem 0;
+    }
     
     .gastro-legacy__card-title,
     .gastro-chef__subtitle,
     .gastro-authentic__card-title {
         font-size: 1.5rem;
     }
-    
-    .gastro-signature__grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .gastro-itinerary {
+
+    .gastro-chef {
         padding: 2.75rem 0 2rem 0;
     }
 
-    .gastro-itinerary__accordion-icon {
-        transition: transform .5s ease;
+    .gastro-legacy {
+        padding: 2.75rem 0 2rem 0;
     }
 
-    .gastro-itinerary__accordion-item.active .gastro-itinerary__accordion-icon {
-        transform: rotate(180deg);
+    .gastro-sustainability {
+        padding: 2.75rem 0 2rem 0;
+    }
+    
+    .gastro-signature__grid {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .gastro-intro {
+        padding: 2.75rem 0 0 0;
+    }
+
+    .gastro-legacy__title {
+        margin-bottom: 2.75rem;
+    }
+
+    .gastro-intro__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .gastro-intro__text {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
+    .gastro-intro__image {
+        height: 16rem;
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .gastro-intro__grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.75rem;
+    }
+
+    .gastro-intro__image img, .gastro-intro__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .gastro-legacy__card-title {
+        color: #F7F2E5;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .gastro-legacy__card-image {
+        margin-bottom: 1.5rem;
+    }
+
+    .gastro-legacy__card-text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+    
     .gastro-itinerary__title {
         color: #FFF;
         font-size: 2rem;

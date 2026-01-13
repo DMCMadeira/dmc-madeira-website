@@ -116,16 +116,18 @@
     justify-content: center;
 }
 
-.experience-accordion__icon-close {
-    display: none;
+.experience-accordion__icon {
+    font-size: 1.5rem;
+    color: var(--color-text-white);
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.experience-accordion-container.is-open .experience-accordion__icon-open {
-    display: none;
-}
-
-.experience-accordion-container.is-open .experience-accordion__icon-close {
-    display: block;
+.experience-accordion-container.is-open .experience-accordion__icon {
+    transform: rotate(180deg);
 }
 
 /* Accordion Content */
@@ -249,6 +251,14 @@
 @media (max-width: 768px) {
     .experiences-experts {
         padding: 2.75rem 0;
+    }
+
+    .experiences-discover__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        padding-bottom: 2.75rem;
     }
 
     .experience-accordion__header .container {

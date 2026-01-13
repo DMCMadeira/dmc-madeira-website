@@ -399,8 +399,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Nature & wellness — reconnect with Madeira</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -428,8 +432,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Gastronomy & wine — taste Madeira's soul</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -457,8 +465,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Madeira by sea — discover freedom</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -486,8 +498,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Cultural discovery — hands-on heritage</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -515,8 +531,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Family adventures — memories for every generation</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -544,8 +564,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Golf — tee off between mountains and sea</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -573,8 +597,12 @@
                     <div class="container">
                         <h3 class="experience-accordion__heading">Photography & birdwatching — hidden Madeira</h3>
                         <button class="experience-accordion__toggle" aria-label="Toggle accordion">
-                            <img src="assets/icons/accordeon-open.svg" alt="" class="experience-accordion__icon-open">
-                            <img src="assets/icons/accordeon-close.svg" alt="" class="experience-accordion__icon-close">
+                            <span class="experience-accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/>
+                                    <path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -784,18 +812,33 @@
         document.querySelectorAll('[data-accordion]').forEach(accordion => {
             const trigger = accordion.querySelector('[data-accordion-trigger]');
             const content = accordion.querySelector('[data-accordion-content]');
+            const icon = trigger.querySelector('.experience-accordion__icon');
             
             trigger.addEventListener('click', () => {
                 const isOpen = accordion.classList.contains('is-open');
                 
                 // Close all other accordions
-                document.querySelectorAll('[data-accordion]').forEach(acc => {
-                    acc.classList.remove('is-open');
+                document.querySelectorAll('[data-accordion]').forEach(other => {
+                    if (other !== accordion) {
+                        other.classList.remove('is-open');
+                        const otherIcon = other.querySelector('.experience-accordion__icon');
+                        if (otherIcon) {
+                            otherIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/><path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/></svg>';
+                        }
+                    }
                 });
                 
                 // Toggle current accordion
                 if (!isOpen) {
                     accordion.classList.add('is-open');
+                    if (icon) {
+                        icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4L20 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/><path d="M20 4L4 20" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/></svg>';
+                    }
+                } else {
+                    accordion.classList.remove('is-open');
+                    if (icon) {
+                        icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 0V24" stroke="#FEFEFE" stroke-width="2"/><path d="M24 12H0" stroke="#FEFEFE" stroke-width="2"/></svg>';
+                    }
                 }
             });
         });

@@ -641,8 +641,15 @@
         min-width: 280px;
     }
 
+    .photo-birdwatching {
+        padding-bottom: 0;
+    }
     .photo-species__arrows {
         display: flex;
+    }
+
+    .photo-field-ethics {
+        padding: 2.75rem 0 2rem 0;
     }
 
     /* Birdwatching Section Mobile */
@@ -681,11 +688,6 @@
 
     .photo-landscapes__block--reverse .photo-landscapes__block-content {
         order: 1;
-    }
-
-    .photo-landscapes__block-title {
-        font-size: 1.5rem;
-        line-height: 2rem;
     }
 
     .photo-groups {

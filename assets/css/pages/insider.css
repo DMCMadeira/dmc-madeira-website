@@ -275,6 +275,21 @@
 }
 
 @media (max-width: 768px) {
+    .insider-intro__title {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .insider-intro__text {
+        color: #D8C49B;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+    }
+
     .insider-intro {
         padding: 3.5rem 0 2.5rem 0;
     }
@@ -320,7 +335,7 @@
 
     .articles-grid__items {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: 2.75rem;
     }
     
     .pagination__btn {

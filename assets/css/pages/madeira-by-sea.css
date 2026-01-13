@@ -378,8 +378,15 @@
     }
     
     .sea-intro__grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2.75rem;
+    }
+
+    .sea-intro__image {
+        width: 100vw;
+        height: 16rem;
+        border-radius: 0;
     }
 
     .sea-intro__text {

@@ -80,7 +80,30 @@
 }
 
 .legal-accordion__item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Full-width border effect */
+.legal-accordion__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
+}
+
+.legal-accordion__item:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
 }
 
 .legal-accordion__header {
@@ -88,7 +111,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: var(--spacing-xl) 0;
+    padding: 2.75rem 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -104,22 +127,41 @@
     letter-spacing: -0.04rem;
 }
 
+.legal-accordion__toggle {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
 .legal-accordion__icon {
     font-size: 1.5rem;
     color: var(--color-text-white);
     flex-shrink: 0;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-accordion__item.is-open .legal-accordion__icon {
+    transform: rotate(180deg);
 }
 
 .legal-accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.legal-accordion__item.active .legal-accordion__content {
+.legal-accordion__item.is-open .legal-accordion__content {
     max-height: 1000px;
-    padding-bottom: var(--spacing-xl);
+    padding-bottom: 2.75rem;
 }
 
 .legal-accordion__content p {
@@ -160,13 +202,6 @@
     font-weight: var(--font-weight-medium);
 }
 
-.legal-accordion__icon {
-    transition: transform 0.5s ease;
-}
-
-.legal-accordion__item.active .legal-accordion__icon {
-    transform: rotate(180deg);
-}
 
 
 .legal-contact__title {
@@ -224,6 +259,8 @@
         font-weight: 700;
         line-height: 2.75rem;
         letter-spacing: -0.045rem;
+        max-width: 16.3125rem;
+        margin: 0 auto;
     }
 
     .legal-content {
@@ -235,7 +272,7 @@
     }
     
     .legal-accordion__header {
-        padding: var(--spacing-lg) 0;
+        padding: 2.75rem 0;
     }
     
     .legal-accordion__title {

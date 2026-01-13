@@ -420,7 +420,7 @@
     font-weight: 400;
     line-height: 1.75rem;
     margin-bottom: 1.5rem;
-    width: 58rem;
+    max-width: 58rem;
 }
 
 .operators__buttons {
@@ -560,7 +560,30 @@
 }
 
 .shorex-experiences__accordion-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Full-width border effect */
+.shorex-experiences__accordion-item::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
+}
+
+.shorex-experiences__accordion-item:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color-border-subtle);
 }
 
 .shorex-experiences__accordion-header {
@@ -568,7 +591,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 2.75rem 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -581,21 +604,40 @@
     color: #FFF;
 }
 
+.shorex-experiences__accordion-toggle {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .shorex-experiences__accordion-icon {
     font-size: 1.5rem;
     color: #FFF;
-    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shorex-experiences__accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
 }
 
-.shorex-experiences__accordion-item.active .shorex-experiences__accordion-content {
-    max-height: 200px;
+.shorex-experiences__accordion-item.is-open .shorex-experiences__accordion-content {
+    max-height: 600px;
     padding-bottom: 1.5rem;
+}
+
+.shorex-experiences__accordion-item.is-open .shorex-experiences__accordion-icon {
+    transform: rotate(180deg);
 }
 
 .shorex-experiences__accordion-content p {
@@ -821,14 +863,6 @@
 
     .shorex-experiences__accordion {
         display: block;
-    }
-
-    .shorex-experiences__accordion-icon {
-        transition: transform 0.5s ease;
-    }
-
-    .shorex-experiences__accordion-item.active .shorex-experiences__accordion-icon {
-        transform: rotate(180deg);
     }
 
     .shorex-experiences__accordion-title {

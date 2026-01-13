@@ -5,7 +5,7 @@
 .hero {
     padding: var(--spacing-lg);
     width: 100%;
-    padding-top: calc(var(--spacing-lg) + 80px); /* Account for fixed header */
+    padding-top: calc(var(--spacing-lg) + 100px); 
     min-height: 100vh;
 }
 
@@ -117,11 +117,11 @@
         margin-top: 2rem;
         padding: var(--spacing-md);
         padding-top: calc(var(--spacing-md) + 70px);
+        min-height: unset;
     }
 
     .hero__wrapper {
-        min-height: calc(100vh - var(--spacing-md) * 2 - 70px);
-        min-height: calc(100svh - var(--spacing-md) * 2 - 70px);
+        min-height: 35rem;
         border-radius: var(--radius-xl);
     }
 

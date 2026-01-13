@@ -683,9 +683,7 @@
             let isTransitioning = false;
             let isLocked = false;
             let lockPosition = 0;
-            let hasCompletedDown = false;
-            let hasCompletedUp = true;
-            let isDesktop = window.innerWidth >= 769;
+            let hasPassedSection = false; // Track if user has completed the section going down
 
             function isMobile() {
                 return window.innerWidth < 769;
@@ -732,6 +730,22 @@
                 requestAnimationFrame(animateScroll);
             }
 
+            function ensureCentered() {
+                if (isMobile() || !isLocked) return;
+                
+                const rect = section.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                const sectionCenter = rect.top + rect.height / 2;
+                const viewportCenter = viewportHeight / 2;
+                const offset = Math.abs(sectionCenter - viewportCenter);
+                
+                if (offset > 50) {
+                    const targetPosition = getCenteredScrollPosition();
+                    lockPosition = targetPosition;
+                    window.scrollTo(0, targetPosition);
+                }
+            }
+
             function setActiveItem(index, force = false) {
                 if (isMobile()) return false;
                 if (index < 0 || index >= items.length || isTransitioning) return false;
@@ -745,6 +759,9 @@
                 item.classList.add('active');
                 
                 scrollContainerToItem(index);
+                
+                // Ensure section stays centered when navigating items
+                ensureCentered();
                 
                 const newSrc = item.dataset.image;
                 const newSrcset = `${item.dataset.image} 1x, ${item.dataset.image2x} 2x`;
@@ -771,23 +788,42 @@
                 });
             });
 
-            function shouldLockScroll() {
+            function isSectionEntering() {
                 if (isMobile()) return false;
                 
                 const rect = section.getBoundingClientRect();
                 const viewportHeight = window.innerHeight;
-                const lockThreshold = viewportHeight * 0.3;
                 
-                return rect.top <= lockThreshold && rect.bottom >= viewportHeight * 0.7;
+                // Section is entering when top is in upper half of viewport
+                return rect.top > 0 && rect.top < viewportHeight * 0.5;
             }
 
-            function lockScroll() {
-                if (isMobile()) return;
-                if (!isLocked) {
+            function getCenteredScrollPosition() {
+                const rect = section.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                // Calculate where to scroll so section is centered
+                const sectionTop = window.scrollY + rect.top;
+                const centeredPosition = sectionTop - (viewportHeight - section.offsetHeight) / 2;
+                return Math.max(0, centeredPosition);
+            }
+
+            function centerAndLock() {
+                if (isMobile() || isLocked) return;
+                
+                const targetPosition = getCenteredScrollPosition();
+                
+                // Smooth scroll to center, then lock
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Lock after animation completes
+                setTimeout(() => {
+                    lockPosition = targetPosition;
                     isLocked = true;
-                    lockPosition = window.scrollY;
                     document.body.style.overflow = 'hidden';
-                }
+                }, 400);
             }
 
             function unlockScroll() {
@@ -799,42 +835,47 @@
 
             function handleWheel(e) {
                 if (isMobile()) return;
-                if (!shouldLockScroll()) {
-                    unlockScroll();
-                    return;
-                }
-
+                
                 const scrollingDown = e.deltaY > 0;
                 const scrollingUp = e.deltaY < 0;
-
-                if (scrollingDown && currentIndex < items.length - 1) {
-                    lockScroll();
-                    e.preventDefault();
-                    if (!isTransitioning) {
-                        setActiveItem(currentIndex + 1);
-                        hasCompletedUp = false;
+                
+                // If scrolling UP, never lock - let page scroll freely
+                if (scrollingUp) {
+                    unlockScroll();
+                    // Reset hasPassedSection when user scrolls back above the section
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top > window.innerHeight) {
+                        hasPassedSection = false;
+                        currentIndex = 0;
+                        setActiveItem(0, true);
                     }
-                } else if (scrollingUp && currentIndex > 0) {
-                    lockScroll();
+                    return;
+                }
+                
+                // If we've already passed the section going down, don't lock again
+                if (hasPassedSection) {
+                    return;
+                }
+                
+                // If already locked, handle item navigation
+                if (isLocked) {
                     e.preventDefault();
-                    if (!isTransitioning) {
-                        setActiveItem(currentIndex - 1);
-                        hasCompletedDown = false;
-                    }
-                } else if (scrollingDown && currentIndex === items.length - 1) {
-                    if (!hasCompletedDown) {
-                        hasCompletedDown = true;
-                        e.preventDefault();
-                    } else {
+                    if (scrollingDown && currentIndex < items.length - 1) {
+                        if (!isTransitioning) {
+                            setActiveItem(currentIndex + 1);
+                        }
+                    } else if (scrollingDown && currentIndex === items.length - 1) {
+                        // Finished all items - mark as passed and unlock
+                        hasPassedSection = true;
                         unlockScroll();
                     }
-                } else if (scrollingUp && currentIndex === 0) {
-                    if (!hasCompletedUp) {
-                        hasCompletedUp = true;
-                        e.preventDefault();
-                    } else {
-                        unlockScroll();
-                    }
+                    return;
+                }
+                
+                // Check if section is entering viewport to start centering
+                if (isSectionEntering() && scrollingDown) {
+                    e.preventDefault();
+                    centerAndLock();
                 }
             }
 

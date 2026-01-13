@@ -430,6 +430,23 @@
    ============================================ */
 
 @media (max-width: 768px) {
+    .article-title {
+        color: #FFF;
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 2.75rem;
+        letter-spacing: -0.045rem;
+    }
+
+
+    .article-subtitle {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
     .article-container {
         padding: 0 1.5rem;
     }

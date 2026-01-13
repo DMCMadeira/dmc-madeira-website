@@ -107,6 +107,15 @@
 
     .groups__image {
         order: 1;
+        height: 16rem;
+    }
+
+    .groups__image img, 
+    .groups__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
     }
 
     .groups__content {

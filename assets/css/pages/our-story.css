@@ -28,9 +28,9 @@
     overflow: hidden;
 }
 
-.heritage__image img {
+.heritage__image img, .heritage__image picture {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -202,6 +202,7 @@
     font-size: 1.125rem;
     font-weight: var(--font-weight-regular);
     line-height: 1.75rem;
+    margin: 0;
 }
 
 .trusted__text-wrapper {
@@ -465,10 +466,12 @@
 
     .heritage__left {
         gap: 2rem;
+        flex-direction: column-reverse;
     }
 
     .heritage__image--main {
         max-width: none;
+        height: 22.125rem;
     }
 
     .heritage__text-bottom {
@@ -547,6 +550,10 @@
         grid-template-columns: 1fr;
         gap: 2.75rem;
         padding-top: 2.75rem;
+    }
+
+    .values__card-image {
+        height: 22.125rem;
     }
 
     .values__card-title {

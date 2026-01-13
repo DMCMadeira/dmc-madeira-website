@@ -381,8 +381,11 @@
     }
 
     .contact-hero__title {
+        color: #FFF;
+        text-align: center;
         font-size: 2.25rem;
-        line-height: 2.75rem;
+        font-weight: 700;
+        line-height: 2.75rem;   
         letter-spacing: -0.045rem;
         margin-bottom: 1rem;
     }
@@ -391,6 +394,7 @@
         color: #FFF;
         text-align: center;
         font-size: 2rem;
+        font-weight: 700;
         line-height: 2.5rem;
         letter-spacing: -0.04rem;
         margin-bottom: 1.5rem;

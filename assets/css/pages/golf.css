@@ -228,12 +228,6 @@
     line-height: 1.75rem;
 }
 
-.golf-stays__label {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    margin-bottom: 2rem;
-}
-
 .golf-stays__carousel {
     position: relative;
 }
@@ -500,6 +494,27 @@
 }
 
 @media (max-width: 768px) {
+    .golf-beyond__title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .golf-villas__image,
+    .golf-intro__image {
+        height: 16rem;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .golf-villas .container:has(.golf-villas__image) {
+        width: 100vw;
+        padding: 0;
+    }
+    
     .golf-villas {
         padding: 2.75rem 0 0 0;
         gap: 2.75rem;
@@ -611,12 +626,43 @@
         letter-spacing: -0.035rem;
     }
 
+    .golf-stays__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem; /* 125% */
+        letter-spacing: -0.04rem;
+    }
+
+    .golf-stays__subtitle {
+        color: #F7F2E5;
+        text-align: center;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
+    .golf-stays__text, .golf-stays__label {
+        color: #D8C49B;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.75rem;
+    }
+
+
     .golf-intro {
         padding: 2.75rem 0 0 0;
     }
 
     .golf-intro__grid {
         gap: 2.75rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .golf-intro__text {
@@ -652,7 +698,7 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding-bottom: var(--spacing-md);
+        padding-bottom: 1.5rem;
     }
     
     .golf-stays__grid::-webkit-scrollbar {
@@ -681,7 +727,7 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding-bottom: var(--spacing-md);
+        padding-bottom: 1.5rem;
     }
     
     .golf-beyond__grid::-webkit-scrollbar {
@@ -717,6 +763,7 @@
     .golf-beyond__nav {
         display: flex;
         justify-content: flex-end;
+        margin: 0;
     }
     
     .golf-cta {

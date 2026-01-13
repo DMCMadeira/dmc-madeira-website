@@ -95,6 +95,17 @@
         padding: 2rem 0;
     }
 
+    .corporate__image {
+        height: 16rem;
+    }
+
+    .corporate__image img, 
+    .corporate__image picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
     .corporate__container {
         grid-template-columns: 1fr;
         gap: 2rem;

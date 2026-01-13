@@ -3,7 +3,7 @@
    ============================================ */
 
 .partners {
-    padding: var(--spacing-3xl) 0;
+    padding: 3.5rem 0 5rem 0;
     overflow: hidden;
 }
 
@@ -82,15 +82,16 @@
 
 @media (max-width: 768px) {
     .partners {
-        padding: var(--spacing-2xl) 0;
+        padding: 3.5rem 0;
     }
 
     .partners__carousel-track {
-        gap: var(--spacing-2xl);
+        gap: 4rem;
+        animation-duration: 20s;
     }
 
     .partners__logo {
-        height: 40px;
+        height: 5.5rem;
     }
 
     .partners__logo img {
