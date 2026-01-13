@@ -811,6 +811,39 @@
             locationsNext.addEventListener('click', () => {
                 locationsCarousel.scrollBy({ left: 280, behavior: 'smooth' });
             });
+            
+            // Add drag functionality for locations carousel
+            let isLocationsDragging = false;
+            let locationsStartX = 0;
+            let locationsScrollLeft = 0;
+            
+            locationsCarousel.style.cursor = 'grab';
+            locationsCarousel.style.userSelect = 'none';
+            
+            locationsCarousel.addEventListener('mousedown', (e) => {
+                isLocationsDragging = true;
+                locationsStartX = e.pageX - locationsCarousel.offsetLeft;
+                locationsScrollLeft = locationsCarousel.scrollLeft;
+                locationsCarousel.style.cursor = 'grabbing';
+            });
+            
+            locationsCarousel.addEventListener('mouseleave', () => {
+                isLocationsDragging = false;
+                locationsCarousel.style.cursor = 'grab';
+            });
+            
+            locationsCarousel.addEventListener('mouseup', () => {
+                isLocationsDragging = false;
+                locationsCarousel.style.cursor = 'grab';
+            });
+            
+            locationsCarousel.addEventListener('mousemove', (e) => {
+                if (!isLocationsDragging) return;
+                e.preventDefault();
+                const x = e.pageX - locationsCarousel.offsetLeft;
+                const walk = (x - locationsStartX) * 1.5;
+                locationsCarousel.scrollLeft = locationsScrollLeft - walk;
+            });
         }
 
         // Species Carousel
@@ -824,6 +857,39 @@
             });
             speciesNext.addEventListener('click', () => {
                 speciesCarousel.scrollBy({ left: 280, behavior: 'smooth' });
+            });
+            
+            // Add drag functionality for species carousel
+            let isSpeciesDragging = false;
+            let speciesStartX = 0;
+            let speciesScrollLeft = 0;
+            
+            speciesCarousel.style.cursor = 'grab';
+            speciesCarousel.style.userSelect = 'none';
+            
+            speciesCarousel.addEventListener('mousedown', (e) => {
+                isSpeciesDragging = true;
+                speciesStartX = e.pageX - speciesCarousel.offsetLeft;
+                speciesScrollLeft = speciesCarousel.scrollLeft;
+                speciesCarousel.style.cursor = 'grabbing';
+            });
+            
+            speciesCarousel.addEventListener('mouseleave', () => {
+                isSpeciesDragging = false;
+                speciesCarousel.style.cursor = 'grab';
+            });
+            
+            speciesCarousel.addEventListener('mouseup', () => {
+                isSpeciesDragging = false;
+                speciesCarousel.style.cursor = 'grab';
+            });
+            
+            speciesCarousel.addEventListener('mousemove', (e) => {
+                if (!isSpeciesDragging) return;
+                e.preventDefault();
+                const x = e.pageX - speciesCarousel.offsetLeft;
+                const walk = (x - speciesStartX) * 1.5;
+                speciesCarousel.scrollLeft = speciesScrollLeft - walk;
             });
         }
     </script>

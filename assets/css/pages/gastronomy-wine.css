@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-4xl);
-    align-items: center;
+    align-items: start;
 }
 
 .gastro-intro__content {
@@ -535,9 +535,10 @@
 }
 
 .gastro-itinerary__accordion-content p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
+    color: #D8C49B;
 }
 
 .gastro-itinerary__note {
@@ -740,6 +741,7 @@
     .gastro-intro__grid {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         gap: 2.75rem;
     }
 

@@ -641,8 +641,9 @@
 }
 
 .shorex-experiences__accordion-content p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.75rem;
     color: #D8C49B;
 }
 

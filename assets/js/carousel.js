@@ -50,6 +50,11 @@ class DMCCarousel {
         this.isAnimating = false;
         this.touchStartX = 0;
         this.touchEndX = 0;
+        
+        // Drag state
+        this.isDragging = false;
+        this.dragStartX = 0;
+        this.dragMoved = false;
 
         this.init();
     }
@@ -121,10 +126,32 @@ class DMCCarousel {
             }, 100);
         });
 
+        // Mouse drag events for desktop
+        this.track.style.userSelect = 'none';
+        this.track.style.cursor = 'grab';
+        
+        // Prevent default drag on images and links
+        this.track.querySelectorAll('a, img').forEach(el => {
+            el.addEventListener('dragstart', (e) => e.preventDefault());
+        });
+        
+        this.track.addEventListener('mousedown', (e) => this.handleMouseDown(e));
+        document.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+        document.addEventListener('mouseup', (e) => this.handleMouseUp(e));
+        
+        // Prevent clicks when dragging
+        this.track.addEventListener('click', (e) => {
+            if (this.dragMoved) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+            }
+        }, true);
+
         // Touch events for mobile swipe
         this.track.addEventListener('touchstart', (e) => this.handleTouchStart(e), { passive: true });
         this.track.addEventListener('touchmove', (e) => this.handleTouchMove(e), { passive: true });
-        this.track.addEventListener('touchend', () => this.handleTouchEnd());
+        this.track.addEventListener('touchend', (e) => this.handleTouchEnd(e));
 
         // Pause autoplay on hover
         if (this.options.autoplay) {
@@ -133,24 +160,98 @@ class DMCCarousel {
         }
     }
 
+    // Mouse drag handlers
+    handleMouseDown(e) {
+        this.isDragging = true;
+        this.dragMoved = false;
+        this.dragStartX = e.pageX;
+        this.track.style.cursor = 'grabbing';
+        this.track.style.transition = 'none';
+    }
+
+    handleMouseMove(e) {
+        if (!this.isDragging) return;
+        e.preventDefault();
+        
+        const currentX = e.pageX;
+        const diff = currentX - this.dragStartX;
+        if (Math.abs(diff) > 5) this.dragMoved = true;
+        
+        const currentOptions = this.getResponsiveOptions();
+        const cardWidth = this.slideWidth + currentOptions.gap;
+        const baseTranslate = -this.currentIndex * cardWidth;
+        const newTranslate = baseTranslate + diff;
+        
+        this.track.style.transform = `translateX(${newTranslate}px)`;
+    }
+
+    handleMouseUp(e) {
+        if (!this.isDragging) return;
+        this.isDragging = false;
+        this.track.style.cursor = 'grab';
+        this.track.style.transition = 'transform 0.5s ease';
+        
+        const currentX = e.pageX;
+        const diff = currentX - this.dragStartX;
+        const currentOptions = this.getResponsiveOptions();
+        const cardWidth = this.slideWidth + currentOptions.gap;
+        
+        // Calculate how many cards to move based on drag distance
+        const cardsMoved = Math.round(diff / cardWidth);
+        const newIndex = this.currentIndex - cardsMoved;
+        
+        this.goTo(Math.max(0, Math.min(newIndex, this.maxIndex)), true);
+        
+        // Reset dragMoved after a delay to allow click events to be blocked
+        if (this.dragMoved) {
+            setTimeout(() => { this.dragMoved = false; }, 100);
+        }
+    }
+
+    // Touch handlers with smooth drag
     handleTouchStart(e) {
-        this.touchStartX = e.touches[0].clientX;
+        this.isDragging = true;
+        this.dragMoved = false;
+        this.touchStartX = e.touches[0].pageX;
+        this.track.style.transition = 'none';
     }
 
     handleTouchMove(e) {
-        this.touchEndX = e.touches[0].clientX;
+        if (!this.isDragging) return;
+        
+        const currentX = e.touches[0].pageX;
+        const diff = currentX - this.touchStartX;
+        if (Math.abs(diff) > 5) this.dragMoved = true;
+        
+        const currentOptions = this.getResponsiveOptions();
+        const cardWidth = this.slideWidth + currentOptions.gap;
+        const baseTranslate = -this.currentIndex * cardWidth;
+        const newTranslate = baseTranslate + diff;
+        
+        this.track.style.transform = `translateX(${newTranslate}px)`;
     }
 
-    handleTouchEnd() {
-        const diff = this.touchStartX - this.touchEndX;
-        const threshold = 50;
-
-        if (Math.abs(diff) > threshold) {
-            if (diff > 0) {
-                this.next();
-            } else {
-                this.prev();
-            }
+    handleTouchEnd(e) {
+        if (!this.isDragging) return;
+        this.isDragging = false;
+        this.track.style.transition = 'transform 0.5s ease';
+        
+        const currentOptions = this.getResponsiveOptions();
+        const cardWidth = this.slideWidth + currentOptions.gap;
+        
+        // Get the final position from the transform
+        const transform = this.track.style.transform;
+        const match = transform.match(/translateX\((-?\d+\.?\d*)px\)/);
+        const currentTranslate = match ? parseFloat(match[1]) : 0;
+        
+        // Calculate which index we're closest to
+        const newIndex = Math.round(-currentTranslate / cardWidth);
+        
+        this.goTo(Math.max(0, Math.min(newIndex, this.maxIndex)), true);
+        
+        // Reset dragMoved after a delay to allow click events to be blocked
+        if (this.dragMoved) {
+            setTimeout(() => { this.dragMoved = false; }, 100);
         }
     }
 
@@ -175,13 +276,19 @@ class DMCCarousel {
     }
 
     goTo(index, force = false) {
-        if (this.isAnimating || (!force && index === this.currentIndex)) return;
+        if (this.isAnimating && !force) return;
+        if (!force && index === this.currentIndex) return;
 
         this.isAnimating = true;
         this.currentIndex = Math.max(0, Math.min(index, this.maxIndex));
 
         const currentOptions = this.getResponsiveOptions();
         const translateX = this.currentIndex * (this.slideWidth + currentOptions.gap);
+
+        // Ensure transition is set when not dragging
+        if (!this.isDragging) {
+            this.track.style.transition = 'transform 0.5s ease';
+        }
 
         // Apply transform with vendor prefixes
         this.track.style.webkitTransform = `translateX(-${translateX}px)`;

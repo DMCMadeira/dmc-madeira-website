@@ -999,6 +999,39 @@
             teambuildingNext.addEventListener('click', () => {
                 teambuildingCarousel.scrollBy({ left: 280, behavior: 'smooth' });
             });
+            
+            // Add drag functionality
+            let isDragging = false;
+            let startX = 0;
+            let scrollLeft = 0;
+            
+            teambuildingCarousel.style.cursor = 'grab';
+            teambuildingCarousel.style.userSelect = 'none';
+            
+            teambuildingCarousel.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.pageX - teambuildingCarousel.offsetLeft;
+                scrollLeft = teambuildingCarousel.scrollLeft;
+                teambuildingCarousel.style.cursor = 'grabbing';
+            });
+            
+            teambuildingCarousel.addEventListener('mouseleave', () => {
+                isDragging = false;
+                teambuildingCarousel.style.cursor = 'grab';
+            });
+            
+            teambuildingCarousel.addEventListener('mouseup', () => {
+                isDragging = false;
+                teambuildingCarousel.style.cursor = 'grab';
+            });
+            
+            teambuildingCarousel.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - teambuildingCarousel.offsetLeft;
+                const walk = (x - startX) * 1.5;
+                teambuildingCarousel.scrollLeft = scrollLeft - walk;
+            });
         }
 
         // Itinerary Accordion
