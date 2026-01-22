@@ -410,11 +410,11 @@
                           </svg></span>
                     </a>
                     <!-- Image Card -->
-                    <a href="https://www.seatrade-cruise.com/ports-destinations/madeira-weighs-in-with-q1-cruise-visitor-growth" class="media-card media-card--image" rel="noopener noreferrer">
+                    <div class="media-card media-card--image" rel="noopener noreferrer">
                         <img src="assets/images/press-media-2-thumb.webp" 
                              srcset="assets/images/press-media-2-thumb.webp 1x, assets/images/press-media-2-thumb@2x.webp 2x"
                              alt="Madeira evento de viagem">
-                    </a>
+                    </div>
                     <!-- Info Card -->
                     <a href="https://www.visir.is/k/17c2a62c-5fa5-4d2b-a7b3-99e323d4bfa7-1747992484905/eyjan-sem-heimurinn-er-ad-uppgotva" class="media-card media-card--info" target="_blank" rel="noopener noreferrer">
                         <h3 class="media-card__title">Eyjan sem heimurinn er að uppgötva</h3>
@@ -1013,21 +1013,41 @@
         // Get all image cards
         const imageCards = document.querySelectorAll('.media-card--image');
         const imageUrls = [];
+        const imageSrcsets = [];
         
         imageCards.forEach((card, index) => {
             const img = card.querySelector('img');
             if (img) {
-                // Get the high-res version (2x) or fallback to regular src
+                // Convert thumb image path to expanded version
+                const thumbSrc = img.src;
+                const expandedSrc = thumbSrc.replace('-thumb', '-expanded');
+                
+                // Convert srcset from thumb to expanded versions
                 const srcset = img.getAttribute('srcset');
-                let highResSrc = img.src;
+                let lightboxSrc = expandedSrc;
+                let lightboxSrcset = null;
+                
                 if (srcset) {
+                    // Convert all srcset entries from thumb to expanded
                     const srcsetParts = srcset.split(',');
+                    const expandedSrcsetParts = srcsetParts.map(part => {
+                        const trimmed = part.trim();
+                        const [path, descriptor] = trimmed.split(' ');
+                        const expandedPath = path.replace('-thumb', '-expanded');
+                        return descriptor ? `${expandedPath} ${descriptor}` : expandedPath;
+                    });
+                    lightboxSrcset = expandedSrcsetParts.join(', ');
+                    
+                    // Use 2x version for src if available
                     const highRes = srcsetParts.find(s => s.includes('2x'));
                     if (highRes) {
-                        highResSrc = highRes.trim().split(' ')[0];
+                        const thumb2xPath = highRes.trim().split(' ')[0];
+                        lightboxSrc = thumb2xPath.replace('-thumb', '-expanded');
                     }
                 }
-                imageUrls.push(highResSrc);
+                
+                imageUrls.push(lightboxSrc);
+                imageSrcsets.push(lightboxSrcset);
                 
                 card.addEventListener('click', (e) => {
                     // Double-check drag wasn't happening
@@ -1053,6 +1073,12 @@
         
         function updateLightboxImage() {
             lightboxImage.src = imageUrls[currentImageIndex];
+            // Set srcset if available
+            if (imageSrcsets[currentImageIndex]) {
+                lightboxImage.srcset = imageSrcsets[currentImageIndex];
+            } else {
+                lightboxImage.removeAttribute('srcset');
+            }
             lightboxCounter.textContent = `${currentImageIndex + 1}/${imageUrls.length}`;
             
             // Update dots

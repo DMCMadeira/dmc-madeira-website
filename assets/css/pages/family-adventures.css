@@ -41,7 +41,7 @@
 }
 
 .family-intro__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .family-culture__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
     height: 34.625rem;
     max-width: 1200px;
@@ -233,7 +233,7 @@
 }
 
 .family-educational__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -407,6 +407,7 @@ font-size: 1.125rem;
 }
 
 .family-cta__image {
+    border-radius: 1.5rem;
     position: relative;
     overflow: hidden;
 }

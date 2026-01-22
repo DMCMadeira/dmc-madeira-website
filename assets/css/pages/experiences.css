@@ -40,7 +40,7 @@
 }
 
 .experiences-experts__image {
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 

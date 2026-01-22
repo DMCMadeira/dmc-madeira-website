@@ -234,6 +234,10 @@ svg {
     height: auto;
 }
 
+img:not(.no-lazy, .intro__image img, .join__image img) {
+    border-radius: 1.5rem;
+}
+
 a {
     color: inherit;
     text-decoration: none;
