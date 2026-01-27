@@ -495,12 +495,12 @@
 
     .partners-logos img {
         flex-shrink: 0;
-        height: 2.5rem;
+        height: 5.5rem;
         width: auto;
     }
 
     .partners-logos--associations img {
-        height: 2.5rem;
+        height: 3rem;
     }
 
     .partners-logos::-webkit-scrollbar {
@@ -515,6 +515,12 @@
         font-size: 1.25rem;
         font-weight: 600;
         line-height: 1.75rem;
+    }
+
+    .partners-inspire__title  {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
     }
 
     .media-card__source {

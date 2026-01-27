@@ -52,7 +52,7 @@
 
 .experiences__card-image {
     position: relative;
-    border-radius: var(--radius-lg);
+    border-radius: 1.5rem;
     overflow: hidden;
     display: block;
 }

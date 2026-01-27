@@ -389,6 +389,10 @@
         border-radius: 0;
     }
 
+    .sea-intro__image img {
+        border-radius: 0 !important;
+    }
+
     .sea-intro__text {
         color: #D8C49B;
         font-size: 1.125rem;

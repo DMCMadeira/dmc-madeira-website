@@ -36,38 +36,73 @@
 }
 
 .filter-tag {
-    border-radius: .75rem;
-    border: 1px solid rgba(255, 255, 255, 0.80);
+    position: relative;
+    border-radius: 1rem;
+    border: none;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%), rgba(255, 255, 255, 0.10);
     box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     color: #D8C49B;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     padding: .75rem 1rem;
+    cursor: pointer;
+    isolation: isolate;
+    transition: all var(--transition-fast);
+}
+
+.filter-tag::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 40%, #B2B2B2 50%, #FFFFFF 60%, #FFFFFF 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .filter-tag:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--color-text-white);
-    color: var(--color-text-white);
+    background-color: #D8C49B;
+    color: #0D2D18;
+}
+
+.filter-tag:focus {
+    background: #e1cda2;
+    box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    color: #0D2D18;
+    outline: none;
+}
+
+.filter-tag:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%), rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 0 4px #000DFF, 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    color: #0D2D18;
+}
+
+.filter-tag:active::before {
+    padding: 2px;
 }
 
 .filter-tag--active {
-    border: 1px solid rgba(255, 255, 255, 0.80);
     background: #D8C49B;
     box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
     color: #0D2D18;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
+}
+
+.filter-tag--active::before {
+    background: #D8C49B;
 }
 
 .filter-tag--active:hover {
-    background-color: var(--color-text-muted);
-    border-color: var(--color-text-muted);
-    color: var(--color-primary-dark);
+    background-color: #eee1c8;
+    color: #0D2D18;
 }
 
 /* Articles Grid Section */

@@ -407,7 +407,6 @@ font-size: 1.125rem;
 }
 
 .family-cta__image {
-    border-radius: 1.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -418,6 +417,7 @@ font-size: 1.125rem;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 0;
 }
 
 .family-cta__content {

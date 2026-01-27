@@ -157,6 +157,11 @@
     line-height: 1.75rem;
 }
 
+/* Hide item images by default (shown only on mobile) */
+.real-actions__item-image {
+    display: none;
+}
+
 /* Vision Section */
 .vision {
     padding: var(--spacing-5xl) 0;

@@ -510,6 +510,10 @@
         border-radius: 0;
     }
 
+    .golf-villas__image img, .golf-intro__image img {
+        border-radius: 0 !important;
+    }
+
     .golf-villas .container:has(.golf-villas__image) {
         width: 100vw;
         padding: 0;

@@ -165,6 +165,7 @@
         height: 100%;
         width: 100%;
         display: block;
+        border-radius: 0;
         object-fit: cover;
     }
 
@@ -198,5 +199,6 @@
     .intro-experiences .intro__image-wrapper .intro__image {
         border-radius: 0;
         width: 100vw;
+        border-radius: 0;
     }
 }

@@ -509,6 +509,10 @@
         border-radius: 0;
     }
 
+    .nature-intro__image img {
+        border-radius: 0 !important;
+    }
+
     .nature-intro__text {
         color: var(--secondary-500, #D8C49B);
         font-size: 1.125rem;

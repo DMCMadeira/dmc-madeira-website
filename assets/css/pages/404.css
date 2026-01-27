@@ -100,6 +100,10 @@
         padding: var(--spacing-xl);
     }
     
+    .error-page__title {
+        font-size: 2.25rem;
+    }
+
     .error-page__icon {
         width: 80px;
     }
