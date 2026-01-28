@@ -558,12 +558,11 @@
     position: absolute;
     top: var(--spacing-xl);
     right: var(--spacing-xl);
-    width: 48px;
-    height: 48px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     border: 1px solid var(--color-border-muted);
-    background: transparent;
-    color: var(--color-text-white);
+    background: #F7F2E5;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -573,7 +572,11 @@
 }
 
 .video-modal__close:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: #eee1c8;
+}
+
+.video-modal__close:active {
+    background: #d8c49b;
 }
 
 .video-modal__content {
@@ -602,8 +605,8 @@
     .video-modal__close {
         top: var(--spacing-lg);
         right: var(--spacing-lg);
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .video-modal__content {
