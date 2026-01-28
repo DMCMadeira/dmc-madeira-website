@@ -145,22 +145,7 @@
 }
 
 .photo-locations__arrow, .photo-species__arrow {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    border: 1px solid var(--color-text-white);
-    background: #F7F2F5;
-    color: #FFF;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.photo-locations__arrow:hover, .photo-species__arrow:hover {
-    background: var(--color-text-white);
-    color: var(--color-primary-dark);
+    /* Visual styles inherited from .carousel-arrow in base.css */
 }
 
 .photo-tailor-made, .photo-field-ethics {

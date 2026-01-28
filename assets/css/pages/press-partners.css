@@ -280,33 +280,6 @@
     gap: var(--spacing-sm);
 }
 
-.media-carousel__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    background-color: #F7F2E5;
-    transition: all var(--transition-fast);
-    cursor: pointer;
-}
-
-.media-carousel__btn:hover:not(:disabled) {
-    border-color: var(--color-accent-gold);
-}
-
-.media-carousel__btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.media-carousel__btn img {
-    width: 16px;
-    height: 16px;
-    opacity: 0.8;
-}
-
 /* Testimonials Section */
 .testimonials {
     padding: 3.5rem 0;

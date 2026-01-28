@@ -129,22 +129,6 @@
     gap: var(--spacing-sm);
 }
 
-.why-choose__carousel-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    background-color:#F7F2E5;
-    transition: all var(--transition-fast);
-    cursor: pointer;
-}
-
-.why-choose__carousel-btn:hover {
-    border-color: var(--color-accent-gold);
-}
-
 .why-choose__carousel-btn img {
     width: 2rem;
     height: 2rem;
