@@ -234,26 +234,18 @@
     z-index: 1;
     width: 11.3125rem;
     height: 11.3125rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url("../../images/play-default-desktop.webp") center center / contain no-repeat;
     cursor: pointer;
-    transition: transform var(--transition-base), background-color var(--transition-base);
     border: none;
+    transition: transform var(--transition-base);
 }
 
 .vision__play:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    background-color: #ffffff;
+    transform: translate(-50%, -50%) scale(1.05);
+    background-image: url("../../images/play-hover-desktop.webp");
 }
 
-.vision__play svg {
-    width: 48px;
-    height: 48px;
-    fill: var(--color-primary-dark);
-}
+
 
 /* Join Section - Full width background */
 .join {
