@@ -191,23 +191,27 @@
     width: 11.3125rem;
     height: 11.3125rem;
     border-radius: 50%;
-    background-color: var(--color-text-white);
+    background: url("../../images/play-default-desktop.webp") center center / contain no-repeat;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: transform var(--transition-fast);
 }
 
 .article-video__play:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.05);
+    background-image: url("../../images/play-hover-desktop.webp");
 }
 
-.article-video__play svg {
-    width: 2.74969rem;
-    height: 3.25006rem;
-    color: var(--color-primary-dark);
+@media (max-width: 768px) {
+    .article-video__play {
+        width: 5.875rem;
+        height: 5.875rem;
+        background: url("../../images/play-default-mobile.webp") center center / contain no-repeat;
+    }
+    
+    .article-video__play:hover {
+        background-image: url("../../images/play-hover-mobile.webp");
+    }
 }
 
 /* Icon Grid */
@@ -296,7 +300,7 @@
 }
 
 /* ============================================
-   Lightbox Modal
+   Lightbox & Video Modal
    ============================================ */
 
 .lightbox {
