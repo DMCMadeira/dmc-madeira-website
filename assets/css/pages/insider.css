@@ -386,3 +386,69 @@
 }
 
 
+/* ============================================
+   Coming Soon Mode
+   ============================================ */
+
+/* Blur apenas no conteúdo principal */
+body.is-coming-soon main {
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* Garantir que main é referência */
+main {
+    position: relative;
+}
+
+/* Overlay apenas dentro do main */
+.coming-soon-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+/* Caixa */
+.coming-soon-box {
+    text-align: center;
+    padding: 40px 60px;
+    border-radius: 24px;
+    background: rgba(20, 30, 25, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(216, 196, 155, 0.4);
+    color: #FFF;
+    max-width: 600px;
+}
+
+/* Badge */
+.coming-soon-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #D8C49B;
+    color: #D8C49B;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.coming-soon-box h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+/* Text */
+.coming-soon-box p {
+    font-size: 1.125rem;
+    color: #D8C49B;
+}
