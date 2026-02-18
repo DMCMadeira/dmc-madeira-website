@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/optitravel/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
