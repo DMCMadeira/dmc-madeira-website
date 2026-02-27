@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(done)",
+      "Bash(grep -h \"footer\\\\|contact\\\\|email\\\\|phone\\\\|address\" \"c:\\\\Users\\\\user\\\\DMC Madeira, SA\\\\Paperless - Documentos\\\\27- JENI\\\\dmc-madeira-design-website\"/*.html)",
+      "Bash(grep -h \"footer\\\\|contact\\\\|email\\\\|phone\" *.html)"
+    ]
+  }
+}
