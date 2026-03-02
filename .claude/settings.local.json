@@ -6,7 +6,9 @@
       "Bash(grep -h \"footer\\\\|contact\\\\|email\\\\|phone\" *.html)",
       "Bash(grep -n \"meta name=\"\"description\"\"\" \"c:/Users/user/DMC Madeira, SA/Paperless - Documentos/27- JENI/dmc-madeira-design-website/\"*.html)",
       "Bash(python3 -c \":*)",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(grep -n \"og:image\\\\|og:url\" \"c:/Users/user/DMC Madeira, SA/Paperless - Documentos/27- JENI/dmc-madeira-design-website/\"*.html)",
+      "Bash(grep -rn \"og:url\" \"c:/Users/user/DMC Madeira, SA/Paperless - Documentos/27- JENI/dmc-madeira-design-website/\"*.html)"
     ]
   }
 }
