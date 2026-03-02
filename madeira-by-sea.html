@@ -33,7 +33,32 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TXHQKGVN');</script>
         <!-- End Google Tag Manager -->
-         
+
+        <!-- Schema JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dmcmadeira.pt/"},
+                        {"@type": "ListItem", "position": 2, "name": "Experiences", "item": "https://www.dmcmadeira.pt/experiences.html"},
+                        {"@type": "ListItem", "position": 3, "name": "Madeira by Sea"}
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "name": "Madeira by Sea",
+                    "description": "Private sea experiences in Madeira. Yacht charters, boat trips, dolphin watching, diving and ocean adventures.",
+                    "provider": {"@id": "https://www.dmcmadeira.pt/#organization"},
+                    "areaServed": {"@type": "Place", "name": "Madeira, Portugal"},
+                    "url": "https://www.dmcmadeira.pt/madeira-by-sea.html"
+                }
+            ]
+        }
+        </script>
+        <!-- End Schema JSON-LD -->
     </head>
 
     <body>

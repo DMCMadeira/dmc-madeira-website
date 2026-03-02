@@ -32,7 +32,65 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TXHQKGVN');</script>
         <!-- End Google Tag Manager -->
-         
+
+        <!-- Schema JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "TravelAgency",
+                    "@id": "https://www.dmcmadeira.pt/#organization",
+                    "name": "DMC Madeira",
+                    "description": "DMC Madeira is a destination management company in Madeira dedicated to luxury travel and tailor-made itineraries. Five generations of island expertise.",
+                    "url": "https://www.dmcmadeira.pt/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.dmcmadeira.pt/assets/logos/header-logo-dmcmadeira.svg"
+                    },
+                    "image": "https://www.dmcmadeira.pt/assets/og-image.webp",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Avenida do Mar e das Comunidades Madeirenses 15, 1st floor",
+                        "postalCode": "9000-054",
+                        "addressLocality": "Funchal",
+                        "addressRegion": "Madeira",
+                        "addressCountry": "PT"
+                    },
+                    "telephone": "+351291239002",
+                    "email": "travel@dmcmadeira.pt",
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "09:00",
+                        "closes": "18:00"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Madeira and Porto Santo, Portugal"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/dmcmadeira/",
+                        "https://www.instagram.com/dmcmadeira/",
+                        "https://www.youtube.com/channel/UCl2jsov1rglJ46sdRgv3qBQ",
+                        "https://www.linkedin.com/company/dmc-madeira/"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.dmcmadeira.pt/#website",
+                    "url": "https://www.dmcmadeira.pt/",
+                    "name": "DMC Madeira",
+                    "description": "Luxury travel experiences in Madeira and Porto Santo.",
+                    "publisher": {
+                        "@id": "https://www.dmcmadeira.pt/#organization"
+                    }
+                }
+            ]
+        }
+        </script>
+        <!-- End Schema JSON-LD -->
+
     </head>
 
     <body>

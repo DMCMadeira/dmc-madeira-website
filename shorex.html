@@ -33,7 +33,31 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TXHQKGVN');</script>
         <!-- End Google Tag Manager -->
-         
+
+        <!-- Schema JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dmcmadeira.pt/"},
+                        {"@type": "ListItem", "position": 2, "name": "Shorex"}
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "name": "Shore Excursions in Madeira – Shorex",
+                    "description": "Premium shore excursions in Madeira for cruise passengers. Tailor-made Shorex programmes designed with local expertise for cruise lines and tour operators.",
+                    "provider": {"@id": "https://www.dmcmadeira.pt/#organization"},
+                    "areaServed": {"@type": "Place", "name": "Madeira, Portugal"},
+                    "url": "https://www.dmcmadeira.pt/shorex.html"
+                }
+            ]
+        }
+        </script>
+        <!-- End Schema JSON-LD -->
     </head>
 
     <body>

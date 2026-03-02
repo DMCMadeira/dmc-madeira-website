@@ -33,7 +33,32 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TXHQKGVN');</script>
         <!-- End Google Tag Manager -->
-         
+
+        <!-- Schema JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dmcmadeira.pt/"},
+                        {"@type": "ListItem", "position": 2, "name": "Experiences", "item": "https://www.dmcmadeira.pt/experiences.html"},
+                        {"@type": "ListItem", "position": 3, "name": "Nature & Wellness"}
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "name": "Nature & Wellness in Madeira",
+                    "description": "Immersive nature and wellness experiences in Madeira. Levada walks, forest retreats, spa and mindfulness in a unique natural setting.",
+                    "provider": {"@id": "https://www.dmcmadeira.pt/#organization"},
+                    "areaServed": {"@type": "Place", "name": "Madeira, Portugal"},
+                    "url": "https://www.dmcmadeira.pt/nature-wellness.html"
+                }
+            ]
+        }
+        </script>
+        <!-- End Schema JSON-LD -->
     </head>
 
     <body>
