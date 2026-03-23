@@ -125,8 +125,9 @@
 }
 
 @media screen and (max-width: 480px) {
-    .error-page__content {
-        position: absolute;
-        bottom: 0;
+    .error-page {
+        min-height: auto;
+        overflow: visible;
+        padding-top: 5rem;
     }
 }

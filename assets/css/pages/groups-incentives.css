@@ -872,6 +872,12 @@
         row-gap: 3rem;
     }
 
+    .groups-teambuilding__subtitle {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.035rem;
+    }
+
     .groups-teambuilding__groupsize {
         padding: 2rem 0;
     }

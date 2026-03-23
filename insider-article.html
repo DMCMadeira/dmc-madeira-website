@@ -675,6 +675,7 @@
                 <div class="video-modal__wrapper" id="video-wrapper">
                     <iframe id="video-iframe" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -1018,7 +1019,7 @@
 
             function openVideoModalWithId(videoId) {
                 if (videoId && videoIframe) {
-                    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+                    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
                     videoIframe.src = embedUrl;
                     videoModal.classList.add('is-open');
                     document.body.style.overflow = 'hidden';

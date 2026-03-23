@@ -234,16 +234,18 @@ svg {
     height: auto;
 }
 
-img:not(.no-lazy, 
+img:not(.no-lazy,
 .intro__image img,
- .join__image img, 
- footer img, 
- header img, 
+ .join__image img,
+ footer img,
+ header img,
  .partners-logos img,
  .family-cta__image img,
  .safety__image img,
  .story-continues__video img,
- .partners__logo img) {
+ .partners__logo img,
+ .gastro-intro__image img,
+ .gastro-culture__image img) {
     border-radius: 1.5rem;
 }
 
@@ -491,6 +493,11 @@ p:last-child {
 .carousel-arrow:active {
     box-shadow: 0 0 0 4px #000DFF, 0 0 24px 8px rgba(255, 255, 255, 0.13) inset, 0 8px 32px 0 rgba(31, 38, 135, 0.13);
 
+}
+
+.no-hovering,
+.no-hovering:active {
+    cursor: default;
 }
 
 .no-hovering:hover {

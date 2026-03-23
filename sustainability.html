@@ -985,6 +985,15 @@
                     return rect.top > 0 && rect.top < viewportHeight * 0.5;
                 }
 
+                function isSectionReentering() {
+                    if (isMobile()) return false;
+
+                    const rect = section.getBoundingClientRect();
+                    const viewportHeight = window.innerHeight;
+
+                    return rect.bottom > viewportHeight * 0.5 && rect.bottom < viewportHeight;
+                }
+
                 function getCenteredScrollPosition() {
                     const rect = section.getBoundingClientRect();
                     const viewportHeight = window.innerHeight;
@@ -1029,9 +1038,9 @@
                     // If scrolling UP, never lock - let page scroll freely
                     if (scrollingUp) {
                         unlockScroll();
-                        // Reset hasPassedSection when user scrolls back above the section
+                        // Reset hasPassedSection when user scrolls back above the section or re-enters from above
                         const rect = section.getBoundingClientRect();
-                        if (rect.top > window.innerHeight) {
+                        if (rect.top > window.innerHeight || isSectionReentering()) {
                             hasPassedSection = false;
                             currentIndex = 0;
                             setActiveItem(0, true);

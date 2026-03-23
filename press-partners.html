@@ -1429,6 +1429,49 @@
                 32
             );
         </script>
+
+        <script>
+            // Partners logos ticker/marquee (mobile only)
+            function isMobile() {
+                return window.innerWidth < 769;
+            }
+
+            const logosContainers = document.querySelectorAll('.partners-logos');
+
+            logosContainers.forEach(function (container) {
+                const originalChildren = Array.from(container.children);
+                originalChildren.forEach(function (child) {
+                    const clone = child.cloneNode(true);
+                    container.appendChild(clone);
+                });
+
+                let position = 0;
+                const speed = 0.5;
+
+                function animate() {
+                    if (!isMobile()) {
+                        position = 0;
+                        container.style.transform = '';
+                        requestAnimationFrame(animate);
+                        return;
+                    }
+
+                    position -= speed;
+                    const totalWidth = originalChildren.reduce(function (acc, el) {
+                        return acc + el.offsetWidth + parseInt(getComputedStyle(container).gap || 0);
+                    }, 0);
+
+                    if (Math.abs(position) >= totalWidth) {
+                        position = 0;
+                    }
+
+                    container.style.transform = `translateX(${position}px)`;
+                    requestAnimationFrame(animate);
+                }
+
+                requestAnimationFrame(animate);
+            });
+        </script>
     </body>
 
 </html>

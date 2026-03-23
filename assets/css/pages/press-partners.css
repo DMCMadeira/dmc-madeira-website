@@ -458,12 +458,14 @@
     }
 
     .partners-logos {
-        overflow-x: auto;
-        overflow-y: hidden;
         flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        min-height: 4rem;
+        overflow: visible;
+        width: max-content;
+        will-change: transform;
+    }
+
+    .partners-category {
+        overflow: hidden;
     }
 
     .partners-logos img {
@@ -474,11 +476,6 @@
 
     .partners-logos--associations img {
         height: 3rem;
-    }
-
-    .partners-logos::-webkit-scrollbar {
-        display: none;
-     
     }
 }
 

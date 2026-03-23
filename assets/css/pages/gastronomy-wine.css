@@ -770,6 +770,11 @@
         font-weight: 400;
         line-height: 1.75rem;
     }
+
+    .gastro-chef__block {
+        margin-bottom: 2.75rem;
+        border-radius: 0 !important;
+    }
     
     .gastro-itinerary__title {
         color: #FFF;

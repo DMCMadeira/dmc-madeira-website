@@ -532,6 +532,13 @@
         padding: 3.5rem 0;
     }
 
+    .values__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
+
     .values__grid {
         grid-template-columns: 1fr;
         gap: 2.75rem;

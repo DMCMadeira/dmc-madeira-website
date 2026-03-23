@@ -191,6 +191,13 @@
     .exclusivity {
         padding: 0 0 2.75rem 0;
     }
+
+    .exclusivity__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: -0.04rem;
+    }
     
     .discretion {
         padding: 2.75rem 0;

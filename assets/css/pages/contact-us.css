@@ -92,6 +92,8 @@
 }
 
 .reach-us__item-text a {
+    display: inline-block;
+    color: inherit;
     text-decoration: none;
     position: relative;
 }
@@ -121,6 +123,10 @@
 
 .reach-us__item-text a:hover::before {
     width: 100%;
+}
+
+.reach-us__item-text a:hover {
+    color: inherit !important;
 }
 
 .reach-us__item-note {

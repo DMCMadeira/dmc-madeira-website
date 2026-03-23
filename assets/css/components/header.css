@@ -103,7 +103,6 @@
 }
 
 .header__nav-link:hover svg,
-.header__nav-link.active svg,
 .header__nav-item:hover .header__nav-link svg {
     transform: rotate(180deg);
 }

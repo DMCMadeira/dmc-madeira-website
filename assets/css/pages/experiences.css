@@ -306,6 +306,8 @@
     .experiences-cta__buttons .btn {
         width: 100%;
         max-width: 300px;
+        text-align: center;
+        white-space: initial;
     }
     
     .experience-accordion__info {
