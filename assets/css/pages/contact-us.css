@@ -92,7 +92,6 @@
 }
 
 .reach-us__item-text a {
-    display: inline-block;
     color: inherit;
     text-decoration: none;
     position: relative;
@@ -103,10 +102,10 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 1px;
     width: 100%;
     height: 1px;
-    background-color: var(--color-text-muted);
+    background-color: var(--color-primary-dark);
 }
 
 /* Thicker underline that animates from left to right on hover */
@@ -114,10 +113,10 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 1px;
     width: 0;
     height: 2px;
-    background-color: var(--color-text-muted);
+    background-color: var(--color-primary-dark);
     transition: width 0.3s ease;
 }
 
