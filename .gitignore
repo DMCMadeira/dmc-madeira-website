@@ -11,8 +11,12 @@ Desktop.ini
 *.log
 *.tmp
 *.swp
+tmp
 tmp/
 
 # Ambiente local
 .env
 .env.*
+
+# Claude Code (configurações locais)
+.claude/
