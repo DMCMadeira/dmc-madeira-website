@@ -964,7 +964,7 @@
                     ensureCentered();
 
                     const newSrc = item.dataset.image;
-                    const newSrcset = `${item.dataset.image} 1x, ${item.dataset.image2x} 2x`;
+                    const newSrcset = `${item.dataset.image} 1x, ${item.getAttribute('data-image-2x')} 2x`;
 
                     stickyImage.style.opacity = '0';
                     setTimeout(() => {
