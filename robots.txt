@@ -4,6 +4,7 @@ Allow: /
 # Exclude utility and error pages
 Disallow: /404.html
 Disallow: /insider-soon.html
+Disallow: /pt/insider-soon.html
 
 # Sitemap
 Sitemap: https://www.dmcmadeira.pt/sitemap.xml
